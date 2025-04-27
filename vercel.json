@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "public": true,
+  "devCommand": "node dist/sonica/server/server.mjs",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api" }
+  ],
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "dist/sonica/browser/**"
+    }
+  }
+}
