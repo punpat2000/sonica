@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,9 @@ import { NgOptimizedImage } from '@angular/common';
 })
 export class AppComponent {
   title = 'sonica';
+  private readonly meta = inject(Meta);
+
+  constructor() {
+    this.meta.addTag({ name: 'image', content: 'https://www.sonica.co.th/company_profile2.webp' });
+  }
 }
