@@ -1,0 +1,14 @@
+.sonica-logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 800px; // Setting a reasonable max-width for larger screens
+}
+
+// Media query for smaller screens
+@media screen and (max-width: 768px) {
+  .sonica-logo {
+    max-width: 100%; // Slightly smaller on mobile devices
+  }
+}

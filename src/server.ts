@@ -14,6 +14,9 @@ const browserDistFolder = resolve(serverDistFolder, '../browser');
 const app = express();
 const angularApp = new AngularNodeAppEngine();
 
+// 1. Trust the cloud proxy (very important)
+app.set('trust proxy', 1);
+
 /**
  * Example Express Rest API endpoints can be defined here.
  * Uncomment and define endpoints as necessary.
@@ -36,6 +39,41 @@ app.use(
     redirect: false,
   }),
 );
+
+// Serve robots.txt
+app.get('/robots.txt', (req, res) => {
+  const baseUrl = req.protocol + '://' + req.get('host');
+
+  res.type('text/plain');
+  res.send(
+    `User-agent: *
+Disallow:
+
+Sitemap: ${baseUrl}/sitemap.xml
+`
+  );
+});
+
+app.get('/sitemap.xml', async (req, res) => {
+  const baseUrl = req.protocol + '://' + req.get('host');
+
+  const staticRoutes = ['/'];
+
+  const allRoutes = [...staticRoutes];
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    ${allRoutes.map(route => `
+    <url>
+      <loc>${baseUrl}${route}</loc>
+      <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+      <priority>${route === '/' ? '1.0' : route === '/blog' ? '0.8' : '0.6'}</priority>
+    </url>
+    `).join('')}
+  </urlset>`;
+  res.header('Content-Type', 'application/xml');
+  res.send(sitemap.trim());
+});
 
 /**
  * Handle all other requests by rendering the Angular application.
