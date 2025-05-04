@@ -54,26 +54,26 @@ Sitemap: ${baseUrl}/sitemap.xml
   );
 });
 
-// app.get('/sitemap.xml', async (req, res) => {
-//   const baseUrl = req.protocol + '://' + req.get('host');
+app.get('/sitemap.xml', async (req, res) => {
+  const baseUrl = req.protocol + '://' + req.get('host');
 
-//   const staticRoutes = ['/'];
+  const staticRoutes = ['/'];
 
-//   const allRoutes = [...staticRoutes];
+  const allRoutes = [...staticRoutes];
 
-//   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-//   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-//     ${allRoutes.map(route => `
-//     <url>
-//       <loc>${baseUrl}${route}</loc>
-//       <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-//       <priority>${route === '/' ? '1.0' : route === '/blog' ? '0.8' : '0.6'}</priority>
-//     </url>
-//     `).join('')}
-//   </urlset>`;
-//   res.header('Content-Type', 'application/xml');
-//   res.send(sitemap.trim());
-// });
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    ${allRoutes.map(route => `
+    <url>
+      <loc>${baseUrl}${route}</loc>
+      <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+      <priority>${route === '/' ? '1.0' : route === '/blog' ? '0.8' : '0.6'}</priority>
+    </url>
+    `).join('')}
+  </urlset>`;
+  res.header('Content-Type', 'application/xml');
+  res.send(sitemap.trim());
+});
 
 /**
  * Handle all other requests by rendering the Angular application.
