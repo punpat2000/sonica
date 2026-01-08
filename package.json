@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:sonica": "node dist/sonica/server/server.mjs",
-    "update": "ng update @angular/core@20 @angular/cli@20",
+    "update": "ng update @angular/core@^21 @angular/cli@^21",
     "update:check": "ng update"
   },
   "private": true,
