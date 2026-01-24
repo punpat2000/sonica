@@ -11,6 +11,7 @@
     "update": "ng update @angular/core@^21 @angular/cli@^21",
     "update:check": "ng update"
   },
+  "type": "module",
   "private": true,
   "dependencies": {
     "@angular/common": "^21.0.7",
