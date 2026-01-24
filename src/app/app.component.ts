@@ -25,7 +25,7 @@ interface GradientShape {
 export class AppComponent {
   title = 'sonica';
   private readonly meta = inject(Meta);
-  
+
   shapes: GradientShape[] = [];
 
   // Color palette for gradients
@@ -54,7 +54,7 @@ export class AppComponent {
       const size = Math.floor(Math.random() * 120) + 100; // 100-220px
       const colors = this.colorPalette[Math.floor(Math.random() * this.colorPalette.length)];
       const animationDelay = -(Math.random() * 20); // -20 to 0 seconds
-      
+
       // Random position - choose one of: top-left, top-right, bottom-left, bottom-right, center
       const positionType = Math.floor(Math.random() * 5);
       const shape: GradientShape = {
@@ -93,7 +93,7 @@ export class AppComponent {
 
   getShapeStyle(shape: GradientShape): { [key: string]: string } {
     const style: { [key: string]: string } = {};
-    
+
     style['width'] = `${shape.size}px`;
     style['height'] = `${shape.size}px`;
     style['background'] = `linear-gradient(135deg, ${shape.color1} 0%, ${shape.color2} 100%)`;
