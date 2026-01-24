@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Meta } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './layout/header/header.component';
 
 interface GradientShape {
   size: number;
@@ -17,7 +18,7 @@ interface GradientShape {
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
