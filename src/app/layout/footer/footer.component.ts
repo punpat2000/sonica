@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './footer.component.scss',
 })
 export class FooterComponent {
-  currentYear = new Date().getFullYear();
+  readonly currentYear = signal(new Date().getFullYear());
 }
