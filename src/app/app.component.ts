@@ -1,7 +1,7 @@
 import { Component, inject, LOCALE_ID, OnInit, OnDestroy, signal } from '@angular/core';
 import { RouterOutlet, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
+
 import { filter } from 'rxjs/operators';
 import { Subscription } from 'rxjs';
 import { HeaderComponent } from './layout/header/header.component';
@@ -11,7 +11,7 @@ import { HeroBackgroundComponent } from './components/hero-background/hero-backg
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, HeaderComponent, FooterComponent, GradientShapesComponent, HeroBackgroundComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, GradientShapesComponent, HeroBackgroundComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

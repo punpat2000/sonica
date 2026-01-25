@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, ChangeDetectorRef, PLATFORM_ID, inject, makeStateKey, TransferState, signal } from '@angular/core';
-import { CommonModule, isPlatformBrowser, isPlatformServer } from '@angular/common';
+import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 
 interface GradientShape {
   size: number;
@@ -19,7 +19,7 @@ const GRADIENT_SHAPES_KEY = makeStateKey<GradientShape[]>('gradientShapes');
 
 @Component({
   selector: 'app-gradient-shapes',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './gradient-shapes.component.html',
   styleUrl: './gradient-shapes.component.scss',
 })
