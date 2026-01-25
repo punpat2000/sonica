@@ -7,6 +7,10 @@
       "i18n": {
         "sourceLocale": "en",
         "locales": {
+          "en": {
+            "translation": "src/locale/messages.xlf",
+            "subPath": "en"
+          },
           "th": {
             "translation": "src/locale/messages.th.xlf",
             "subPath": "th"
@@ -79,6 +83,28 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "en": {
+              "localize": ["en"],
+              "outputPath": "dist/sonica/en",
+              "optimization": true
+            },
+            "en-production": {
+              "localize": ["en"],
+              "outputPath": "dist/sonica/en",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
             },
             "th": {
               "localize": ["th"],
@@ -157,6 +183,9 @@
             },
             "development": {
               "buildTarget": "sonica:build:development"
+            },
+            "en": {
+              "buildTarget": "sonica:build:en"
             },
             "th": {
               "buildTarget": "sonica:build:th"

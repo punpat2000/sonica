@@ -60,7 +60,7 @@ export class HeaderComponent {
 
     // Map of locale codes to their path prefixes
     const localePrefixes: Record<string, string> = {
-      'en': '',
+      'en': '/en',
       'th': '/th',
       'zh': '/zh',
       'ja': '/ja'
