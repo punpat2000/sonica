@@ -1,9 +1,6 @@
 <!-- Animated gradient background shapes -->
-<div class="gradient-shapes">
-  @for (shape of shapes; track $index) {
-    <div class="shape" [ngStyle]="getShapeStyle(shape)"></div>
-  }
-</div>
+<!-- TransferState ensures server-generated shapes are used on client, preventing re-rendering -->
+<app-gradient-shapes></app-gradient-shapes>
 
 <app-header></app-header>
 
