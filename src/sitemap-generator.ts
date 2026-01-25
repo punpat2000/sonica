@@ -24,7 +24,7 @@ export const routes: Route[] = [
 ];
 
 export const locales = [
-  { code: 'en', path: '/en' },
+  { code: 'en', path: '' },
   { code: 'th', path: '/th' },
   { code: 'zh', path: '/zh' },
   { code: 'ja', path: '/ja' },
@@ -32,8 +32,10 @@ export const locales = [
 
 export function generateSitemapIndex(baseUrl: string): string {
   const sitemaps = locales.map(locale => {
-    // All language sitemaps are at /{locale}/sitemap.xml
-    const sitemapUrl = `${baseUrl}${locale.path}/sitemap.xml`;
+    // English sitemap is at /sitemap-en.xml, others are at /{locale}/sitemap.xml
+    const sitemapUrl = locale.path 
+      ? `${baseUrl}${locale.path}/sitemap.xml`
+      : `${baseUrl}/sitemap-en.xml`;
     return `    <sitemap>
       <loc>${sitemapUrl}</loc>
       <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
