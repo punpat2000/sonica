@@ -1,6 +1,7 @@
 :host {
   display: block;
   min-height: 100vh;
+  background: #000000;
 }
 
 .sonica-logo {
@@ -28,6 +29,7 @@
   z-index: 0;
   pointer-events: none;
   overflow: hidden;
+  background: #000000; // Ensure black background for SEO crawlers
 }
 
 .shape {

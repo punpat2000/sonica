@@ -1,7 +1,7 @@
-import { Component, inject, LOCALE_ID } from '@angular/core';
+import { Component, inject, LOCALE_ID, PLATFORM_ID } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 
@@ -27,6 +27,7 @@ export class AppComponent {
   private readonly meta = inject(Meta);
   private readonly titleService = inject(Title);
   private readonly locale = inject(LOCALE_ID);
+  private readonly platformId = inject(PLATFORM_ID);
 
   // SEO titles for different languages
   private readonly seoTitles: Record<string, string> = {
@@ -68,7 +69,11 @@ export class AppComponent {
 
   constructor() {
     this.setSEO();
-    this.generateShapes();
+    // Only generate shapes on the client to avoid SSR/client mismatch
+    // Shapes will be empty array on server, populated on client
+    if (isPlatformBrowser(this.platformId)) {
+      this.generateShapes();
+    }
   }
 
   private setSEO(): void {
