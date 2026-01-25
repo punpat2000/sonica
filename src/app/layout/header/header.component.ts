@@ -137,4 +137,5 @@ export class HeaderComponent {
       this.isMobileMenuOpen.set(false);
     }
   }
+
 }

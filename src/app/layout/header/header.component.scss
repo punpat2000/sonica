@@ -7,6 +7,7 @@
   right: 0;
   z-index: 1000;
   padding: 1.5rem 2rem;
+  pointer-events: none;
 }
 
 .nav-container {
@@ -15,6 +16,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  pointer-events: auto;
+}
+
+// Re-enable pointer events for all interactive elements
+.header * {
+  pointer-events: auto;
 }
 
 .logo {
@@ -250,7 +257,7 @@
     bottom: 0;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 5rem 2rem 2rem;
     @include glass(0.08, 25px, 0.15, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -258,7 +265,7 @@
     transition: transform 0.3s ease;
     gap: 0;
     overflow-y: auto;
-    overflow: hidden;
+    overflow-x: hidden;
 
     &.mobile-open {
       transform: translateX(0);
