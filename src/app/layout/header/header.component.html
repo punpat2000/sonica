@@ -15,7 +15,7 @@
     <ul class="nav-menu" [class.mobile-open]="isMobileMenuOpen()">
       <!-- Ink Stain Decoration for Mobile Menu -->
       <div class="mobile-menu-stain">
-        <img src="/ink-stain2.webp" alt="" class="stain-image">
+        <img src="ink-stain2.webp" alt="" class="stain-image">
       </div>
 
       <li class="nav-item">
@@ -61,9 +61,9 @@
         <ul class="dropdown-menu">
           @for (lang of languages; track lang.code) {
             <li>
-              <a 
-                href="#" 
-                class="dropdown-link" 
+              <a
+                href="#"
+                class="dropdown-link"
                 [class.active]="currentLocale() === lang.code"
                 (click)="switchLanguage(lang.code); $event.preventDefault()">
                 <span class="lang-flag">{{ lang.flag }}</span>
