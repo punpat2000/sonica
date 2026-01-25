@@ -1,5 +1,5 @@
-import { Component, inject, PLATFORM_ID, makeStateKey, TransferState } from '@angular/core';
-import { CommonModule, isPlatformServer, isPlatformBrowser } from '@angular/common';
+import { Component, AfterViewInit, ChangeDetectorRef, PLATFORM_ID, inject, makeStateKey, TransferState, signal } from '@angular/core';
+import { CommonModule, isPlatformBrowser, isPlatformServer } from '@angular/common';
 
 interface GradientShape {
   size: number;
@@ -10,6 +10,8 @@ interface GradientShape {
   color1: string;
   color2: string;
   isCenter?: boolean;
+  // Pre-computed style string to avoid function calls during hydration
+  styleString: string;
 }
 
 // State key for transferring shapes from server to client
@@ -21,10 +23,15 @@ const GRADIENT_SHAPES_KEY = makeStateKey<GradientShape[]>('gradientShapes');
   templateUrl: './gradient-shapes.component.html',
   styleUrl: './gradient-shapes.component.scss',
 })
-export class GradientShapesComponent {
+export class GradientShapesComponent implements AfterViewInit {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly transferState = inject(TransferState);
-  shapes: GradientShape[] = [];
+  private readonly cdr = inject(ChangeDetectorRef);
+  
+  shapes = signal<GradientShape[]>([]);
+  
+  // On server, render immediately. On client, defer until after FCP
+  shouldRender = signal(!isPlatformBrowser(this.platformId));
 
   // Color palette for gradients
   private readonly colorPalette = [
@@ -43,12 +50,12 @@ export class GradientShapesComponent {
     if (isPlatformServer(this.platformId)) {
       // Generate shapes on server and store in TransferState
       this.generateShapes();
-      this.transferState.set(GRADIENT_SHAPES_KEY, this.shapes);
+      this.transferState.set(GRADIENT_SHAPES_KEY, this.shapes());
     } else if (isPlatformBrowser(this.platformId)) {
       // Retrieve shapes from TransferState on client
       const transferredShapes = this.transferState.get<GradientShape[]>(GRADIENT_SHAPES_KEY, []);
       if (transferredShapes.length > 0) {
-        this.shapes = transferredShapes;
+        this.shapes.set(transferredShapes);
       } else {
         // Fallback: generate if not found in TransferState (shouldn't happen in SSR)
         this.generateShapes();
@@ -56,10 +63,28 @@ export class GradientShapesComponent {
     }
   }
 
+  ngAfterViewInit(): void {
+    // Only defer on browser - server should render immediately
+    if (isPlatformBrowser(this.platformId)) {
+      // Defer rendering until after first contentful paint
+      // This allows the main content to paint first, then we add the background
+      // Use multiple requestAnimationFrame calls + small delay to ensure we're well past FCP
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          // Additional small delay to ensure FCP is complete
+          setTimeout(() => {
+            this.shouldRender.set(true);
+            this.cdr.detectChanges();
+          }, 100); // 100ms delay after RAF to ensure FCP is complete
+        });
+      });
+    }
+  }
+
   private generateShapes(): void {
     // Random number of shapes between 10 and 20
     const numShapes = Math.floor(Math.random() * 11) + 10;
-    this.shapes = [];
+    const shapesArray: GradientShape[] = [];
 
     for (let i = 0; i < numShapes; i++) {
       const size = Math.floor(Math.random() * 120) + 100; // 100-220px
@@ -71,6 +96,7 @@ export class GradientShapesComponent {
         size,
         color1: colors.c1,
         color2: colors.c2,
+        styleString: '', // Will be computed below
       };
 
       switch (positionType) {
@@ -96,36 +122,50 @@ export class GradientShapesComponent {
           break;
       }
 
-      this.shapes.push(shape);
+      // Pre-compute style string to avoid function calls during hydration
+      shape.styleString = this.computeStyleString(shape);
+
+      shapesArray.push(shape);
     }
+    
+    // Update signal with generated shapes
+    this.shapes.set(shapesArray);
   }
 
-  getShapeStyle(shape: GradientShape): { [key: string]: string } {
-    const style: { [key: string]: string } = {};
-
-    style['width'] = `${shape.size}px`;
-    style['height'] = `${shape.size}px`;
-    style['background'] = `linear-gradient(135deg, ${shape.color1} 0%, ${shape.color2} 100%)`;
+  private computeStyleString(shape: GradientShape): string {
+    const parts: string[] = [];
+    
+    parts.push(`width: ${shape.size}px`);
+    parts.push(`height: ${shape.size}px`);
+    parts.push(`background: linear-gradient(135deg, ${shape.color1} 0%, ${shape.color2} 100%)`);
 
     if (shape.isCenter) {
-      style['top'] = '50%';
-      style['left'] = '50%';
-      style['transform'] = 'translate(-50%, -50%)';
+      parts.push('top: 50%');
+      parts.push('left: 50%');
+      parts.push('transform: translate(-50%, -50%) translateZ(0)');
     } else {
       if (shape.top !== undefined) {
-        style['top'] = shape.top < 0 ? `${shape.top}px` : `${shape.top}%`;
+        parts.push(`top: ${shape.top < 0 ? `${shape.top}px` : `${shape.top}%`}`);
       }
       if (shape.left !== undefined) {
-        style['left'] = shape.left < 0 ? `${shape.left}px` : `${shape.left}%`;
+        parts.push(`left: ${shape.left < 0 ? `${shape.left}px` : `${shape.left}%`}`);
       }
       if (shape.right !== undefined) {
-        style['right'] = `${shape.right}px`;
+        parts.push(`right: ${shape.right}px`);
+        parts.push('transform: translateZ(0)');
       }
       if (shape.bottom !== undefined) {
-        style['bottom'] = shape.bottom < 0 ? `${shape.bottom}px` : `${shape.bottom}%`;
+        parts.push(`bottom: ${shape.bottom < 0 ? `${shape.bottom}px` : `${shape.bottom}%`}`);
+        if (shape.right === undefined) {
+          parts.push('transform: translateZ(0)');
+        }
+      }
+      // Ensure GPU acceleration for all shapes
+      if (!parts.some(p => p.includes('transform'))) {
+        parts.push('transform: translateZ(0)');
       }
     }
 
-    return style;
+    return parts.join('; ');
   }
 }

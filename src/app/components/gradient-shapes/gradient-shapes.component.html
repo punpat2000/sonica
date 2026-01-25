@@ -1,5 +1,7 @@
 <div class="gradient-shapes">
-  @for (shape of shapes; track $index) {
-    <div class="shape" [style]="getShapeStyle(shape)"></div>
+  @if (shouldRender()) {
+    @for (shape of shapes(); track $index) {
+      <div class="shape" [attr.style]="shape.styleString"></div>
+    }
   }
 </div>

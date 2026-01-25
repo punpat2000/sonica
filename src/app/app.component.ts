@@ -49,22 +49,22 @@ export class AppComponent {
   private setSEO(): void {
     // Get base locale (e.g., 'th' from 'th-TH', 'en' from 'en-US')
     const baseLocale = this.locale.split('-')[0].toLowerCase();
-    
+
     // Get SEO content for current locale, fallback to English if not found
     const title = this.seoTitles[baseLocale] || this.seoTitles['en'] || 'Sonica';
     const description = this.seoDescriptions[baseLocale] || this.seoDescriptions['en'] || '';
     const keywords = this.seoKeywords[baseLocale] || this.seoKeywords['en'] || '';
-    
+
     // Set title
     this.titleService.setTitle(title);
-    
+
     // Update or create meta description
     if (this.meta.getTag('name="description"')) {
       this.meta.updateTag({ name: 'description', content: description });
     } else {
       this.meta.addTag({ name: 'description', content: description });
     }
-    
+
     // Update or create meta keywords
     if (this.meta.getTag('name="keywords"')) {
       this.meta.updateTag({ name: 'keywords', content: keywords });
