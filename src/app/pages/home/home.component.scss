@@ -240,9 +240,6 @@
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
   contain: layout style paint;
-  // Use content-visibility for cards below the fold
-  content-visibility: auto;
-  contain-intrinsic-size: auto 500px;
 }
 
 .content-with-image {
