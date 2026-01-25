@@ -21,8 +21,6 @@
   object-fit: cover;
   z-index: 0;
   filter: brightness(0.75);
-  // Ensure it stays fixed and doesn't move when viewport changes
-  will-change: auto;
 }
 
 // Glassmorphism card base styles
@@ -36,7 +34,6 @@
   // Performance optimizations for mobile Safari
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  will-change: transform;
   contain: layout style paint;
 
   &:hover {
