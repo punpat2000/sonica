@@ -1,4 +1,4 @@
-// Animated gradient background shapes
+// Gradient background shapes (randomly generated, deferred rendering for FCP optimization)
 .gradient-shapes {
   position: fixed;
   top: 0;
@@ -9,11 +9,24 @@
   pointer-events: none;
   overflow: hidden;
   background: #000000; // Ensure black background for SEO crawlers
+  // Isolate paint work to prevent affecting other elements
+  contain: paint;
+  isolation: isolate;
+  // Force GPU acceleration
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .shape {
   position: absolute;
   border-radius: 50%;
-  filter: blur(50px);
+  // Reduce blur for better performance (was 50px)
+  filter: blur(40px);
+  -webkit-filter: blur(40px);
   opacity: 0.6;
+  // Isolate paint work per shape
+  contain: paint;
+  // Prevent layout thrashing
+  will-change: transform;
 }
+

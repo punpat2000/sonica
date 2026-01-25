@@ -4,10 +4,11 @@ import { Meta, Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { GradientShapesComponent } from './components/gradient-shapes/gradient-shapes.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, HeaderComponent, FooterComponent],
+  imports: [RouterOutlet, CommonModule, HeaderComponent, FooterComponent, GradientShapesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
