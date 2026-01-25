@@ -1,22 +1,31 @@
-import { Component, inject, LOCALE_ID } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, inject, LOCALE_ID, OnInit, OnDestroy, signal } from '@angular/core';
+import { RouterOutlet, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { filter } from 'rxjs/operators';
+import { Subscription } from 'rxjs';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { GradientShapesComponent } from './components/gradient-shapes/gradient-shapes.component';
+import { HeroBackgroundComponent } from './components/hero-background/hero-background.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, HeaderComponent, FooterComponent, GradientShapesComponent],
+  imports: [RouterOutlet, CommonModule, HeaderComponent, FooterComponent, GradientShapesComponent, HeroBackgroundComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy {
   title = 'sonica';
   private readonly meta = inject(Meta);
   private readonly titleService = inject(Title);
   private readonly locale = inject(LOCALE_ID);
+  private readonly router = inject(Router);
+  private readonly activatedRoute = inject(ActivatedRoute);
+  private routerSubscription?: Subscription;
+  
+  // Signal to track which background to use (default: gradient)
+  useHeroBackground = signal(false);
 
   // SEO titles for different languages
   private readonly seoTitles: Record<string, string> = {
@@ -44,6 +53,36 @@ export class AppComponent {
 
   constructor() {
     this.setSEO();
+  }
+
+  ngOnInit(): void {
+    // Check initial route
+    this.updateBackground();
+    
+    // Subscribe to route changes
+    this.routerSubscription = this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        this.updateBackground();
+      });
+  }
+
+  ngOnDestroy(): void {
+    this.routerSubscription?.unsubscribe();
+  }
+
+  private updateBackground(): void {
+    // Get the current activated route
+    let route = this.activatedRoute;
+    
+    // Traverse to the deepest child route
+    while (route.firstChild) {
+      route = route.firstChild;
+    }
+    
+    // Get background from route data, default to 'gradient'
+    const background = route.snapshot.data['background'] || 'gradient';
+    this.useHeroBackground.set(background === 'hero');
   }
 
   private setSEO(): void {

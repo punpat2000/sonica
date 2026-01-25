@@ -5,6 +5,7 @@ export const routes: Routes = [
     path: '',
     loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
     pathMatch: 'full',
+    data: { background: 'hero' } // Use hero background for home page
   },
   {
     path: 'about',

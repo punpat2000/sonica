@@ -1,4 +1,8 @@
-<app-gradient-shapes />
+@if (useHeroBackground()) {
+  <app-hero-background />
+} @else {
+  <app-gradient-shapes />
+}
 
 <app-header></app-header>
 
