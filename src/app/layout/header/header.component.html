@@ -6,7 +6,7 @@
       </a>
     </div>
 
-    <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" [attr.aria-expanded]="isMobileMenuOpen()" aria-label="Toggle menu">
+    <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" [attr.aria-expanded]="isMobileMenuOpen()" i18n-aria-label="@@header.toggleMenu" aria-label="Toggle menu">
       <span class="hamburger-line" [class.active]="isMobileMenuOpen()"></span>
       <span class="hamburger-line" [class.active]="isMobileMenuOpen()"></span>
       <span class="hamburger-line" [class.active]="isMobileMenuOpen()"></span>
@@ -19,36 +19,36 @@
       </div>
 
       <li class="nav-item">
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Home</a>
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link" i18n="@@header.home">Home</a>
       </li>
       <li class="nav-item">
-        <a routerLink="/about" routerLinkActive="active" class="nav-link">About Us</a>
+        <a routerLink="/about" routerLinkActive="active" class="nav-link" i18n="@@header.about">About Us</a>
       </li>
       <li class="nav-item dropdown">
-        <a href="#" class="nav-link" (click)="toggleDropdown($event)">Products <span class="dropdown-arrow">▼</span></a>
+        <a href="#" class="nav-link" (click)="toggleDropdown($event)" i18n="@@header.products">Products <span class="dropdown-arrow">▼</span></a>
         <ul class="dropdown-menu">
-          <li><a routerLink="/products/inks" class="dropdown-link">UV Screen Printing Inks</a></li>
-          <li><a routerLink="/products/squeegees" class="dropdown-link">Squeegees</a></li>
-          <li><a routerLink="/products/led-uv-curing" class="dropdown-link">LED/UV Curing Systems</a></li>
-          <li><a routerLink="/products/uv-meters" class="dropdown-link">UV Intensity Meters</a></li>
+          <li><a routerLink="/products/inks" class="dropdown-link" i18n="@@header.products.inks">UV Screen Printing Inks</a></li>
+          <li><a routerLink="/products/squeegees" class="dropdown-link" i18n="@@header.products.squeegees">Squeegees</a></li>
+          <li><a routerLink="/products/led-uv-curing" class="dropdown-link" i18n="@@header.products.ledUvCuring">LED/UV Curing Systems</a></li>
+          <li><a routerLink="/products/uv-meters" class="dropdown-link" i18n="@@header.products.uvMeters">UV Intensity Meters</a></li>
         </ul>
       </li>
       <li class="nav-item dropdown">
-        <a href="#" class="nav-link" (click)="toggleDropdown($event)">Services <span class="dropdown-arrow">▼</span></a>
+        <a href="#" class="nav-link" (click)="toggleDropdown($event)" i18n="@@header.services">Services <span class="dropdown-arrow">▼</span></a>
         <ul class="dropdown-menu">
-          <li><a routerLink="/services/color-matching" class="dropdown-link">Color Matching</a></li>
-          <li><a routerLink="/services/consulting" class="dropdown-link">Technical Consulting</a></li>
-          <li><a routerLink="/services/support" class="dropdown-link">Customer Support</a></li>
+          <li><a routerLink="/services/color-matching" class="dropdown-link" i18n="@@header.services.colorMatching">Color Matching</a></li>
+          <li><a routerLink="/services/consulting" class="dropdown-link" i18n="@@header.services.consulting">Technical Consulting</a></li>
+          <li><a routerLink="/services/support" class="dropdown-link" i18n="@@header.services.support">Customer Support</a></li>
         </ul>
       </li>
       <li class="nav-item">
-        <a routerLink="/industries" routerLinkActive="active" class="nav-link">Industries</a>
+        <a routerLink="/industries" routerLinkActive="active" class="nav-link" i18n="@@header.industries">Industries</a>
       </li>
       <li class="nav-item">
-        <a routerLink="/resources" routerLinkActive="active" class="nav-link">Resources</a>
+        <a routerLink="/resources" routerLinkActive="active" class="nav-link" i18n="@@header.resources">Resources</a>
       </li>
       <li class="nav-item">
-        <a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact</a>
+        <a routerLink="/contact" routerLinkActive="active" class="nav-link" i18n="@@header.contact">Contact</a>
       </li>
     </ul>
   </nav>

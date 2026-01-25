@@ -4,6 +4,14 @@
   "newProjectRoot": "projects",
   "projects": {
     "sonica": {
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "th": {
+            "translation": "src/locale/messages.th.xlf"
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +25,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "localize": true,
             "outputPath": "dist/sonica",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -61,6 +70,28 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "th": {
+              "localize": ["th"],
+              "outputPath": "dist/sonica/th",
+              "optimization": true
+            },
+            "th-production": {
+              "localize": ["th"],
+              "outputPath": "dist/sonica/th",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
             }
           },
           "defaultConfiguration": "production"
@@ -73,6 +104,9 @@
             },
             "development": {
               "buildTarget": "sonica:build:development"
+            },
+            "th": {
+              "buildTarget": "sonica:build:th"
             }
           },
           "defaultConfiguration": "development"
