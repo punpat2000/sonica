@@ -140,7 +140,7 @@
       </trans-unit>
       <trans-unit id="footer.products.inks" datatype="html">
         <source>UV Screen Printing Inks</source>
-        <target>น้ำหมึกพิมพ์สกรีน UV</target>
+        <target>หมึกพิมพ์สกรีน UV</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
           <context context-type="linenumber">63,64</context>
@@ -180,7 +180,7 @@
       </trans-unit>
       <trans-unit id="footer.services.colorMatching" datatype="html">
         <source>Color Matching</source>
-        <target>จับคู่สี</target>
+        <target>แมตช์สี</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
           <context context-type="linenumber">74,75</context>
@@ -260,7 +260,7 @@
       </trans-unit>
       <trans-unit id="header.products.inks" datatype="html">
         <source>UV Screen Printing Inks</source>
-        <target>น้ำหมึกพิมพ์สกรีน UV</target>
+        <target>หมึกพิมพ์สกรีน UV</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
           <context context-type="linenumber">30,31</context>
@@ -300,7 +300,7 @@
       </trans-unit>
       <trans-unit id="header.services.colorMatching" datatype="html">
         <source>Color Matching</source>
-        <target>จับคู่สี</target>
+        <target>แมตช์สี</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
           <context context-type="linenumber">39,40</context>
@@ -404,7 +404,7 @@
       </trans-unit>
       <trans-unit id="home.aboutSonica.description2" datatype="html">
         <source> We specialize in providing high-quality UV screen printing inks, premium squeegees, advanced LED/UV curing systems, and precision UV intensity meters. Our commitment to excellence and innovation, combined with our exclusive partnership with Norcote International, has made us a preferred partner for leading manufacturers across Thailand. </source>
-        <target> เราเชี่ยวชาญในการให้บริการน้ำหมึกพิมพ์สกรีน UV คุณภาพสูง ใบมีดพรีเมียม ระบบอบแห้ง LED/UV ขั้นสูง และเครื่องวัดความเข้ม UV แบบแม่นยำ ความมุ่งมั่นของเราต่อความเป็นเลิศและนวัตกรรม ร่วมกับพันธมิตรพิเศษของเรากับ Norcote International ทำให้เราเป็นพันธมิตรที่ผู้ผลิตชั้นนำทั่วประเทศไทยเลือกใช้ </target>
+        <target> เราเชี่ยวชาญในการให้บริการหมึกพิมพ์สกรีน UV คุณภาพสูง ใบมีดพรีเมียม ระบบอบแห้ง LED/UV ขั้นสูง และเครื่องวัดความเข้ม UV แบบแม่นยำ ความมุ่งมั่นของเราต่อความเป็นเลิศและนวัตกรรม ร่วมกับพันธมิตรพิเศษของเรากับ Norcote International ทำให้เราเป็นพันธมิตรที่ผู้ผลิตชั้นนำทั่วประเทศไทยเลือกใช้ </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">31,35</context>
@@ -420,7 +420,7 @@
       </trans-unit>
       <trans-unit id="home.aboutNorcote.description1" datatype="html">
         <source> For over 40 years, Norcote has focused on developing innovative, market-driven UV curable printing inks, helping our customers lead their markets. As your needs evolve, we evolve with you, ensuring our products remain cutting-edge. </source>
-        <target> กว่า 40 ปีที่ Norcote มุ่งเน้นการพัฒนาน้ำหมึกพิมพ์ที่บ่มด้วย UV ที่เป็นนวัตกรรมและขับเคลื่อนด้วยตลาด ช่วยให้ลูกค้าของเรานำตลาด เมื่อความต้องการของคุณพัฒนาไป เราก็พัฒนาตามไปด้วย เพื่อให้แน่ใจว่าผลิตภัณฑ์ของเรายังคงล้ำสมัยอยู่เสมอ </target>
+        <target> กว่า 40 ปีที่ Norcote มุ่งเน้นการพัฒนาหมึกพิมพ์ที่อบด้วย UV ที่เป็นนวัตกรรมและขับเคลื่อนด้วยตลาด ช่วยให้ลูกค้าของเรานำตลาด เมื่อความต้องการของคุณพัฒนาไป เราก็พัฒนาตามไปด้วย เพื่อให้แน่ใจว่าผลิตภัณฑ์ของเรายังคงล้ำสมัยอยู่เสมอ </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">40,44</context>
@@ -436,7 +436,7 @@
       </trans-unit>
       <trans-unit id="home.aboutNorcote.description3" datatype="html">
         <source> Our team of color experts offers quick and precise color matching, with a turnaround time of one to three days, and provides on-site training with the latest color measurement technology. Additionally, our friendly Customer Service Representatives ensure your orders are handled efficiently and delivered promptly, meeting your expectations every time. </source>
-        <target> ทีมผู้เชี่ยวชาญด้านสีของเรามอบการจับคู่สีที่รวดเร็วและแม่นยำ โดยใช้เวลาส่งมอบ 1-3 วัน และให้การฝึกอบรมที่ไซต์งานด้วยเทคโนโลยีการวัดสีล่าสุด นอกจากนี้ ผู้แทนฝ่ายบริการลูกค้าที่เป็นมิตรของเรามั่นใจว่าคำสั่งซื้อของคุณได้รับการจัดการอย่างมีประสิทธิภาพและส่งมอบทันเวลา ตอบสนองความคาดหวังของคุณทุกครั้ง </target>
+        <target> ทีมผู้เชี่ยวชาญด้านสีของเรามอบการแมตช์สีที่รวดเร็วและแม่นยำ และให้การฝึกอบรมที่ไซต์งานด้วยเทคโนโลยีการวัดสีล่าสุด นอกจากนี้ ผู้แทนฝ่ายบริการลูกค้าที่เป็นมิตรของเรามั่นใจว่าคำสั่งซื้อของคุณได้รับการจัดการอย่างมีประสิทธิภาพและส่งมอบทันเวลา ตอบสนองความคาดหวังของคุณทุกครั้ง </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">49,53</context>
@@ -452,7 +452,7 @@
       </trans-unit>
       <trans-unit id="home.services.inks.alt" datatype="html">
         <source>UV Screen Printing Inks</source>
-        <target>น้ำหมึกพิมพ์สกรีน UV</target>
+        <target>หมึกพิมพ์สกรีน UV</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">59,60</context>
@@ -460,7 +460,7 @@
       </trans-unit>
       <trans-unit id="home.services.inks.title" datatype="html">
         <source>UV Screen Printing Inks</source>
-        <target>น้ำหมึกพิมพ์สกรีน UV</target>
+        <target>หมึกพิมพ์สกรีน UV</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">61,62</context>
@@ -468,7 +468,7 @@
       </trans-unit>
       <trans-unit id="home.services.inks.description" datatype="html">
         <source>Premium quality inks for various printing applications with excellent color matching capabilities.</source>
-        <target>น้ำหมึกคุณภาพพรีเมียมสำหรับการใช้งานการพิมพ์ที่หลากหลายพร้อมความสามารถในการจับคู่สีที่ยอดเยี่ยม</target>
+        <target>หมึกคุณภาพพรีเมียมสำหรับการใช้งานการพิมพ์ที่หลากหลายพร้อมความสามารถในการแมตช์สีที่ยอดเยี่ยม</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">62,65</context>
@@ -476,7 +476,7 @@
       </trans-unit>
       <trans-unit id="home.services.colorMatching.alt" datatype="html">
         <source>Color Matching Services</source>
-        <target>บริการจับคู่สี</target>
+        <target>บริการแมตช์สี</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">66,67</context>
@@ -484,7 +484,7 @@
       </trans-unit>
       <trans-unit id="home.services.colorMatching.title" datatype="html">
         <source>Color Matching Services</source>
-        <target>บริการจับคู่สี</target>
+        <target>บริการแมตช์สี</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">68,69</context>
@@ -492,7 +492,7 @@
       </trans-unit>
       <trans-unit id="home.services.colorMatching.description" datatype="html">
         <source>Professional color matching to ensure perfect color consistency for your projects.</source>
-        <target>การจับคู่สีแบบมืออาชีพเพื่อให้แน่ใจว่าความสม่ำเสมอของสีที่สมบูรณ์แบบสำหรับโครงการของคุณ</target>
+        <target>การแมตช์สีแบบมืออาชีพเพื่อให้แน่ใจว่าความสม่ำเสมอของสีที่สมบูรณ์แบบสำหรับโครงการของคุณ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">69,72</context>
