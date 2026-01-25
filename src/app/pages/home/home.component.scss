@@ -45,11 +45,6 @@
     box-shadow: 0 12px 48px 0 rgba(0, 0, 0, 0.5);
   }
 
-  // Reduce backdrop-filter on mobile for better performance
-  @media (max-width: 768px) {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-  }
 }
 
 // Hero Section
@@ -137,8 +132,6 @@
 
 .cta-button {
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   padding: 1rem 2.5rem;

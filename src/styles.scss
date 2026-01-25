@@ -32,16 +32,8 @@ body {
 // Universal Glassmorphism Mixins
 @mixin glass($opacity: 0.05, $blur: 20px, $border-opacity: 0.1, $shadow-opacity: 0.37) {
   background: rgba(255, 255, 255, $opacity);
-  backdrop-filter: blur($blur);
-  -webkit-backdrop-filter: blur($blur);
   border: 1px solid rgba(255, 255, 255, $border-opacity);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, $shadow-opacity);
-  
-  // Performance optimization for mobile Safari - reduce blur
-  @media (max-width: 768px) {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-  }
 }
 
 // Utility Classes for direct use
