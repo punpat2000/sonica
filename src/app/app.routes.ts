@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { PlaceholderComponent } from './pages/placeholder/placeholder.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { LedUvCuringComponent } from './pages/products/led-uv-curing/led-uv-curing.component';
 
 export const routes: Routes = [
   {
@@ -29,7 +30,7 @@ export const routes: Routes = [
       },
       {
         path: 'led-uv-curing',
-        component: PlaceholderComponent,
+        component: LedUvCuringComponent,
         data: { title: 'LED/UV Curing Systems', description: 'Advanced LED and UV curing systems for efficient production.' }
       },
       {
