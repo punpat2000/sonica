@@ -33,22 +33,11 @@
   padding: 2.5rem;
   transition: all 0.3s ease;
   @include glass();
-  // Performance optimizations for mobile Safari
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  will-change: transform;
-  contain: layout style paint;
 
   &:hover {
-    transform: translateY(-5px) translateZ(0);
+    transform: translateY(-5px);
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 12px 48px 0 rgba(0, 0, 0, 0.5);
-  }
-
-  // Reduce backdrop-filter on mobile for better performance
-  @media (max-width: 768px) {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
   }
 }
 
@@ -236,13 +225,6 @@
 
 .company-info-card {
   width: 100%;
-  // Performance optimizations
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  contain: layout style paint;
-  // Use content-visibility for cards below the fold
-  content-visibility: auto;
-  contain-intrinsic-size: auto 500px;
 }
 
 .content-with-image {
@@ -302,10 +284,6 @@
   color: #ffffff;
   margin: 0 0 1.5rem 0;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-  // Performance: reduce text-shadow complexity on mobile
-  @media (max-width: 768px) {
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  }
 }
 
 .company-description {
@@ -313,13 +291,6 @@
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.8;
   margin: 0;
-  // Performance: optimize text rendering on mobile
-  @media (max-width: 768px) {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeSpeed;
-    // Reduce line-height for better performance
-    line-height: 1.6;
-  }
 }
 
 .services-grid {
@@ -345,12 +316,9 @@
   border-radius: 12px;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
-  // Performance: GPU acceleration
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
 
   &:hover {
-    transform: scale(1.03) translateZ(0);
+    transform: scale(1.03);
   }
 }
 
