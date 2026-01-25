@@ -4,6 +4,23 @@
   "newProjectRoot": "projects",
   "projects": {
     "sonica": {
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "th": {
+            "translation": "src/locale/messages.th.xlf",
+            "subPath": "th"
+          },
+          "zh": {
+            "translation": "src/locale/messages.zh.xlf",
+            "subPath": "zh"
+          },
+          "ja": {
+            "translation": "src/locale/messages.ja.xlf",
+            "subPath": "ja"
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -15,12 +32,15 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular/build:application",
           "options": {
+            "localize": true,
             "outputPath": "dist/sonica",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [],
+            "polyfills": [
+              "@angular/localize/init"
+            ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -59,29 +79,106 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "th": {
+              "localize": ["th"],
+              "outputPath": "dist/sonica/th",
+              "optimization": true
+            },
+            "th-production": {
+              "localize": ["th"],
+              "outputPath": "dist/sonica/th",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "zh": {
+              "localize": ["zh"],
+              "outputPath": "dist/sonica/zh",
+              "optimization": true
+            },
+            "zh-production": {
+              "localize": ["zh"],
+              "outputPath": "dist/sonica/zh",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "ja": {
+              "localize": ["ja"],
+              "outputPath": "dist/sonica/ja",
+              "optimization": true
+            },
+            "ja-production": {
+              "localize": ["ja"],
+              "outputPath": "dist/sonica/ja",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
             }
           },
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
               "buildTarget": "sonica:build:production"
             },
             "development": {
               "buildTarget": "sonica:build:development"
+            },
+            "th": {
+              "buildTarget": "sonica:build:th"
+            },
+            "zh": {
+              "buildTarget": "sonica:build:zh"
+            },
+            "ja": {
+              "buildTarget": "sonica:build:ja"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
+          "builder": "@angular/build:extract-i18n"
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular/build:karma",
           "options": {
-            "polyfills": [],
+            "polyfills": [
+              "@angular/localize/init"
+            ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -101,5 +198,31 @@
   },
   "cli": {
     "analytics": "48808514-1ca2-4e4a-b0ee-946ba756da9c"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "type": "component"
+    },
+    "@schematics/angular:directive": {
+      "type": "directive"
+    },
+    "@schematics/angular:service": {
+      "type": "service"
+    },
+    "@schematics/angular:guard": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:interceptor": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:module": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:pipe": {
+      "typeSeparator": "."
+    },
+    "@schematics/angular:resolver": {
+      "typeSeparator": "."
+    }
   }
 }

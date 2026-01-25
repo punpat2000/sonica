@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" target-language="zh" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="footer.companyName" datatype="html">
+        <source>Sonica</source>
+        <target>Sonica</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.description" datatype="html">
+        <source> Leading provider of UV screen printing solutions since 2000. Trusted by manufacturers across Thailand for quality products and expert service. </source>
+        <target>自2000年以来，UV丝网印刷解决方案的领先提供商。凭借优质产品和专业服务，受到泰国各地制造商的信赖。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">8,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.email" datatype="html">
+        <source>Email: </source>
+        <target>电子邮件：</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.phone" datatype="html">
+        <source>Phone: </source>
+        <target>电话：</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.followUs" datatype="html">
+        <source>Follow Us</source>
+        <target>关注我们</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.social.facebook" datatype="html">
+        <source>Facebook</source>
+        <target>Facebook</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.social.linkedin" datatype="html">
+        <source>LinkedIn</source>
+        <target>LinkedIn</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.social.twitter" datatype="html">
+        <source>Twitter</source>
+        <target>Twitter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.social.youtube" datatype="html">
+        <source>YouTube</source>
+        <target>YouTube</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.social.instagram" datatype="html">
+        <source>Instagram</source>
+        <target>Instagram</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.quickLinks" datatype="html">
+        <source>Quick Links</source>
+        <target>快速链接</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.home" datatype="html">
+        <source>Home</source>
+        <target>首页</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.about" datatype="html">
+        <source>About Us</source>
+        <target>关于我们</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.industries" datatype="html">
+        <source>Industries</source>
+        <target>行业</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.resources" datatype="html">
+        <source>Resources</source>
+        <target>资源</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.contact" datatype="html">
+        <source>Contact</source>
+        <target>联系我们</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.products" datatype="html">
+        <source>Products</source>
+        <target>产品</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.products.inks" datatype="html">
+        <source>UV Screen Printing Inks</source>
+        <target>UV丝网印刷油墨</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.products.squeegees" datatype="html">
+        <source>Squeegees</source>
+        <target>刮刀</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">64,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.products.ledUvCuring" datatype="html">
+        <source>LED/UV Curing Systems</source>
+        <target>LED/UV固化系统</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.products.uvMeters" datatype="html">
+        <source>UV Intensity Meters</source>
+        <target>UV强度计</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">66,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.services" datatype="html">
+        <source>Services</source>
+        <target>服务</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.services.colorMatching" datatype="html">
+        <source>Color Matching</source>
+        <target>配色服务</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.services.consulting" datatype="html">
+        <source>Technical Consulting</source>
+        <target>技术咨询</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.services.support" datatype="html">
+        <source>Customer Support</source>
+        <target>客户支持</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">76,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.copyright" datatype="html">
+        <source>© <x id="INTERPOLATION" equiv-text="{{ currentYear }}"/> Sonica. All rights reserved.</source>
+        <target>© <x id="INTERPOLATION" equiv-text="{{ currentYear }}"/> Sonica。保留所有权利。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">83,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.privacy" datatype="html">
+        <source>Privacy Policy</source>
+        <target>隐私政策</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.terms" datatype="html">
+        <source>Terms of Service</source>
+        <target>服务条款</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
+          <context context-type="linenumber">87,89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.toggleMenu" datatype="html">
+        <source>Toggle menu</source>
+        <target>切换菜单</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.home" datatype="html">
+        <source>Home</source>
+        <target>首页</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.about" datatype="html">
+        <source>About Us</source>
+        <target>关于我们</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.products" datatype="html">
+        <source>Products <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;dropdown-arrow&quot;&gt;"/>▼<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>产品 <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;dropdown-arrow&quot;&gt;"/>▼<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.products.inks" datatype="html">
+        <source>UV Screen Printing Inks</source>
+        <target>UV丝网印刷油墨</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.products.squeegees" datatype="html">
+        <source>Squeegees</source>
+        <target>刮刀</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.products.ledUvCuring" datatype="html">
+        <source>LED/UV Curing Systems</source>
+        <target>LED/UV固化系统</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.products.uvMeters" datatype="html">
+        <source>UV Intensity Meters</source>
+        <target>UV强度计</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">33,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.services" datatype="html">
+        <source>Services <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;dropdown-arrow&quot;&gt;"/>▼<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>服务 <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;dropdown-arrow&quot;&gt;"/>▼<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.services.colorMatching" datatype="html">
+        <source>Color Matching</source>
+        <target>配色服务</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.services.consulting" datatype="html">
+        <source>Technical Consulting</source>
+        <target>技术咨询</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.services.support" datatype="html">
+        <source>Customer Support</source>
+        <target>客户支持</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">41,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.industries" datatype="html">
+        <source>Industries</source>
+        <target>行业</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.resources" datatype="html">
+        <source>Resources</source>
+        <target>资源</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.contact" datatype="html">
+        <source>Contact</source>
+        <target>联系我们</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
+          <context context-type="linenumber">51,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.imageAlt" datatype="html">
+        <source>Sonica Hero</source>
+        <target>Sonica 主页</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.title" datatype="html">
+        <source>Welcome to Sonica</source>
+        <target>欢迎来到 Sonica</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.subtitle" datatype="html">
+        <source>Sole Distributor of Norcote International, Inc. in Thailand</source>
+        <target>Norcote International, Inc. 在泰国的独家经销商</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.description" datatype="html">
+        <source>Experience the future of innovation with cutting-edge UV screen printing technology and design solutions</source>
+        <target>体验创新的未来，采用尖端的UV丝网印刷技术和设计解决方案</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.hero.button" datatype="html">
+        <source>Get Started</source>
+        <target>开始使用</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.aboutSonica.title" datatype="html">
+        <source>About Sonica</source>
+        <target>关于 Sonica</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.aboutSonica.description1" datatype="html">
+        <source> Sonica was established in 2000 and has been a trusted leader in the UV screen printing industry. We are the <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>sole distributor of Norcote International, Inc.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> in Thailand, bringing world-class UV screen printing solutions to manufacturers across the country. </source>
+        <target> Sonica成立于2000年，一直是UV丝网印刷行业值得信赖的领导者。我们是Norcote International, Inc.在泰国的<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>独家经销商<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/>，为全国各地的制造商带来世界一流的UV丝网印刷解决方案。 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">26,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.aboutSonica.description2" datatype="html">
+        <source> We specialize in providing high-quality UV screen printing inks, premium squeegees, advanced LED/UV curing systems, and precision UV intensity meters. Our commitment to excellence and innovation, combined with our exclusive partnership with Norcote International, has made us a preferred partner for leading manufacturers across Thailand. </source>
+        <target> 我们专注于提供高品质的UV丝网印刷油墨、优质刮刀、先进的LED/UV固化系统和精密UV强度计。我们对卓越和创新的承诺，加上与Norcote International的独家合作伙伴关系，使我们成为泰国各地领先制造商的首选合作伙伴。 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">31,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.aboutNorcote.title" datatype="html">
+        <source>About Norcote International</source>
+        <target>关于 Norcote International</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.aboutNorcote.description1" datatype="html">
+        <source> For over 40 years, Norcote has focused on developing innovative, market-driven UV curable printing inks, helping our customers lead their markets. As your needs evolve, we evolve with you, ensuring our products remain cutting-edge. </source>
+        <target> 40多年来，Norcote一直专注于开发创新的、市场驱动的UV固化印刷油墨，帮助客户在市场中领先。随着您的需求不断发展，我们与您共同发展，确保我们的产品始终保持前沿。 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">40,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.aboutNorcote.description2" datatype="html">
+        <source> Whether you&apos;re new to UV printing or a seasoned veteran, our Technical Service team is here to provide the right tools and support, from laboratory testing to on-site troubleshooting, ensuring your projects are completed successfully. </source>
+        <target> 无论您是UV印刷的新手还是经验丰富的专家，我们的技术服务团队都会为您提供合适的工具和支持，从实验室测试到现场故障排除，确保您的项目成功完成。 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">45,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.aboutNorcote.description3" datatype="html">
+        <source> Our team of color experts offers quick and precise color matching, with a turnaround time of one to three days, and provides on-site training with the latest color measurement technology. Additionally, our friendly Customer Service Representatives ensure your orders are handled efficiently and delivered promptly, meeting your expectations every time. </source>
+        <target> 我们的色彩专家团队提供快速精确的配色服务，周转时间为1-3天，并提供最新色彩测量技术的现场培训。此外，我们友好的客户服务代表确保您的订单得到高效处理并及时交付，每次都满足您的期望。 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">49,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.title" datatype="html">
+        <source>Our Services</source>
+        <target>我们的服务</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.inks.alt" datatype="html">
+        <source>UV Screen Printing Inks</source>
+        <target>UV丝网印刷油墨</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.inks.title" datatype="html">
+        <source>UV Screen Printing Inks</source>
+        <target>UV丝网印刷油墨</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.inks.description" datatype="html">
+        <source>Premium quality inks for various printing applications with excellent color matching capabilities.</source>
+        <target>适用于各种印刷应用的高品质油墨，具有出色的配色能力。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">62,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.colorMatching.alt" datatype="html">
+        <source>Color Matching Services</source>
+        <target>配色服务</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.colorMatching.title" datatype="html">
+        <source>Color Matching Services</source>
+        <target>配色服务</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.colorMatching.description" datatype="html">
+        <source>Professional color matching to ensure perfect color consistency for your projects.</source>
+        <target>专业的配色服务，确保您的项目颜色完美一致。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">69,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.consulting.alt" datatype="html">
+        <source>Technical Consulting</source>
+        <target>技术咨询</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.consulting.title" datatype="html">
+        <source>Technical Consulting</source>
+        <target>技术咨询</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.consulting.description" datatype="html">
+        <source>Expert guidance to optimize your printing processes and improve efficiency.</source>
+        <target>专家指导，优化您的印刷流程并提高效率。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">76,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.equipment.alt" datatype="html">
+        <source>Equipment Solutions</source>
+        <target>设备解决方案</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.equipment.title" datatype="html">
+        <source>Equipment Solutions</source>
+        <target>设备解决方案</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.services.equipment.description" datatype="html">
+        <source>State-of-the-art LED/UV curing systems and UV intensity meters for quality control.</source>
+        <target>用于质量控制的先进LED/UV固化系统和UV强度计。</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">83,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.whyChoose.title" datatype="html">
+        <source>Why Choose Sonica?</source>
+        <target>为什么选择 Sonica？</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">90,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.whyChoose.experience.title" datatype="html">
+        <source>25+ Years Experience</source>
+        <target>25年以上经验</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.whyChoose.experience.description" datatype="html">
+        <source>Extensive industry knowledge and expertise since 2000</source>
+        <target>自2000年以来丰富的行业知识和专业知识</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">94,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.whyChoose.quality.title" datatype="html">
+        <source>Quality Products</source>
+        <target>优质产品</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">97,98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.whyChoose.quality.description" datatype="html">
+        <source>Premium materials trusted by leading manufacturers</source>
+        <target>领先制造商信赖的优质材料</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">98,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.whyChoose.support.title" datatype="html">
+        <source>Expert Support</source>
+        <target>专家支持</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">101,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.whyChoose.support.description" datatype="html">
+        <source>Comprehensive technical consulting and customer service</source>
+        <target>全面的技术咨询和客户服务</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">102,104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.whyChoose.innovation.title" datatype="html">
+        <source>Innovation</source>
+        <target>创新</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">105,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.whyChoose.innovation.description" datatype="html">
+        <source>Cutting-edge technology and solutions for modern printing needs</source>
+        <target>满足现代印刷需求的尖端技术和解决方案</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">106,110</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

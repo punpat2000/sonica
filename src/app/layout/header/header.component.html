@@ -1,0 +1,78 @@
+<header class="header">
+  <nav class="nav-container">
+    <div class="logo">
+      <a routerLink="/" class="logo-link">
+        <span class="logo-s">S</span> <span class="logo-onica">&nbsp;o n i c a</span>
+      </a>
+    </div>
+
+    <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" [attr.aria-expanded]="isMobileMenuOpen()" i18n-aria-label="@@header.toggleMenu" aria-label="Toggle menu">
+      <span class="hamburger-line" [class.active]="isMobileMenuOpen()"></span>
+      <span class="hamburger-line" [class.active]="isMobileMenuOpen()"></span>
+      <span class="hamburger-line" [class.active]="isMobileMenuOpen()"></span>
+    </button>
+
+    <ul class="nav-menu" [class.mobile-open]="isMobileMenuOpen()">
+      <!-- Ink Stain Decoration for Mobile Menu -->
+      <div class="mobile-menu-stain">
+        <img src="ink-stain2.webp" alt="" class="stain-image">
+      </div>
+
+      <li class="nav-item">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link" i18n="@@header.home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/about" routerLinkActive="active" class="nav-link" i18n="@@header.about">About Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link" (click)="toggleDropdown($event)" i18n="@@header.products">Products <span class="dropdown-arrow">▼</span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/products/inks" class="dropdown-link" i18n="@@header.products.inks">UV Screen Printing Inks</a></li>
+          <li><a routerLink="/products/squeegees" class="dropdown-link" i18n="@@header.products.squeegees">Squeegees</a></li>
+          <li><a routerLink="/products/led-uv-curing" class="dropdown-link" i18n="@@header.products.ledUvCuring">LED/UV Curing Systems</a></li>
+          <li><a routerLink="/products/uv-meters" class="dropdown-link" i18n="@@header.products.uvMeters">UV Intensity Meters</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link" (click)="toggleDropdown($event)" i18n="@@header.services">Services <span class="dropdown-arrow">▼</span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/services/color-matching" class="dropdown-link" i18n="@@header.services.colorMatching">Color Matching</a></li>
+          <li><a routerLink="/services/consulting" class="dropdown-link" i18n="@@header.services.consulting">Technical Consulting</a></li>
+          <li><a routerLink="/services/support" class="dropdown-link" i18n="@@header.services.support">Customer Support</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/industries" routerLinkActive="active" class="nav-link" i18n="@@header.industries">Industries</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/resources" routerLinkActive="active" class="nav-link" i18n="@@header.resources">Resources</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/contact" routerLinkActive="active" class="nav-link" i18n="@@header.contact">Contact</a>
+      </li>
+      <li class="nav-item dropdown language-switcher">
+        <a href="#" class="nav-link" (click)="toggleDropdown($event)">
+          <span class="lang-display">
+            <span class="lang-flag">{{ currentLanguage().flag }}</span>
+            <span class="lang-code">{{ currentLanguage().code.toUpperCase() }}</span>
+          </span>
+          <span class="dropdown-arrow">▼</span>
+        </a>
+        <ul class="dropdown-menu">
+          @for (lang of languages; track lang.code) {
+            <li>
+              <a
+                href="#"
+                class="dropdown-link"
+                [class.active]="currentLocale() === lang.code"
+                (click)="switchLanguage(lang.code); $event.preventDefault()">
+                <span class="lang-flag">{{ lang.flag }}</span>
+                <span class="lang-name">{{ lang.name }}</span>
+              </a>
+            </li>
+          }
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
