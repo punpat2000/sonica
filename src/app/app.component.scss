@@ -1,6 +1,7 @@
 :host {
   display: block;
   min-height: 100vh;
+  min-height: 100dvh; // Use dynamic viewport height for mobile
   background: #000000;
 }
 
@@ -17,6 +18,28 @@
   .sonica-logo {
     max-width: 100%; // Slightly smaller on mobile devices
   }
+}
+
+// Animated gradient background shapes
+.gradient-shapes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 100vh; // Fallback for older browsers
+  height: 100dvh; // Use dynamic viewport height for mobile (accounts for browser UI)
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: #000000; // Ensure black background for SEO crawlers
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 0.6;
 }
 
 .main-content {
