@@ -13,6 +13,11 @@
     </button>
 
     <ul class="nav-menu" [class.mobile-open]="isMobileMenuOpen()">
+      <!-- Ink Stain Decoration for Mobile Menu -->
+      <div class="mobile-menu-stain">
+        <img src="/ink-stain2.webp" alt="" class="stain-image">
+      </div>
+
       <li class="nav-item">
         <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Home</a>
       </li>
