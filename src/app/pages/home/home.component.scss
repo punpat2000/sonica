@@ -16,10 +16,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  height: 100dvh; // Use dynamic viewport height for mobile
   object-fit: cover;
   z-index: 0;
   filter: brightness(0.75);
+  // Ensure it stays fixed and doesn't move when viewport changes
+  will-change: auto;
 }
 
 // Glassmorphism card base styles
