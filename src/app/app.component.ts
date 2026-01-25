@@ -42,7 +42,6 @@ export class AppComponent {
   ];
 
   constructor() {
-    this.meta.addTag({ name: 'image', content: 'https://www.sonica.co.th/company_profile2.webp' });
     this.generateShapes();
   }
 

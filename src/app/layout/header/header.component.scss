@@ -30,6 +30,7 @@
   transition: opacity 0.3s ease;
   font-family: Arial, sans-serif;
   font-weight: 700;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.85), 0 2px 8px rgba(0, 0, 0, 0.7);
 
   &:hover {
     opacity: 0.8;
@@ -73,6 +74,7 @@
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.75), 0 2px 6px rgba(0, 0, 0, 0.6);
 
   &:hover {
     color: #ffffff;
@@ -179,6 +181,7 @@
   text-decoration: none;
   font-size: 0.9rem;
   transition: all 0.3s ease;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.75), 0 2px 6px rgba(0, 0, 0, 0.6);
 
   &:hover {
     color: #ffffff;

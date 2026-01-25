@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { PlaceholderComponent } from './pages/placeholder/placeholder.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 export const routes: Routes = [
   {
@@ -10,7 +11,7 @@ export const routes: Routes = [
   },
   {
     path: 'about',
-    component: PlaceholderComponent,
+    component: AboutUsComponent,
     data: { title: 'About Us', description: 'Learn more about Sonica and our mission to provide innovative UV screen printing solutions.' }
   },
   {
