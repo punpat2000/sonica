@@ -13,7 +13,6 @@ interface GradientShape {
   bottom?: number;
   color1: string;
   color2: string;
-  animationDelay: number;
   isCenter?: boolean;
 }
 
@@ -107,7 +106,6 @@ export class AppComponent {
     for (let i = 0; i < numShapes; i++) {
       const size = Math.floor(Math.random() * 120) + 100; // 100-220px
       const colors = this.colorPalette[Math.floor(Math.random() * this.colorPalette.length)];
-      const animationDelay = -(Math.random() * 20); // -20 to 0 seconds
 
       // Random position - choose one of: top-left, top-right, bottom-left, bottom-right, center
       const positionType = Math.floor(Math.random() * 5);
@@ -115,7 +113,6 @@ export class AppComponent {
         size,
         color1: colors.c1,
         color2: colors.c2,
-        animationDelay,
       };
 
       switch (positionType) {
@@ -151,7 +148,6 @@ export class AppComponent {
     style['width'] = `${shape.size}px`;
     style['height'] = `${shape.size}px`;
     style['background'] = `linear-gradient(135deg, ${shape.color1} 0%, ${shape.color2} 100%)`;
-    style['animation-delay'] = `${shape.animationDelay}s`;
 
     if (shape.isCenter) {
       style['top'] = '50%';
