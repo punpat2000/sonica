@@ -19,12 +19,19 @@ export class HeaderComponent {
   // Available languages
   languages = [
     { code: 'en', name: 'English', flag: '🇺🇸' },
-    { code: 'th', name: 'ไทย', flag: '🇹🇭' }
+    { code: 'th', name: 'ไทย', flag: '🇹🇭' },
+    { code: 'zh', name: '中文', flag: '🇨🇳' },
+    { code: 'ja', name: '日本語', flag: '🇯🇵' }
   ];
 
   // Detect current locale from LOCALE_ID
   currentLocale = computed(() => {
-    return this.locale.startsWith('th') ? 'th' : 'en';
+    const baseLocale = this.locale.split('-')[0].toLowerCase();
+    // Support: en, th, zh, ja
+    if (['th', 'zh', 'ja'].includes(baseLocale)) {
+      return baseLocale;
+    }
+    return 'en'; // Default to English
   });
 
   // Get current language display info
@@ -51,19 +58,31 @@ export class HeaderComponent {
     const currentPath = this.router.url;
     let newPath = '';
 
-    if (locale === 'th') {
-      // Switch to Thai - add /th prefix
-      if (currentPath.startsWith('/th')) {
-        return; // Already on Thai
-      }
-      newPath = `/th${currentPath === '/' ? '' : currentPath}`;
-    } else {
-      // Switch to English - remove /th prefix
-      if (!currentPath.startsWith('/th')) {
-        return; // Already on English
-      }
-      newPath = currentPath.replace(/^\/th/, '') || '/';
+    // Map of locale codes to their path prefixes
+    const localePrefixes: Record<string, string> = {
+      'en': '',
+      'th': '/th',
+      'zh': '/zh',
+      'ja': '/ja'
+    };
+
+    const currentLocale = this.currentLocale();
+    const targetPrefix = localePrefixes[locale] || '';
+    const currentPrefix = localePrefixes[currentLocale] || '';
+
+    // If already on target locale, do nothing
+    if (locale === currentLocale) {
+      return;
     }
+
+    // Remove current locale prefix if exists
+    let pathWithoutLocale = currentPath;
+    if (currentPrefix && currentPath.startsWith(currentPrefix)) {
+      pathWithoutLocale = currentPath.replace(currentPrefix, '') || '/';
+    }
+
+    // Add target locale prefix
+    newPath = targetPrefix ? `${targetPrefix}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}` : pathWithoutLocale;
 
     // Full page navigation to switch locale (required for separate builds)
     window.location.href = newPath;
