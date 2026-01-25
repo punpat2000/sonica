@@ -19,6 +19,7 @@
 
 .logo {
   font-size: 1.5rem;
+  font-family: Arial, sans-serif;
   font-weight: 700;
   z-index: 1001;
 }
@@ -27,10 +28,22 @@
   color: #ffffff;
   text-decoration: none;
   transition: opacity 0.3s ease;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
 
   &:hover {
     opacity: 0.8;
   }
+}
+
+.logo-s {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.logo-onica {
+  font-weight: 700;
+  font-style: italic;
 }
 
 .nav-menu {
