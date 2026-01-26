@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -52,10 +52,10 @@ import { ActivatedRoute } from '@angular/router';
   `]
 })
 export class PlaceholderComponent implements OnInit {
+  private route = inject(ActivatedRoute);
+
   title: string = 'Page Title';
   description: string = 'This page is coming soon.';
-
-  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     const data = this.route.snapshot.data;

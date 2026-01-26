@@ -1,11 +1,11 @@
 import { Component, HostListener, signal, computed, inject, LOCALE_ID } from '@angular/core';
 import { RouterLink, RouterLinkActive, NavigationEnd, Router, ActivatedRoute } from '@angular/router';
-import { CommonModule, Location } from '@angular/common';
+import { Location } from '@angular/common';
 import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, RouterLinkActive, CommonModule],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
