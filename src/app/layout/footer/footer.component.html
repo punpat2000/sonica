@@ -48,7 +48,7 @@
       <div class="footer-section">
         <h4 class="footer-heading" i18n="@@footer.quickLinks">Quick Links</h4>
         <ul class="footer-links">
-          <li><a routerLink="/" routerLinkActive="active" i18n="@@footer.home">Home</a></li>
+          <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" i18n="@@footer.home">Home</a></li>
           <li><a routerLink="/about" routerLinkActive="active" i18n="@@footer.about">About Us</a></li>
           <li><a routerLink="/industries" routerLinkActive="active" i18n="@@footer.industries">Industries</a></li>
           <li><a routerLink="/resources" routerLinkActive="active" i18n="@@footer.resources">Resources</a></li>
