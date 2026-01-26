@@ -1,4 +1,4 @@
-<div class="gradient-shapes">
+<div class="gradient-shapes" [class.visible]="shouldRender()">
   @if (shouldRender()) {
     @for (shape of shapes(); track $index) {
       <div class="shape" [attr.style]="shape.styleString"></div>
