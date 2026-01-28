@@ -24,12 +24,6 @@
   }
 }
 
-// Leave animation for the container - fade out smoothly when removed
-.gradient-shapes-leaving {
-  opacity: 0;
-  transition: opacity 5000ms ease-out;
-}
-
 .shape {
   position: absolute;
   border-radius: 50%;

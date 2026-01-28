@@ -1,5 +1,5 @@
 @if (shouldRender()) {
-  <div class="gradient-shapes" animate.leave="gradient-shapes-leaving">
+  <div class="gradient-shapes">
     @for (shape of shapes(); track $index) {
       <div class="shape" [attr.style]="shape.styleString"></div>
     }

@@ -29,9 +29,10 @@ export class GradientShapesComponent implements AfterViewInit {
   private readonly cdr = inject(ChangeDetectorRef);
 
   shapes = signal<GradientShape[]>([]);
-
-  // On server, render immediately. On client, defer until after FCP
-  shouldRender = signal(!isPlatformBrowser(this.platformId));
+  
+  // Never render on server - only calculate shapes for TransferState
+  // On client, defer until after FCP
+  shouldRender = signal(false);
 
   // Color palette for gradients
   private readonly colorPalette = [
@@ -78,19 +79,13 @@ export class GradientShapesComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    // Only defer on browser - server should render immediately
+    // Only defer on browser - server never renders
     if (isPlatformBrowser(this.platformId)) {
       // Defer rendering until after first contentful paint
       // This allows the main content to paint first, then we add the background
-      // Use multiple requestAnimationFrame calls + small delay to ensure we're well past FCP
       requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          // Additional small delay to ensure FCP is complete
-          setTimeout(() => {
-            this.shouldRender.set(true);
-            this.cdr.detectChanges();
-          }, 100); // 100ms delay after RAF to ensure FCP is complete
-        });
+        this.shouldRender.set(true);
+        this.cdr.detectChanges();
       });
     }
   }
