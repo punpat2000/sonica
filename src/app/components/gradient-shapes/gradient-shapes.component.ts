@@ -43,6 +43,20 @@ export class GradientShapesComponent implements AfterViewInit {
     { c1: '#ff006e', c2: '#3a86ff' },
     { c1: '#8338ec', c2: '#06ffa5' },
     { c1: '#ff6b35', c2: '#00d4ff' },
+    { c1: '#ff006e', c2: '#ffbe0b' },
+    { c1: '#8338ec', c2: '#00d4ff' },
+    { c1: '#06ffa5', c2: '#3a86ff' },
+    { c1: '#ff6b35', c2: '#8338ec' },
+    { c1: '#ff006e', c2: '#06ffa5' },
+    { c1: '#3a86ff', c2: '#ff6b35' },
+    { c1: '#8338ec', c2: '#ffbe0b' },
+    { c1: '#00d4ff', c2: '#ff006e' },
+    { c1: '#06ffa5', c2: '#ff6b35' },
+    { c1: '#3a86ff', c2: '#8338ec' },
+    { c1: '#ffbe0b', c2: '#00d4ff' },
+    { c1: '#ff006e', c2: '#00d4ff' },
+    { c1: '#8338ec', c2: '#ff6b35' },
+    { c1: '#06ffa5', c2: '#ffbe0b' },
   ];
 
   constructor() {
