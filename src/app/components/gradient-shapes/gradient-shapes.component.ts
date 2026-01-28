@@ -1,5 +1,5 @@
-import { Component, AfterViewInit, ChangeDetectorRef, PLATFORM_ID, inject, makeStateKey, TransferState, signal } from '@angular/core';
-import { isPlatformBrowser, isPlatformServer } from '@angular/common';
+import { Component, PLATFORM_ID, inject, signal } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 
 interface GradientShape {
   size: number;
@@ -14,25 +14,16 @@ interface GradientShape {
   styleString: string;
 }
 
-// State key for transferring shapes from server to client
-const GRADIENT_SHAPES_KEY = makeStateKey<GradientShape[]>('gradientShapes');
-
 @Component({
   selector: 'app-gradient-shapes',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './gradient-shapes.component.html',
   styleUrl: './gradient-shapes.component.scss',
 })
-export class GradientShapesComponent implements AfterViewInit {
+export class GradientShapesComponent {
   private readonly platformId = inject(PLATFORM_ID);
-  private readonly transferState = inject(TransferState);
-  private readonly cdr = inject(ChangeDetectorRef);
 
   shapes = signal<GradientShape[]>([]);
-  
-  // Never render on server - only calculate shapes for TransferState
-  // On client, defer until after FCP
-  shouldRender = signal(false);
 
   // Color palette for gradients
   private readonly colorPalette = [
@@ -61,32 +52,10 @@ export class GradientShapesComponent implements AfterViewInit {
   ];
 
   constructor() {
-    // Use TransferState to prevent re-rendering on client
-    if (isPlatformServer(this.platformId)) {
-      // Generate shapes on server and store in TransferState
-      this.generateShapes();
-      this.transferState.set(GRADIENT_SHAPES_KEY, this.shapes());
-    } else if (isPlatformBrowser(this.platformId)) {
-      // Retrieve shapes from TransferState on client
-      const transferredShapes = this.transferState.get<GradientShape[]>(GRADIENT_SHAPES_KEY, []);
-      if (transferredShapes.length > 0) {
-        this.shapes.set(transferredShapes);
-      } else {
-        // Fallback: generate if not found in TransferState (shouldn't happen in SSR)
-        this.generateShapes();
-      }
-    }
-  }
-
-  ngAfterViewInit(): void {
-    // Only defer on browser - server never renders
+    // Generate shapes only on client, not on server
+    // This avoids any SSR/hydration issues and keeps the server HTML clean
     if (isPlatformBrowser(this.platformId)) {
-      // Defer rendering until after first contentful paint
-      // This allows the main content to paint first, then we add the background
-      requestAnimationFrame(() => {
-        this.shouldRender.set(true);
-        this.cdr.detectChanges();
-      });
+      this.generateShapes();
     }
   }
 
