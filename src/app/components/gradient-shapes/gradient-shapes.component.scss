@@ -16,13 +16,18 @@
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
 
-  opacity: 0;
+  opacity: 1;
   transition: opacity 400ms ease-out;
   will-change: opacity;
+  @starting-style {
+    opacity: 0;
+  }
 }
 
-.gradient-shapes.visible {
-  opacity: 1;
+// Leave animation for the container - fade out smoothly when removed
+.gradient-shapes-leaving {
+  opacity: 0;
+  transition: opacity 5000ms ease-out;
 }
 
 .shape {

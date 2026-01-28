@@ -1,7 +1,7 @@
-<div class="gradient-shapes" [class.visible]="shouldRender()">
-  @if (shouldRender()) {
+@if (shouldRender()) {
+  <div class="gradient-shapes" animate.leave="gradient-shapes-leaving">
     @for (shape of shapes(); track $index) {
       <div class="shape" [attr.style]="shape.styleString"></div>
     }
-  }
-</div>
+  </div>
+}

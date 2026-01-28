@@ -27,9 +27,9 @@ export class GradientShapesComponent implements AfterViewInit {
   private readonly platformId = inject(PLATFORM_ID);
   private readonly transferState = inject(TransferState);
   private readonly cdr = inject(ChangeDetectorRef);
-  
+
   shapes = signal<GradientShape[]>([]);
-  
+
   // On server, render immediately. On client, defer until after FCP
   shouldRender = signal(!isPlatformBrowser(this.platformId));
 
@@ -127,14 +127,14 @@ export class GradientShapesComponent implements AfterViewInit {
 
       shapesArray.push(shape);
     }
-    
+
     // Update signal with generated shapes
     this.shapes.set(shapesArray);
   }
 
   private computeStyleString(shape: GradientShape): string {
     const parts: string[] = [];
-    
+
     parts.push(`width: ${shape.size}px`);
     parts.push(`height: ${shape.size}px`);
     parts.push(`background: linear-gradient(135deg, ${shape.color1} 0%, ${shape.color2} 100%)`);
