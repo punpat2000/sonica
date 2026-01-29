@@ -24,18 +24,16 @@ export const routes: Route[] = [
 ];
 
 export const locales = [
-  { code: 'en', path: '' },
-  { code: 'th', path: '/th' },
-  { code: 'zh', path: '/zh' },
-  { code: 'ja', path: '/ja' },
+  { code: 'en', path: '/en/' },
+  { code: 'th', path: '/th/' },
+  { code: 'zh', path: '/zh/' },
+  { code: 'ja', path: '/ja/' },
 ];
 
 export function generateSitemapIndex(baseUrl: string): string {
   const sitemaps = locales.map(locale => {
-    // English sitemap is at /sitemap-en.xml, others are at /{locale}/sitemap.xml
-    const sitemapUrl = locale.path 
-      ? `${baseUrl}${locale.path}/sitemap.xml`
-      : `${baseUrl}/sitemap-en.xml`;
+    // Each locale has its sitemap at /{locale}/sitemap.xml (e.g. /en/sitemap.xml)
+    const sitemapUrl = `${baseUrl}${locale.path}sitemap.xml`;
     return `    <sitemap>
       <loc>${sitemapUrl}</loc>
       <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
@@ -53,21 +51,15 @@ export function generateSitemap(baseUrl: string, locale: { code: string; path: s
   const lastmod = new Date().toISOString().split('T')[0];
 
   const urlEntries = routes.map(route => {
-    // Ensure proper path construction - if both are empty, use '/'
-    let fullPath = localePrefix + route.path;
-    if (fullPath === '') {
-      fullPath = '/';
-    }
-    
+    // Build full path: localePrefix is e.g. /en/, route.path is '' or '/about'
+    const fullPath = route.path === '' ? localePrefix : localePrefix + route.path.slice(1);
+
     const priority = route.priority || 0.6;
     const changefreq = route.changefreq || 'monthly';
 
     // Generate hreflang alternatives
     const hreflangTags = locales.map(altLocale => {
-      let altPath = altLocale.path + route.path;
-      if (altPath === '') {
-        altPath = '/';
-      }
+      const altPath = route.path === '' ? altLocale.path : altLocale.path + route.path.slice(1);
       return `      <xhtml:link rel="alternate" hreflang="${altLocale.code}" href="${baseUrl}${altPath}"/>`;
     }).join('\n');
 

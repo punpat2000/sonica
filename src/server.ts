@@ -63,9 +63,10 @@ app.get('/sitemap.xml', (req, res) => {
   res.send(sitemapIndex);
 });
 
-// Serve language-specific sitemaps for each locale
+// Serve language-specific sitemaps for each locale (e.g. /en/sitemap.xml, /th/sitemap.xml)
 locales.forEach(locale => {
-  const sitemapPath = locale.path ? `${locale.path}/sitemap.xml` : '/sitemap-en.xml';
+  const pathWithoutTrailingSlash = locale.path.replace(/\/$/, '');
+  const sitemapPath = pathWithoutTrailingSlash ? `${pathWithoutTrailingSlash}/sitemap.xml` : '/sitemap.xml';
   app.get(sitemapPath, (req, res) => {
     const baseUrl = req.protocol + '://' + req.get('host');
     const sitemap = generateSitemap(baseUrl, locale);
