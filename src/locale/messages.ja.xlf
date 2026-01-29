@@ -212,7 +212,7 @@
       </trans-unit>
       <trans-unit id="footer.copyright" datatype="html">
         <source>© <x id="INTERPOLATION" equiv-text="{{ currentYear() }}"/> Sonica. All rights reserved.</source>
-        <target>© <x id="INTERPOLATION" equiv-text="{{ currentYear }}"/> Sonica。全著作権所有。</target>
+        <target>© <x id="INTERPOLATION" equiv-text="{{ currentYear }}"/> Sonica。無断転載を禁じます。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
           <context context-type="linenumber">83,84</context>
@@ -436,7 +436,7 @@
       </trans-unit>
       <trans-unit id="home.aboutNorcote.description3" datatype="html">
         <source> Our team of color experts offers quick and precise color matching, and provides on-site training with the latest color measurement technology. Additionally, our friendly Customer Service Representatives ensure your orders are handled efficiently and delivered promptly, meeting your expectations every time. </source>
-        <target> 当社の色彩専門家チームは、1〜3日の納期で迅速かつ正確なカラーマッチングを提供し、最新の色彩測定技術による現場トレーニングも提供しています。さらに、親切なカスタマーサービス担当者が、お客様の注文を効率的に処理し、迅速に配達し、毎回お客様の期待に応えます。 </target>
+        <target> 当社の色彩専門家チームは、迅速かつ正確なカラーマッチングを提供し、最新の色彩測定技術による現場トレーニングも行っています。さらに、親切なカスタマーサービス担当者が、お客様のご注文を効率的に処理し、迅速にお届けすることで、常にご期待にお応えします。 </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">47,51</context>
@@ -700,7 +700,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.processColors" datatype="html">
         <source>Process Colors</source>
-        <target>プロセスカラー</target>
+        <target>プロセスカラー（CMYK）</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">79,80</context>
@@ -716,7 +716,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.transparents" datatype="html">
         <source>Transparents</source>
-        <target>透明インク</target>
+        <target>クリアインク</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">122,123</context>
@@ -724,7 +724,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.transparentShelfLife" datatype="html">
         <source>Transparent inks have a shelf life of 1 year from date of manufacture when stored under proper conditions.</source>
-        <target>透明インクは適切な条件下で保管した場合、製造日から1年の賞味期限があります。</target>
+        <target>クリアインクは適切な条件下で保管した場合、製造日から1年の保存期限があります。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">123,125</context>
@@ -748,7 +748,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.texturedClearsShelfLife" datatype="html">
         <source>Textured clears have a shelf life of 1 year from date of manufacture when stored under proper conditions.</source>
-        <target>テクスチャークリアは適切な条件下で保管した場合、製造日から1年の賞味期限があります。</target>
+        <target>テクスチャークリアは適切な条件下で保管した場合、製造日から1年の保存期限があります。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">158,160</context>
@@ -796,7 +796,7 @@
       </trans-unit>
       <trans-unit id="inks.series.70g.shortDescription" datatype="html">
         <source>One-part, dual cure UV/LED screen ink for glass and plastic containers. High adhesion, chemical and water resistance.</source>
-        <target>ガラス・プラスチック容器用の一液型UV/LED二重硬化スクリーンインク。高密着性、耐薬品・耐水性。</target>
+        <target>ガラスおよびプラスチック容器用の一液型UV/LEDデュアルキュアスクリーンインク。高い密着性と耐薬品性・耐水性を備えています。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">48</context>
@@ -812,7 +812,7 @@
       </trans-unit>
       <trans-unit id="inks.series.ppc.shortDescription" datatype="html">
         <source>One-part UV screen ink for containers. Chemical resistant, quick curing, superb gloss, high definition. No additives required; excellent intercoat. All colors intermixable.</source>
-        <target>容器用一液型UVスクリーンインク。耐薬品、速乾、高光沢・高精細。添加剤不要、優れた層間密着。全色混色可能。</target>
+        <target>容器用一液型UVスクリーンインク。優れた耐薬品性と高速硬化性を持ち、高光沢で高解像度な印刷が可能です。添加剤不要で層間密着にも優れ、全色混色が可能です。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">54</context>
@@ -828,7 +828,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.shortDescription" datatype="html">
         <source>High-end UV curable second surface ink for industrial graphics. Extremely flexible, embossable, excellent adhesion. For user interface overlays, nameplates, automotive.</source>
-        <target>産業用グラフィック向け高級UV硬化裏面インク。極めて柔軟、エンボス可能、優れた密着性。UIオーバーレイ、ネームプレート、自動車向け。</target>
+        <target>産業用グラフィック向け高性能UV硬化裏面印刷インク。極めて柔軟でエンボス加工が可能、密着性にも優れています。UIオーバーレイ、ネームプレート、自動車用途に最適です。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">60</context>
@@ -844,7 +844,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.shortDescription" datatype="html">
         <source>UV curable ink system for pressure sensitive decals with 3–5 years exterior exposure. Excellent flexibility, adhesion, opacity; NVP free. For pressure sensitive vinyls and print treated polyesters.</source>
-        <target>屋外3〜5年耐候の感圧デカール用UV硬化インク。優れた柔軟性・密着・不透明性、NVPフリー。感圧ビニール・印刷処理ポリエステル向け。</target>
+        <target>屋外3〜5年の耐候性を持つ感圧デカール用UV硬化インクシステム。優れた柔軟性・密着性・不透明性を備え、NVPフリーです。感圧ビニールや印刷処理ポリエステル向けに設計されています。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">66</context>
@@ -860,7 +860,7 @@
       </trans-unit>
       <trans-unit id="inks.series.specialty.shortDescription" datatype="html">
         <source>Specialty UV screen inks for decorative, metallic, and effect applications. Contact us for availability.</source>
-        <target>装飾・メタリック・特殊効果向けスペシャルティUVスクリーンインク。在庫はお問い合わせください。</target>
+        <target>装飾・メタリック・特殊効果向けのスペシャルティUVスクリーンインク。仕様や在庫状況についてはお問い合わせください。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">72</context>
@@ -868,7 +868,7 @@
       </trans-unit>
       <trans-unit id="inks.series.70g.longDescription" datatype="html">
         <source>The 70G Series is a one-part, dual cure ink system formulated to meet the requirements needed for printing on glass and plastic bottles commonly used in the container market. It can be cured with UV or LED systems (365–405 nm) or with traditional UV mercury or iron-doped curing systems. Cross-linking continues for up to 24 hours after printing; adhesion should be tested after cooling to room temperature.</source>
-        <target>70Gシリーズは、容器市場で一般的なガラス・プラスチック瓶の印刷に必要な要件を満たす一液型二重硬化インクです。UVまたはLED（365–405 nm）、従来のUV水銀または鉄添加硬化システムで硬化可能。印刷後最大24時間架橋が続くため、室温冷却後に密着性を試験してください。</target>
+        <target>70Gシリーズは、容器市場で一般的に使用されるガラスおよびプラスチックボトルへの印刷要件を満たすために開発された一液型デュアルキュアインクシステムです。UVまたはLED（365～405 nm）による硬化に加え、従来のUV水銀ランプおよび鉄添加ランプによる硬化にも対応しています。印刷後も最大24時間にわたり架橋反応が進行するため、室温まで冷却した後に密着性の確認を行ってください。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">86</context>
@@ -932,7 +932,7 @@
       </trans-unit>
       <trans-unit id="inks.series.ppc.longDescription" datatype="html">
         <source>The PPC Series is a one-part UV curable ink system designed for direct printing on common container applications. Suitable for treated HDPE, LDPE, polypropylene, styrene, PET, and PVC. PET may require flame treatment for adhesion; for thin-walled PVC, embrittlement can occur (04 Series may be better for PVC). Inks are supplied at print-ready viscosity; PPC-070 Thinner or PPC-049 Overprint Clear can be used to thin. Curing: UV light 280–400 nm; fast cure with one 300 W/in or two 200 W/in medium pressure mercury vapor lamps. Non-visual post-curing with cross-linking up to 24 hours. All PPC Series colors are intermixable. Custom and specific colors can be matched at Norcote with print sample, wet ink sample, or Pantone® numbers.</source>
-        <target>PPCシリーズは、一般的な容器用途への直接印刷向け一液型UV硬化インクです。処理済みHDPE、LDPE、ポリプロピレン、スチレン、PET、PVCに適しています。PETは密着のためにフレーム処理が必要な場合があります。薄肉PVCでは脆化が発生する可能性があります（PVCには04シリーズが適している場合があります）。インクは印刷可能粘度で供給されます。PPC-070シンナーまたはPPC-049オーバープリントクリアで希釈可能。硬化：UV光280–400 nm。1本300 W/inまたは2本200 W/in中圧水銀ランプで速乾。最大24時間の非視覚後硬化と架橋。全PPCシリーズ色は混色可能。Norcoteで印刷サンプル、湿潤インクサンプル、またはPantone®番号でカスタム・特定色のマッチングが可能です。</target>
+        <target>PPCシリーズは、一般的な容器用途への直接印刷を目的として設計された一液型UV硬化インクシステムです。処理済みHDPE、LDPE、ポリプロピレン、スチレン、PET、PVCに適しています。PETでは密着性向上のためフレーム処理が必要となる場合があります。また、薄肉PVCでは脆化が生じる可能性があるため、PVC用途には04シリーズが適する場合があります。インクは印刷可能な粘度で供給され、PPC-070シンナーまたはPPC-049オーバープリントクリアにより希釈が可能です。硬化は280～400 nmのUV光で行い、300 W/inランプ1灯または200 W/in中圧水銀ランプ2灯により高速硬化が可能です。非視覚的後硬化により、最大24時間にわたり架橋反応が進行します。PPCシリーズの全色は混色可能で、Norcoteでは印刷サンプル、湿潤インクサンプル、またはPantone®番号に基づくカスタムカラー対応が可能です。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">122</context>
@@ -1028,7 +1028,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.longDescription" datatype="html">
         <source>The MSK Series is a high-end, UV curable, second surface ink system specifically formulated for use on substrates common to the industrial graphics market, such as polycarbonate, print treated polyesters, and PC/PET blends. Suitable for demanding applications where adhesive resistance, opacity, embossability, and actuation resistance are required, such as user interface overlays, nameplates, and automotive applications. MSK Series inks cure only when exposed to UV light of the proper wavelength. Curing speeds depend on ink film thickness and lamp energy level; ink should be cured immediately after printing. Works best with two 200 wpi focused medium pressure mercury vapor lamps. MSK is a non-visual post-curing system with further cross-linking occurring up to 24 hours later. Custom and specific colors can be matched at Norcote with customer-supplied print sample, wet ink sample, Pantone® numbers, or other recognized standards.</source>
-        <target>MSKシリーズは、ポリカーボネート、印刷処理ポリエステル、PC/PETブレンドなど、産業用グラフィック市場で一般的な基材向けに特別に調合された高級UV硬化裏面インクです。密着抵抗、不透明度、エンボス性、作動抵抗が必要な要求の厳しい用途（UIオーバーレイ、ネームプレート、自動車用途）に適しています。MSKシリーズインクは適切な波長のUV光にさらされた場合のみ硬化します。硬化速度はインクフィルム厚さとランプエネルギーに依存します。インクは印刷後すぐに硬化させる必要があります。2本の200 wpi集光中圧水銀ランプで最適に機能します。MSKは最大24時間後にさらに架橋が発生する非視覚後硬化システムです。Norcoteでお客様提供の印刷サンプル、湿潤インクサンプル、Pantone®番号、またはその他の認証標準でカスタム・特定色のマッチングが可能です。</target>
+        <target>MSKシリーズは、ポリカーボネート、印刷処理ポリエステル、PC/PETブレンドなど、産業用グラフィック市場で一般的に使用される基材向けに特別に開発された高性能UV硬化裏面印刷インクシステムです。高い密着抵抗、不透明性、エンボス適性、耐作動性が求められるUIオーバーレイ、ネームプレート、自動車用途などの要求の厳しいアプリケーションに適しています。MSKシリーズインクは、適切な波長のUV光に曝露された場合のみ硬化し、硬化速度はインク膜厚およびランプ出力に依存します。そのため、印刷後は速やかに硬化させてください。200 wpi集光中圧水銀ランプ2灯構成で最適な性能を発揮します。本シリーズは非視覚的後硬化システムであり、硬化後も最大24時間にわたり追加の架橋反応が進行します。Norcoteでは、印刷サンプル、湿潤インクサンプル、Pantone®番号、その他認定標準に基づくカスタムカラー対応が可能です。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">173</context>
@@ -1156,7 +1156,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.longDescription" datatype="html">
         <source>The 1500 is a UV curable ink system specifically formulated for pressure sensitive decal applications requiring exterior exposure up to five years. 1500 Series inks provide excellent flexibility, eliminating edge curl due to ink film shrinkage, as well as outstanding adhesion properties while being NVP free. Combined with automotive grade pigments, Norcote&apos;s 1500 Series exhibits excellent opacity and light-fastness, resulting in superior overall performance on pressure sensitive vinyls and print treated polyesters. It is the responsibility of the user to pretest all substrates with Norcote products prior to use in production.</source>
-        <target>1500は、最大5年の屋外暴露が必要な感圧デカール用途向けに特別に調合されたUV硬化インクです。1500シリーズインクは優れた柔軟性を提供し、インクフィルム収縮によるエッジカールを排除し、NVPフリーでありながら優れた密着性を提供します。自動車グレード顔料と組み合わせ、Norcoteの1500シリーズは優れた不透明度と耐光性を示し、感圧ビニールと印刷処理ポリエステルで優れた総合性能を実現します。生産使用前にNorcote製品ですべての基材を事前テストすることはユーザーの責任です。</target>
+        <target>1500シリーズは、最大5年間の屋外耐候性が求められる感圧デカール用途向けに特別に設計されたUV硬化インクシステムです。優れた柔軟性により、インク膜収縮によるエッジカールを抑制し、NVPフリーでありながら高い密着性を実現しています。自動車グレードの顔料を使用することで、高い不透明性と耐光性を備え、感圧ビニールおよび印刷処理ポリエステル上で優れた総合性能を発揮します。量産使用前には、すべての基材について事前に適合性試験を行うことを推奨します。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">234</context>
@@ -1300,7 +1300,7 @@
       </trans-unit>
       <trans-unit id="inks.series.specialty.longDescription" datatype="html">
         <source>Specialty UV screen inks for decorative, metallic, and special-effect applications. Availability and specifications vary; contact us for technical bulletins and recommendations.</source>
-        <target>装飾・メタリック・特殊効果向けスペシャルティUVスクリーンインク。在庫・仕様は品目により異なります。技術資料・推奨はお問い合わせください。</target>
+        <target>装飾用途、メタリック表現、特殊効果向けに設計されたスペシャルティUVスクリーンインクシリーズです。品目により仕様や供給状況が異なるため、技術資料および推奨条件についてはお問い合わせください。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">310</context>
