@@ -404,7 +404,7 @@
       </trans-unit>
       <trans-unit id="home.aboutSonica.description2" datatype="html">
         <source> We specialize in providing high-quality UV screen printing inks, premium squeegees, advanced LED/UV curing systems, and precision UV intensity meters. Our commitment to excellence and innovation, combined with our exclusive partnership with Norcote International, has made us a preferred partner for leading manufacturers across Thailand. </source>
-        <target> เราเชี่ยวชาญในการให้บริการหมึกพิมพ์สกรีน UV คุณภาพสูง ใบมีดพรีเมียม ระบบอบแห้ง LED/UV ขั้นสูง และเครื่องวัดความเข้ม UV แบบแม่นยำ ความมุ่งมั่นของเราต่อความเป็นเลิศและนวัตกรรม ร่วมกับพันธมิตรพิเศษของเรากับ Norcote International ทำให้เราเป็นพันธมิตรที่ผู้ผลิตชั้นนำทั่วประเทศไทยเลือกใช้ </target>
+        <target> เราเชี่ยวชาญในการให้บริการหมึกพิมพ์สกรีน UV คุณภาพสูง ยางปาดพรีเมียม ระบบอบแห้ง LED/UV ขั้นสูง และเครื่องวัดความเข้ม UV แบบแม่นยำ ความมุ่งมั่นของเราต่อความเป็นเลิศและนวัตกรรม ร่วมกับพันธมิตรพิเศษของเรากับ Norcote International ทำให้เราเป็นพันธมิตรที่ผู้ผลิตชั้นนำทั่วประเทศไทยเลือกใช้ </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">29,33</context>
@@ -700,7 +700,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.processColors" datatype="html">
         <source>Process Colors</source>
-        <target>สีกระบวนการ</target>
+        <target>สี CMYK</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">79,80</context>
@@ -764,7 +764,7 @@
       </trans-unit>
       <trans-unit id="2750456055320728274" datatype="html">
         <source>May not be suitable for lightfast applications. Prolonged exposure to direct sunlight not recommended.</source>
-        <target>อาจไม่เหมาะสำหรับการใช้งานที่ต้องการความทนแสง ไม่แนะนำให้สัมผัสแสงแดดโดยตรงเป็นเวลานาน</target>
+        <target>อาจไม่เหมาะสำหรับงานที่ต้องการความทนทานต่อแสง; ไม่แนะนำให้สัมผัสแสงแดดโดยตรงเป็นเวลานาน</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.ts</context>
           <context context-type="linenumber">29</context>
@@ -796,7 +796,7 @@
       </trans-unit>
       <trans-unit id="inks.series.70g.shortDescription" datatype="html">
         <source>One-part, dual cure UV/LED screen ink for glass and plastic containers. High adhesion, chemical and water resistance.</source>
-        <target>หมึกสกรีน UV/LED แบบหนึ่งส่วน สองระบบอบ สำหรับขวดแก้วและพลาสติก ติดแน่น ทนสารเคมีและน้ำ</target>
+        <target>หมึกพิมพ์สกรีนชนิดหนึ่งส่วนผสม (One-part) แบบ Dual Cure UV/LED สำหรับบรรจุภัณฑ์แก้วและพลาสติก ให้การยึดเกาะสูง พร้อมความทนทานต่อสารเคมีและน้ำ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">48</context>
@@ -812,7 +812,7 @@
       </trans-unit>
       <trans-unit id="inks.series.ppc.shortDescription" datatype="html">
         <source>One-part UV screen ink for containers. Chemical resistant, quick curing, superb gloss, high definition. No additives required; excellent intercoat. All colors intermixable.</source>
-        <target>หมึกสกรีน UV แบบหนึ่งส่วน สำหรับบรรจุภัณฑ์ ทนสารเคมี อบแห้งเร็ว ความเงาสูง ความละเอียดสูง ไม่ต้องใช้สารเติม ไม่มีชั้นกลาง ผสมสีได้ทุกสี</target>
+        <target>หมึกพิมพ์สกรีน UV แบบหนึ่งส่วนผสมสำหรับงานบรรจุภัณฑ์ ให้ความทนทานต่อสารเคมี อบแห้งรวดเร็ว ผิวเงาสูง คมชัด ไม่ต้องใช้สารเติมแต่ง ให้การยึดเกาะระหว่างชั้นพิมพ์ดีเยี่ยม และสามารถผสมสีได้ทุกเฉด</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">54</context>
@@ -828,7 +828,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.shortDescription" datatype="html">
         <source>High-end UV curable second surface ink for industrial graphics. Extremely flexible, embossable, excellent adhesion. For user interface overlays, nameplates, automotive.</source>
-        <target>หมึกผิวหลัง UV ระดับพรีเมียม สำหรับกราฟิกอุตสาหกรรม ยืดหยุ่นมาก กดนูนได้ ติดแน่น ใช้กับโอเวอร์เลย์ UI แผ่นชื่อ ยานยนต์</target>
+        <target>หมึกพิมพ์ UV Curable สำหรับงานพิมพ์ด้านหลัง (Second Surface) ระดับพรีเมียมสำหรับกราฟิกอุตสาหกรรม ให้ความยืดหยุ่นสูงเป็นพิเศษ สามารถปั๊มนูนได้ และยึดเกาะดีเยี่ยม เหมาะสำหรับแผงควบคุมผู้ใช้ เนมเพลต และงานอุตสาหกรรมยานยนต์</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">60</context>
@@ -844,7 +844,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.shortDescription" datatype="html">
         <source>UV curable ink system for pressure sensitive decals with 3–5 years exterior exposure. Excellent flexibility, adhesion, opacity; NVP free. For pressure sensitive vinyls and print treated polyesters.</source>
-        <target>ระบบหมึก UV สำหรับสติกเกอร์กดติด ทนสภาพกลางแจ้ง 3–5 ปี ยืดหยุ่น ติดแน่น ทึบแสง ไร้ NVP สำหรับไวนิลกดติด และโพลีเอสเตอร์ที่ผ่านการพิมพ์</target>
+        <target>ระบบหมึก UV สำหรับสติกเกอร์กดติด ทนสภาพกลางแจ้ง 3–5 ปี ยืดหยุ่น ยึดเกาะแน่น ทึบแสง ไร้ NVP สำหรับไวนิลกดติด และโพลีเอสเตอร์ที่ผ่านการพิมพ์</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">66</context>
@@ -868,7 +868,7 @@
       </trans-unit>
       <trans-unit id="inks.series.70g.longDescription" datatype="html">
         <source>The 70G Series is a one-part, dual cure ink system formulated to meet the requirements needed for printing on glass and plastic bottles commonly used in the container market. It can be cured with UV or LED systems (365–405 nm) or with traditional UV mercury or iron-doped curing systems. Cross-linking continues for up to 24 hours after printing; adhesion should be tested after cooling to room temperature.</source>
-        <target>ซีรีส์ 70G เป็นระบบหมึกหนึ่งส่วน สองระบบอบ ออกแบบสำหรับพิมพ์บนขวดแก้วและพลาสติกที่ใช้ในตลาดบรรจุภัณฑ์ อบด้วย UV หรือ LED (365–405 nm) หรือระบบ UV ปรอท/เหล็กแบบดั้งเดิม การเชื่อมขวางดำเนินต่อถึง 24 ชม. หลังพิมพ์ ควรทดสอบการติดหลังเย็นถึงอุณหภูมิห้อง</target>
+        <target>70G Series เป็นระบบหมึกพิมพ์ แบบหนึ่งส่วนผสม (One-part) ชนิด Dual Cure ที่พัฒนาขึ้นเพื่อตอบโจทย์งานพิมพ์บนขวดแก้วและขวดพลาสติกที่ใช้กันทั่วไปในตลาดบรรจุภัณฑ์ หมึกสามารถอบได้ทั้งด้วยระบบ UV หรือ LED (ช่วง 365–405 นาโนเมตร) รวมถึงระบบอบแบบดั้งเดิมที่ใช้หลอด UV Mercury หรือ Iron-doped โดยหลังการพิมพ์จะยังเกิดกระบวนการ Cross-linking ต่อเนื่องได้นานถึง 24 ชั่วโมง และควรทำการทดสอบการยึดเกาะหลังจากชิ้นงานเย็นตัวลงจนถึงอุณหภูมิห้องแล้ว</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">86</context>
@@ -884,7 +884,7 @@
       </trans-unit>
       <trans-unit id="inks.series.70g.features.1" datatype="html">
         <source>Plain weave polyester mesh 305+ TPI (120+ threads/cm) recommended</source>
-        <target>แนะนำตาข่ายโพลีเอสเตอร์สานธรรมดา 305+ TPI (120+ เส้น/cm)</target>
+        <target>แนะนำผ้าเบอร์โพลีเอสเตอร์สานธรรมดา 305+ TPI (120+ เส้น/cm)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">96</context>
@@ -892,7 +892,7 @@
       </trans-unit>
       <trans-unit id="inks.series.70g.features.2" datatype="html">
         <source>70G-070 Thinner up to 10% by weight if needed</source>
-        <target>70G-070 Thinner ได้ถึง 10% ตามน้ำหนักถ้าต้องการ</target>
+        <target>70G-070 Thinner สามารถเติมได้สูงสุด 10% โดยน้ำหนัก หากจำเป็น</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">97</context>
@@ -900,7 +900,7 @@
       </trans-unit>
       <trans-unit id="inks.series.70g.features.3" datatype="html">
         <source>Additives available for difficult adhesion (70G-000KG4, CUR-800, ADC-172, ADH-067, DK-072)</source>
-        <target>มีสารเติมสำหรับการติดยาก (70G-000KG4, CUR-800, ADC-172, ADH-067, DK-072)</target>
+        <target>มีสารเติมสำหรับการยึดเกาะยาก (70G-000KG4, CUR-800, ADC-172, ADH-067, DK-072)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">98</context>
@@ -932,7 +932,7 @@
       </trans-unit>
       <trans-unit id="inks.series.ppc.longDescription" datatype="html">
         <source>The PPC Series is a one-part UV curable ink system designed for direct printing on common container applications. Suitable for treated HDPE, LDPE, polypropylene, styrene, PET, and PVC. PET may require flame treatment for adhesion; for thin-walled PVC, embrittlement can occur (04 Series may be better for PVC). Inks are supplied at print-ready viscosity; PPC-070 Thinner or PPC-049 Overprint Clear can be used to thin. Curing: UV light 280–400 nm; fast cure with one 300 W/in or two 200 W/in medium pressure mercury vapor lamps. Non-visual post-curing with cross-linking up to 24 hours. All PPC Series colors are intermixable. Custom and specific colors can be matched at Norcote with print sample, wet ink sample, or Pantone® numbers.</source>
-        <target>ซีรีส์ PPC เป็นระบบหมึก UV แบบหนึ่งส่วน ออกแบบสำหรับพิมพ์โดยตรงบนบรรจุภัณฑ์ทั่วไป เหมาะสำหรับ HDPE, LDPE, polypropylene, styrene, PET และ PVC ที่ผ่านการบำบัด PET อาจต้องใช้การบำบัดด้วยเปลวไฟเพื่อการติด สำหรับ PVC ผนังบางอาจเกิดความเปราะ (04 Series อาจเหมาะกว่า PVC) หมึกจัดส่งที่ความหนืดพร้อมพิมพ์ ใช้ PPC-070 Thinner หรือ PPC-049 Overprint Clear เพื่อเจือจาง การอบ: แสง UV 280–400 nm; อบแห้งเร็วด้วย 1 หลอด 300 W/in หรือ 2 หลอด 200 W/in ปรอทไอแรงดันกลาง หลังอบแบบไม่เห็นด้วยการเชื่อมขวางถึง 24 ชม. สี PPC Series ทั้งหมดผสมกันได้ สีตามสั่งและสีเฉพาะสามารถแมตช์ที่ Norcote ด้วยตัวอย่างพิมพ์ ตัวอย่างหมึกเปียก หรือหมายเลข Pantone®</target>
+        <target>PPC Series เป็นหมึกพิมพ์ UV Curable แบบหนึ่งส่วนผสม สำหรับการพิมพ์โดยตรงบนบรรจุภัณฑ์ทั่วไป เหมาะกับวัสดุที่ผ่านการเตรียมผิวแล้ว เช่น HDPE, LDPE, Polypropylene, Styrene, PET และ PVC โดย PET อาจต้องผ่าน Flame Treatment เพื่อเพิ่มการยึดเกาะ และ PVC ที่มีผนังบางอาจเกิดความเปราะได้ (แนะนำให้ใช้ 04 Series สำหรับงาน PVC) หมึกถูกจัดส่งในความหนืดพร้อมพิมพ์ สามารถปรับลดความหนืดได้ด้วย PPC-070 Thinner หรือ PPC-049 Overprint Clear การอบใช้แสง UV ช่วง 280–400 nm ให้การอบที่รวดเร็วด้วยหลอด Mercury Vapor แบบแรงดันปานกลาง ขนาด 300 W/in จำนวน 1 หลอด หรือ 200 W/in จำนวน 2 หลอด ทั้งนี้ระบบเป็นแบบ non-visual post-curing โดยจะเกิดการ cross-linking ต่อเนื่องและสมบูรณ์ภายใน 24 ชั่วโมง หมึก PPC Series ทุกสีสามารถผสมกันได้ และ Norcote สามารถพัฒนาสีเฉพาะตามตัวอย่างงานพิมพ์ ตัวอย่างหมึกเปียก หรือหมายเลข Pantone®</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">122</context>
@@ -956,7 +956,7 @@
       </trans-unit>
       <trans-unit id="inks.series.ppc.features.2" datatype="html">
         <source>Excellent intercoat adhesion</source>
-        <target>การติดชั้นกลางยอดเยี่ยม</target>
+        <target>การยึดเกาะชั้นกลางยอดเยี่ยม</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">132</context>
@@ -964,7 +964,7 @@
       </trans-unit>
       <trans-unit id="inks.series.ppc.features.3" datatype="html">
         <source>Mesh: 355 TPI and higher (140/cm²) low elongation monofilament polyester; tension 18–25 N/cm²</source>
-        <target>ตาข่าย: 355 TPI ขึ้นไป (140/cm²) โพลีเอสเตอร์โมโนฟิลาเมนต์ยืดต่ำ; แรงดึง 18–25 N/cm²</target>
+        <target>ผ้าเบอร์: 355 TPI ขึ้นไป (140/cm²) โพลีเอสเตอร์โมโนฟิลาเมนต์ยืดต่ำ; แรงดึง 18–25 N/cm²</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">133</context>
@@ -972,7 +972,7 @@
       </trans-unit>
       <trans-unit id="inks.series.ppc.features.4" datatype="html">
         <source>Stencil: direct emulsions and thin capillary films (15–25 µm)</source>
-        <target>สเตนซิล: อิมัลชันโดยตรงและฟิล์มเส้นเลือดฝอยบาง (15–25 µm)</target>
+        <target>สเตนซิล: อิมัลชันแบบเคลือบตรง (Direct Emulsion) และฟิล์มคาพิลลารีแบบบาง (15–25 µm)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">134</context>
@@ -980,7 +980,7 @@
       </trans-unit>
       <trans-unit id="inks.series.ppc.features.5" datatype="html">
         <source>Squeegee: sharp 80 shore durometer polyurethane preferred (60–90 or dual durometer)</source>
-        <target>ใบมีด: โพลียูรีเทน 80 shore durometer แหลมแนะนำ (60–90 หรือ dual durometer)</target>
+        <target>ยางปาด: โพลียูรีเทน 80 shore durometer แหลมแนะนำ (60–90 หรือ dual durometer)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">135</context>
@@ -1028,7 +1028,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.longDescription" datatype="html">
         <source>The MSK Series is a high-end, UV curable, second surface ink system specifically formulated for use on substrates common to the industrial graphics market, such as polycarbonate, print treated polyesters, and PC/PET blends. Suitable for demanding applications where adhesive resistance, opacity, embossability, and actuation resistance are required, such as user interface overlays, nameplates, and automotive applications. MSK Series inks cure only when exposed to UV light of the proper wavelength. Curing speeds depend on ink film thickness and lamp energy level; ink should be cured immediately after printing. Works best with two 200 wpi focused medium pressure mercury vapor lamps. MSK is a non-visual post-curing system with further cross-linking occurring up to 24 hours later. Custom and specific colors can be matched at Norcote with customer-supplied print sample, wet ink sample, Pantone® numbers, or other recognized standards.</source>
-        <target>ซีรีส์ MSK เป็นระบบหมึกผิวหลัง UV ระดับพรีเมียม ออกแบบพิเศษสำหรับใช้บนพื้นผิวที่ใช้ในตลาดกราฟิกอุตสาหกรรม เช่น polycarbonate, polyesters ที่ผ่านการพิมพ์ และ PC/PET blends เหมาะสำหรับการใช้งานที่ต้องการความต้านทานกาว ความทึบแสง การกดนูน และความต้านทานการทำงาน เช่น UI overlays, nameplates และการใช้งานยานยนต์ หมึก MSK Series อบแห้งเฉพาะเมื่อสัมผัสแสง UV ที่ความยาวคลื่นที่เหมาะสม ความเร็วการอบขึ้นอยู่กับความหนาของฟิล์มหมึกและระดับพลังงานของหลอด หมึกควรอบทันทีหลังพิมพ์ ทำงานได้ดีที่สุดกับ 2 หลอด 200 wpi ปรอทไอแรงดันกลางแบบโฟกัส MSK เป็นระบบหลังอบแบบไม่เห็นด้วยการเชื่อมขวางเพิ่มเติมถึง 24 ชม. สีตามสั่งและสีเฉพาะสามารถแมตช์ที่ Norcote ด้วยตัวอย่างพิมพ์ ตัวอย่างหมึกเปียก หมายเลข Pantone® หรือมาตรฐานอื่นๆ ที่ยอมรับ</target>
+        <target>MSK Series คือหมึกพิมพ์ชนิด UV Curable ระดับพรีเมียมสำหรับงานพิมพ์ด้านหลัง (Second Surface) ที่พัฒนาขึ้นเฉพาะสำหรับวัสดุในตลาดกราฟิกอุตสาหกรรม เช่น โพลีคาร์บอเนต โพลีเอสเตอร์ที่ผ่านการเตรียมผิว และวัสดุผสม PC/PET เหมาะสำหรับงานที่ต้องการคุณสมบัติสูงและความทนทานเป็นพิเศษ ไม่ว่าจะเป็นความทนต่อกาว ความทึบแสง ความสามารถในการปั๊มนูน และความทนต่อการกดหรือการใช้งานซ้ำ เช่น แผงควบคุมผู้ใช้ เนมเพลต และชิ้นส่วนในอุตสาหกรรมยานยนต์ หมึกจะทำปฏิกิริยาและแข็งตัวเฉพาะเมื่อได้รับแสง UV ที่มีความยาวคลื่นเหมาะสม โดยความเร็วในการอบขึ้นอยู่กับความหนาของฟิล์มหมึกและพลังงานของหลอด UV และควรอบทันทีหลังการพิมพ์เพื่อให้ได้ประสิทธิภาพสูงสุด ระบบทำงานได้ดีที่สุดเมื่อใช้หลอด UV Mercury Vapor แบบแรงดันปานกลางจำนวน 2 หลอด กำลัง 200 WPI พร้อมชุดโฟกัส ทั้งนี้ MSK เป็นระบบ Non-visual Post-Curing ซึ่งจะเกิดการเชื่อมโครงสร้างของหมึกเพิ่มเติมต่อเนื่องหลังการอบ และจะสมบูรณ์เต็มที่ภายในประมาณ 24 ชั่วโมง นอกจากนี้ Norcote สามารถพัฒนาสีตามความต้องการเฉพาะได้ โดยอ้างอิงจากตัวอย่างงานพิมพ์จริง ตัวอย่างหมึกเปียก หมายเลข Pantone® หรือมาตรฐานสีที่เป็นที่ยอมรับอื่น ๆ ตามที่ลูกค้าจัดเตรียม</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">173</context>
@@ -1044,7 +1044,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.1" datatype="html">
         <source>Excellent adhesion and intercoat adhesion</source>
-        <target>การติดและติดชั้นกลางยอดเยี่ยม</target>
+        <target>การยึดเกาะชั้นตรงกลางยอดเยี่ยม</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">184</context>
@@ -1060,7 +1060,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.3" datatype="html">
         <source>Mesh: 355 TPI (140/cm²) and above for single lamp; 280 TPI (110/cm²) for two lamp systems</source>
-        <target>ตาข่าย: 355 TPI (140/cm²) ขึ้นไปสำหรับหลอดเดียว; 280 TPI (110/cm²) สำหรับระบบ 2 หลอด</target>
+        <target>ผ้าเบอร์: 355 TPI (140/cm²) ขึ้นไปสำหรับหลอดเดียว; 280 TPI (110/cm²) สำหรับระบบ 2 หลอด</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">186</context>
@@ -1068,7 +1068,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.4" datatype="html">
         <source>Stencil: direct or capillary emulsions, UV compatible, 7–10 µm dry thickness</source>
-        <target>สเตนซิล: อิมัลชันโดยตรงหรือเส้นเลือดฝอย ใช้กับ UV ได้ ความหนาแห้ง 7–10 µm</target>
+        <target>สเตนซิล: อิมัลชันแบบเคลือบโดยตรง หรือฟิล์มคาพิลลารีที่รองรับ UV (ความหนา 7–10 µm)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">187</context>
@@ -1076,7 +1076,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.5" datatype="html">
         <source>Squeegee: 80 durometer molded preferred; 70–90 or multi-durometer polyurethane</source>
-        <target>ใบมีด: 80 durometer แบบขึ้นรูปแนะนำ; 70–90 หรือ multi-durometer polyurethane</target>
+        <target>ยางปาด: 80 durometer แบบขึ้นรูปแนะนำ; 70–90 หรือ multi-durometer polyurethane</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">188</context>
@@ -1092,7 +1092,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.7" datatype="html">
         <source>Cure: two 200 wpi focused medium pressure mercury vapor lamps; 200 mJ/cm² @ 600 mW/cm² for most colors; 300 mJ/cm² @ 600+ mW/cm² for opaque colors and metallics</source>
-        <target>การอบ: 2 หลอด 200 wpi ปรอทไอแรงดันกลางแบบโฟกัส; 200 mJ/cm² @ 600 mW/cm² สำหรับสีส่วนใหญ่; 300 mJ/cm² @ 600+ mW/cm² สำหรับสีทึบและเมทัลลิก</target>
+        <target>การอบ: ใช้หลอด Mercury Vapor แบบแรงดันปานกลางพร้อมชุดโฟกัส ขนาด 200 WPI จำนวน 2 หลอด โดยพลังงานที่แนะนำคือ 200 mJ/cm² ที่ความเข้มแสง 600 mW/cm² สำหรับสีทั่วไป และ 300 mJ/cm² ที่ความเข้มแสงมากกว่า 600 mW/cm² สำหรับสีทึบและสีเมทัลลิก</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">190</context>
@@ -1108,7 +1108,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.9" datatype="html">
         <source>MSK-000 Metallic Mixing Clear for metallics; increases viscosity to stabilize pigment suspension</source>
-        <target>MSK-000 Metallic Mixing Clear สำหรับเมทัลลิก; เพิ่มความหนืดเพื่อทำให้เม็ดสีแขวนลอยคงตัว</target>
+        <target>MSK-000 Metallic Mixing Clear สำหรับสำหรับสีเมทัลลิก; เพิ่มความหนืดเพื่อช่วยคงสภาพการกระจายตัวของเม็ดสี</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">192</context>
@@ -1116,7 +1116,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.10" datatype="html">
         <source>Not weatherable for first surface outdoor; can be used for second surface outdoor where protected</source>
-        <target>ไม่ทนสภาพอากาศสำหรับผิวหน้าภายนอก; ใช้ได้สำหรับผิวหลังภายนอกที่ได้รับการป้องกัน</target>
+        <target>ไม่ทนสภาพอากาศสำหรับการพิมพ์ผิวหน้า (First Surface) ภายนอกอาคาร; สามารถใช้กับการพิมพ์ผิวหลัง (Second Surface) ภายนอกอาคารได้เมื่อมีการปกป้องพื้นผิว</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">193</context>
@@ -1132,7 +1132,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.12" datatype="html">
         <source>Fluorescent colors available on request (not light-fast beyond 60–90 days); 230–260 mesh recommended</source>
-        <target>สีเรืองแสงตามคำขอ (ไม่ทนแสงเกิน 60–90 วัน); แนะนำตาข่าย 230–260</target>
+        <target>สีเรืองแสงตามคำขอ (ไม่ทนแสงเกิน 60–90 วัน); แนะนำผ้าเบอร์ 230–260</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">195</context>
@@ -1140,7 +1140,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.13" datatype="html">
         <source>ODMSK-2586-A2 Light-block Ink available (mesh 355.34 pw, two 300 wpi medium pressure mercury lamps)</source>
-        <target>ODMSK-2586-A2 Light-block Ink มีให้ (ตาข่าย 355.34 pw, 2 หลอด 300 wpi ปรอทแรงดันกลาง)</target>
+        <target>ODMSK-2586-A2 Light-block Ink มีให้ (ผ้าเบอร์ 355.34 pw, 2 หลอด 300 wpi ปรอทแรงดันกลาง)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">196</context>
@@ -1156,7 +1156,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.longDescription" datatype="html">
         <source>The 1500 is a UV curable ink system specifically formulated for pressure sensitive decal applications requiring exterior exposure up to five years. 1500 Series inks provide excellent flexibility, eliminating edge curl due to ink film shrinkage, as well as outstanding adhesion properties while being NVP free. Combined with automotive grade pigments, Norcote&apos;s 1500 Series exhibits excellent opacity and light-fastness, resulting in superior overall performance on pressure sensitive vinyls and print treated polyesters. It is the responsibility of the user to pretest all substrates with Norcote products prior to use in production.</source>
-        <target>1500 เป็นระบบหมึก UV ที่ออกแบบพิเศษสำหรับสติกเกอร์กดติดที่ต้องการทนสภาพกลางแจ้งถึง 5 ปี หมึก 1500 Series ให้ความยืดหยุ่นยอดเยี่ยม กำจัดขอบม้วนเนื่องจากหดตัวของฟิล์มหมึก และคุณสมบัติการติดที่ยอดเยี่ยมในขณะที่ไร้ NVP ร่วมกับเม็ดสีเกรดยานยนต์ 1500 Series ของ Norcote แสดงความทึบแสงและความทนแสงยอดเยี่ยม ส่งผลให้ประสิทธิภาพโดยรวมเหนือกว่าในไวนิลกดติดและโพลีเอสเตอร์ที่ผ่านการพิมพ์ เป็นความรับผิดชอบของผู้ใช้ในการทดสอบล่วงหน้าทุกพื้นผิวด้วยผลิตภัณฑ์ Norcote ก่อนใช้ในการผลิต</target>
+        <target>1500 เป็นระบบหมึก UV ที่ออกแบบพิเศษสำหรับสติกเกอร์กดติดที่ต้องการทนสภาพกลางแจ้งถึง 5 ปี หมึก 1500 Series ให้ความยืดหยุ่นยอดเยี่ยม กำจัดขอบม้วนเนื่องจากหดตัวของฟิล์มหมึก และคุณสมบัติการยึดเกาะที่ยอดเยี่ยมในขณะที่ไร้ NVP ร่วมกับเม็ดสีเกรดยานยนต์ 1500 Series ของ Norcote แสดงความทึบแสงและความทนแสงยอดเยี่ยม ส่งผลให้ประสิทธิภาพโดยรวมเหนือกว่าในไวนิลกดติดและโพลีเอสเตอร์ที่ผ่านการพิมพ์ เป็นความรับผิดชอบของผู้ใช้ในการทดสอบล่วงหน้าทุกพื้นผิวด้วยผลิตภัณฑ์ Norcote ก่อนใช้ในการผลิต</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">234</context>
@@ -1172,7 +1172,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.1" datatype="html">
         <source>Not recommended for vinyl with high plasticizer (e.g. static cling); five-year outdoor durability contingent on substrate compatibility</source>
-        <target>ไม่แนะนำสำหรับไวนิลที่มีพลาสติไซเซอร์สูง (เช่น static cling); ความทนทานกลางแจ้ง 5 ปีขึ้นอยู่กับความเข้ากันได้ของพื้นผิว</target>
+        <target>ไม่แนะนำสำหรับไวนิลที่มีปริมาณพลาสติไซเซอร์สูง (เช่น สตาติกคลิงก์); ความทนทานภายนอกอาคาร 5 ปีขึ้นอยู่กับความเข้ากันได้ของวัสดุพิมพ์</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">242</context>
@@ -1188,7 +1188,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.3" datatype="html">
         <source>Excellent solvent &amp; abrasion resistance</source>
-        <target>ความต้านทานตัวทำละลายและการขัดถูยอดเยี่ยม</target>
+        <target>ทนต่อสารทำละลายและการขัดถูยอดเยี่ยม</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">244</context>
@@ -1196,7 +1196,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.4" datatype="html">
         <source>Low shrinkage; NVP free</source>
-        <target>หดตัวต่ำ; ไร้ NVP</target>
+        <target>การหดตัวต่ำ; ไม่ผสมนี–วินิลไพโรลิดิโนน (NVP-Free)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">245</context>
@@ -1204,7 +1204,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.5" datatype="html">
         <source>Mesh: 355 PW and above for single lamp; 305 PW and above for two lamp UV systems</source>
-        <target>ตาข่าย: 355 PW ขึ้นไปสำหรับหลอดเดียว; 305 PW ขึ้นไปสำหรับระบบ UV 2 หลอด</target>
+        <target>ผ้าเบอร์: 355 PW ขึ้นไปสำหรับหลอดเดียว; 305 PW ขึ้นไปสำหรับระบบ UV 2 หลอด</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">246</context>
@@ -1212,7 +1212,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.6" datatype="html">
         <source>Stencil: direct or capillary emulsions, UV compatible, 7–10 µm dry thickness</source>
-        <target>สเตนซิล: อิมัลชันโดยตรงหรือเส้นเลือดฝอย ใช้กับ UV ได้ ความหนาแห้ง 7–10 µm</target>
+        <target>สเตนซิล: อิมัลชันแบบเคลือบโดยตรง หรือฟิล์มคาพิลลารีที่รองรับ UV (7–10 µm)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">247</context>
@@ -1220,7 +1220,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.7" datatype="html">
         <source>Squeegee: cut or molded 70–90 durometer or multi-durometer polyurethane, UV compatible</source>
-        <target>ใบมีด: ตัดหรือขึ้นรูป 70–90 durometer หรือ multi-durometer polyurethane ใช้กับ UV ได้</target>
+        <target>ยางปาด: ตัดหรือขึ้นรูป 70–90 durometer หรือ multi-durometer polyurethane ใช้กับ UV ได้</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">248</context>
@@ -1236,7 +1236,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.9" datatype="html">
         <source>Cure: one 300 W/in or two 200 W/in focused medium pressure mercury vapor lamps; 200 mJ/cm² @ 600 mW/cm² for most colors and clear; 300 mJ/cm² @ 600+ mW/cm² for most opaque colors</source>
-        <target>การอบ: 1 หลอด 300 W/in หรือ 2 หลอด 200 W/in ปรอทไอแรงดันกลางแบบโฟกัส; 200 mJ/cm² @ 600 mW/cm² สำหรับสีส่วนใหญ่และคลียร์; 300 mJ/cm² @ 600+ mW/cm² สำหรับสีทึบส่วนใหญ่</target>
+        <target>การอบ: ใช้หลอด Mercury Vapor แบบแรงดันปานกลางพร้อมชุดโฟกัส ขนาด 300 W/in จำนวน 1 หลอด หรือ 200 W/in จำนวน 2 หลอด โดยพลังงานที่แนะนำคือ 200 mJ/cm² ที่ความเข้มแสง 600 mW/cm² สำหรับสีทั่วไปและหมึกใส และ 300 mJ/cm² ที่ความเข้มแสงมากกว่า 600 mW/cm² สำหรับสีทึบส่วนใหญ่</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">250</context>
@@ -1244,7 +1244,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.10" datatype="html">
         <source>Thinning: up to 10% UVO Universal Thinner or 5–10% 1500-049 Mixing Clear; do not microwave</source>
-        <target>การเจือจาง: UVO Universal Thinner ได้ถึง 10% หรือ 1500-049 Mixing Clear 5–10%; อย่าใช้ไมโครเวฟ</target>
+        <target>การเจือจาง: UVO Universal Thinner ได้ถึง 10% หรือ 1500-049 Mixing Clear 5–10%; ห้ามเข้าไมโครเวฟ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">251</context>
@@ -1252,7 +1252,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.11" datatype="html">
         <source>Non-visual post-curing; cross-linking up to 24 hours; cross hatch tape test (3M 600) after exiting cure unit and cooling</source>
-        <target>หลังอบแบบไม่เห็น; การเชื่อมขวางถึง 24 ชม.; ทดสอบเทป cross hatch (3M 600) หลังออกจากหน่วยอบและเย็นลง</target>
+        <target>ไม่มีการเปลี่ยนแปลงให้เห็นหลังการอบต่อ (Post-Curing); กระบวนการเชื่อมขวาง (Cross-Linking) ดำเนินต่อได้ถึง 24 ชั่วโมง; ทดสอบครอสแฮทช์ด้วยเทป (3M 600) หลังออกจากชุดอบและปล่อยให้เย็นลง</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">252</context>
@@ -1268,7 +1268,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.13" datatype="html">
         <source>Metallics: 1500-011 Metallic Mixing Clear; mesh 195–305 pw generally recommended for metallic pigment transfer</source>
-        <target>เมทัลลิก: 1500-011 Metallic Mixing Clear; โดยทั่วไปแนะนำตาข่าย 195–305 pw สำหรับการถ่ายโอนเม็ดสีเมทัลลิก</target>
+        <target>เมทัลลิก: 1500-011 Metallic Mixing Clear; โดยทั่วไปแนะนำผ้าเบอร์ 195–305 pw สำหรับการถ่ายโอนเม็ดสีเมทัลลิก</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">254</context>
@@ -1276,7 +1276,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.14" datatype="html">
         <source>Fluorescent colors and T-Powders available on request (not light-fast beyond 60–90 days); 230–260 plain weave mesh recommended</source>
-        <target>สีเรืองแสงและ T-Powders ตามคำขอ (ไม่ทนแสงเกิน 60–90 วัน); แนะนำตาข่ายสานธรรมดา 230–260</target>
+        <target>สีเรืองแสงและ T-Powders ตามคำขอ (ไม่ทนแสงเกิน 60–90 วัน); แนะนำผ้าเบอร์สานธรรมดา 230–260</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">255</context>
@@ -1348,7 +1348,7 @@
       </trans-unit>
       <trans-unit id="inks.catalogue.description" datatype="html">
         <source> Our UV screen printing ink series from Norcote International. Each series is designed for specific applications and substrates. More ink types will be added in the future. </source>
-        <target> ซีรีส์หมึกพิมพ์สกรีน UV จาก Norcote International แต่ละซีรีส์ออกแบบสำหรับการใช้งานและพื้นผิวเฉพาะ จะมีประเภทหมึกเพิ่มเติมในอนาคต </target>
+        <target> หมึกพิมพ์ยูวีสกรีนของเรา จาก Norcote International โดยแต่ละซีรีส์ได้รับการออกแบบมาให้เหมาะกับงานพิมพ์และวัสดุเฉพาะทางแตกต่างกันไป และจะมีการเพิ่มประเภทหมึกใหม่ ๆ ในอนาคต </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/inks.component.html</context>
           <context context-type="linenumber">6,9</context>
