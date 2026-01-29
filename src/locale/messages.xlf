@@ -2,6 +2,13 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="home.hero.imageAlt" datatype="html">
+        <source>Sonica Hero</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/hero-background/hero-background.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="footer.companyName" datatype="html">
         <source>Sonica</source>
         <context-group purpose="location">
@@ -178,7 +185,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="footer.copyright" datatype="html">
-        <source>© <x id="INTERPOLATION" equiv-text="{{ currentYear }}"/> Sonica. All rights reserved.</source>
+        <source>© <x id="INTERPOLATION" equiv-text="{{ currentYear() }}"/> Sonica. All rights reserved.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
           <context context-type="linenumber">83,84</context>
@@ -300,245 +307,896 @@
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">51,54</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="home.hero.imageAlt" datatype="html">
-        <source>Sonica Hero</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">2,3</context>
+          <context context-type="linenumber">51,53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.title" datatype="html">
         <source>Welcome to Sonica</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">13,14</context>
+          <context context-type="linenumber">11,12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.subtitle" datatype="html">
         <source>Sole Distributor of Norcote International, Inc. in Thailand</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">14,15</context>
+          <context context-type="linenumber">12,13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.description" datatype="html">
         <source>Experience the future of innovation with cutting-edge UV screen printing technology and design solutions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">15,16</context>
+          <context context-type="linenumber">13,14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.button" datatype="html">
         <source>Get Started</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">16,18</context>
+          <context context-type="linenumber">14,16</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.aboutSonica.title" datatype="html">
         <source>About Sonica</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">24,25</context>
+          <context context-type="linenumber">22,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.aboutSonica.description1" datatype="html">
         <source> Sonica was established in 2000 and has been a trusted leader in the UV screen printing industry. We are the <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>sole distributor of Norcote International, Inc.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> in Thailand, bringing world-class UV screen printing solutions to manufacturers across the country. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">26,30</context>
+          <context context-type="linenumber">24,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.aboutSonica.description2" datatype="html">
         <source> We specialize in providing high-quality UV screen printing inks, premium squeegees, advanced LED/UV curing systems, and precision UV intensity meters. Our commitment to excellence and innovation, combined with our exclusive partnership with Norcote International, has made us a preferred partner for leading manufacturers across Thailand. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">31,35</context>
+          <context context-type="linenumber">29,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.aboutNorcote.title" datatype="html">
         <source>About Norcote International</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="linenumber">36,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.aboutNorcote.description1" datatype="html">
         <source> For over 40 years, Norcote has focused on developing innovative, market-driven UV curable printing inks, helping our customers lead their markets. As your needs evolve, we evolve with you, ensuring our products remain cutting-edge. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">40,44</context>
+          <context context-type="linenumber">38,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.aboutNorcote.description2" datatype="html">
         <source> Whether you&apos;re new to UV printing or a seasoned veteran, our Technical Service team is here to provide the right tools and support, from laboratory testing to on-site troubleshooting, ensuring your projects are completed successfully. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">45,48</context>
+          <context context-type="linenumber">43,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.aboutNorcote.description3" datatype="html">
-        <source> Our team of color experts offers quick and precise color matching, with a turnaround time of one to three days, and provides on-site training with the latest color measurement technology. Additionally, our friendly Customer Service Representatives ensure your orders are handled efficiently and delivered promptly, meeting your expectations every time. </source>
+        <source> Our team of color experts offers quick and precise color matching, and provides on-site training with the latest color measurement technology. Additionally, our friendly Customer Service Representatives ensure your orders are handled efficiently and delivered promptly, meeting your expectations every time. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">49,53</context>
+          <context context-type="linenumber">47,51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.title" datatype="html">
         <source>Our Services</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">56,57</context>
+          <context context-type="linenumber">54,55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.inks.alt" datatype="html">
         <source>UV Screen Printing Inks</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">59,60</context>
+          <context context-type="linenumber">57,58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.inks.title" datatype="html">
         <source>UV Screen Printing Inks</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">61,62</context>
+          <context context-type="linenumber">59,60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.inks.description" datatype="html">
         <source>Premium quality inks for various printing applications with excellent color matching capabilities.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">62,65</context>
+          <context context-type="linenumber">60,63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.colorMatching.alt" datatype="html">
         <source>Color Matching Services</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">66,67</context>
+          <context context-type="linenumber">64,65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.colorMatching.title" datatype="html">
         <source>Color Matching Services</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">68,69</context>
+          <context context-type="linenumber">66,67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.colorMatching.description" datatype="html">
         <source>Professional color matching to ensure perfect color consistency for your projects.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">69,72</context>
+          <context context-type="linenumber">67,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.consulting.alt" datatype="html">
         <source>Technical Consulting</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">73,74</context>
+          <context context-type="linenumber">71,72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.consulting.title" datatype="html">
         <source>Technical Consulting</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">75,76</context>
+          <context context-type="linenumber">73,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.consulting.description" datatype="html">
         <source>Expert guidance to optimize your printing processes and improve efficiency.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">76,79</context>
+          <context context-type="linenumber">74,77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.equipment.alt" datatype="html">
         <source>Equipment Solutions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">80,81</context>
+          <context context-type="linenumber">78,79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.equipment.title" datatype="html">
         <source>Equipment Solutions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">82,83</context>
+          <context context-type="linenumber">80,81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.services.equipment.description" datatype="html">
         <source>State-of-the-art LED/UV curing systems and UV intensity meters for quality control.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">83,87</context>
+          <context context-type="linenumber">81,85</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.whyChoose.title" datatype="html">
         <source>Why Choose Sonica?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">90,91</context>
+          <context context-type="linenumber">88,89</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.whyChoose.experience.title" datatype="html">
         <source>25+ Years Experience</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">93,94</context>
+          <context context-type="linenumber">91,92</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.whyChoose.experience.description" datatype="html">
         <source>Extensive industry knowledge and expertise since 2000</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">94,96</context>
+          <context context-type="linenumber">92,94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.whyChoose.quality.title" datatype="html">
         <source>Quality Products</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">97,98</context>
+          <context context-type="linenumber">95,96</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.whyChoose.quality.description" datatype="html">
         <source>Premium materials trusted by leading manufacturers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">98,100</context>
+          <context context-type="linenumber">96,98</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.whyChoose.support.title" datatype="html">
         <source>Expert Support</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">101,102</context>
+          <context context-type="linenumber">99,100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.whyChoose.support.description" datatype="html">
         <source>Comprehensive technical consulting and customer service</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">102,104</context>
+          <context context-type="linenumber">100,102</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.whyChoose.innovation.title" datatype="html">
         <source>Innovation</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">105,106</context>
+          <context context-type="linenumber">103,104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.whyChoose.innovation.description" datatype="html">
         <source>Cutting-edge technology and solutions for modern printing needs</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">106,110</context>
+          <context context-type="linenumber">104,108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.backToCatalogue" datatype="html">
+        <source>← Back to ink catalogue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.screenPrinting" datatype="html">
+        <source>Screen Printing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.overview" datatype="html">
+        <source>Overview</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.applications" datatype="html">
+        <source>Applications</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.substrates" datatype="html">
+        <source>Substrates</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.features" datatype="html">
+        <source>Features</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.standardColors" datatype="html">
+        <source>Standard Colors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.soldByWeight" datatype="html">
+        <source>Sold by weight. KG in part code indicates kg per US gallon container.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.footnote1" datatype="html">
+        <source>¹ May not be suitable for lightfast applications. Prolonged exposure to direct sunlight not recommended.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.footnote2" datatype="html">
+        <source>² Avoid using in color matches; these colors contain multiple pigments.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">72,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.processColors" datatype="html">
+        <source>Process Colors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.colorMatchingGuide" datatype="html">
+        <source>Color Matching Guide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">102,104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.transparents" datatype="html">
+        <source>Transparents</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">122,123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.transparentShelfLife" datatype="html">
+        <source>Transparent inks have a shelf life of 1 year from date of manufacture when stored under proper conditions.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">123,125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.whitesBlacksClears" datatype="html">
+        <source>Whites, Blacks &amp; Clears</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">143,145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.texturedClears" datatype="html">
+        <source>Textured Clears</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">157,158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.texturedClearsShelfLife" datatype="html">
+        <source>Textured clears have a shelf life of 1 year from date of manufacture when stored under proper conditions.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">158,160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.detail.contactUs" datatype="html">
+        <source>Contact us for more info</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
+          <context context-type="linenumber">174,177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2750456055320728274" datatype="html">
+        <source>May not be suitable for lightfast applications. Prolonged exposure to direct sunlight not recommended.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2563614145653608063" datatype="html">
+        <source>Avoid using in color matches; these colors contain multiple pigments.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4102044457124597546" datatype="html">
+        <source>Halogen free per the International Electrotechnical Commission standard IEC 61249-2-21, or may not be suitable for lightfast applications and is not recommended for prolonged exposure to direct sunlight.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.70g.name" datatype="html">
+        <source>70G Series</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.70g.shortDescription" datatype="html">
+        <source>One-part, dual cure UV/LED screen ink for glass and plastic containers. High adhesion, chemical and water resistance.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.name" datatype="html">
+        <source>PPC Series</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.shortDescription" datatype="html">
+        <source>One-part UV screen ink for containers. Chemical resistant, quick curing, superb gloss, high definition. No additives required; excellent intercoat. All colors intermixable.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.name" datatype="html">
+        <source>MSK Series</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.shortDescription" datatype="html">
+        <source>High-end UV curable second surface ink for industrial graphics. Extremely flexible, embossable, excellent adhesion. For user interface overlays, nameplates, automotive.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.name" datatype="html">
+        <source>1500 Series</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.shortDescription" datatype="html">
+        <source>UV curable ink system for pressure sensitive decals with 3–5 years exterior exposure. Excellent flexibility, adhesion, opacity; NVP free. For pressure sensitive vinyls and print treated polyesters.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.specialty.name" datatype="html">
+        <source>Specialty Screen Series</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.specialty.shortDescription" datatype="html">
+        <source>Specialty UV screen inks for decorative, metallic, and effect applications. Contact us for availability.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.70g.longDescription" datatype="html">
+        <source>The 70G Series is a one-part, dual cure ink system formulated to meet the requirements needed for printing on glass and plastic bottles commonly used in the container market. It can be cured with UV or LED systems (365–405 nm) or with traditional UV mercury or iron-doped curing systems. Cross-linking continues for up to 24 hours after printing; adhesion should be tested after cooling to room temperature.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.70g.features.0" datatype="html">
+        <source>Dual cure: UV and LED (365–405 nm)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.70g.features.1" datatype="html">
+        <source>Plain weave polyester mesh 305+ TPI (120+ threads/cm) recommended</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.70g.features.2" datatype="html">
+        <source>70G-070 Thinner up to 10% by weight if needed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.70g.features.3" datatype="html">
+        <source>Additives available for difficult adhesion (70G-000KG4, CUR-800, ADC-172, ADH-067, DK-072)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.70g.features.4" datatype="html">
+        <source>Metallic pastes and pigments supported (70G-000KG4 Mixing Base)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.70g.features.5" datatype="html">
+        <source>Fluorescent colors available on request</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.70g.features.6" datatype="html">
+        <source>Sold by weight; KG in part code = kg per US gallon container</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.longDescription" datatype="html">
+        <source>The PPC Series is a one-part UV curable ink system designed for direct printing on common container applications. Suitable for treated HDPE, LDPE, polypropylene, styrene, PET, and PVC. PET may require flame treatment for adhesion; for thin-walled PVC, embrittlement can occur (04 Series may be better for PVC). Inks are supplied at print-ready viscosity; PPC-070 Thinner or PPC-049 Overprint Clear can be used to thin. Curing: UV light 280–400 nm; fast cure with one 300 W/in or two 200 W/in medium pressure mercury vapor lamps. Non-visual post-curing with cross-linking up to 24 hours. All PPC Series colors are intermixable. Custom and specific colors can be matched at Norcote with print sample, wet ink sample, or Pantone® numbers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.features.0" datatype="html">
+        <source>One part; no additives required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.features.1" datatype="html">
+        <source>Chemical resistant; quick curing; superb gloss; high definition</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.features.2" datatype="html">
+        <source>Excellent intercoat adhesion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.features.3" datatype="html">
+        <source>Mesh: 355 TPI and higher (140/cm²) low elongation monofilament polyester; tension 18–25 N/cm²</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.features.4" datatype="html">
+        <source>Stencil: direct emulsions and thin capillary films (15–25 µm)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.features.5" datatype="html">
+        <source>Squeegee: sharp 80 shore durometer polyurethane preferred (60–90 or dual durometer)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.features.6" datatype="html">
+        <source>Coverage: approximately 2,500 sq ft per gallon</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.features.7" datatype="html">
+        <source>PPC-000 Mixing Base for metallics/fluorescent; add into pigmented ink only (reactive to light)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.features.8" datatype="html">
+        <source>Fluorescent colors and T-Powders available on request</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.features.9" datatype="html">
+        <source>Screen cleaning: conventional solvent; avoid alcohol. Norcote Press Wash 110, 140, or NSW-824</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.ppc.features.10" datatype="html">
+        <source>Standard warranty: 1 year from date of sale (no additives); see bulletin for custom colors and limitations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.longDescription" datatype="html">
+        <source>The MSK Series is a high-end, UV curable, second surface ink system specifically formulated for use on substrates common to the industrial graphics market, such as polycarbonate, print treated polyesters, and PC/PET blends. Suitable for demanding applications where adhesive resistance, opacity, embossability, and actuation resistance are required, such as user interface overlays, nameplates, and automotive applications. MSK Series inks cure only when exposed to UV light of the proper wavelength. Curing speeds depend on ink film thickness and lamp energy level; ink should be cured immediately after printing. Works best with two 200 wpi focused medium pressure mercury vapor lamps. MSK is a non-visual post-curing system with further cross-linking occurring up to 24 hours later. Custom and specific colors can be matched at Norcote with customer-supplied print sample, wet ink sample, Pantone® numbers, or other recognized standards.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.0" datatype="html">
+        <source>Extremely flexible; embossable</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.1" datatype="html">
+        <source>Excellent adhesion and intercoat adhesion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.2" datatype="html">
+        <source>Very opaque; outstanding print definition</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">185</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.3" datatype="html">
+        <source>Mesh: 355 TPI (140/cm²) and above for single lamp; 280 TPI (110/cm²) for two lamp systems</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">186</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.4" datatype="html">
+        <source>Stencil: direct or capillary emulsions, UV compatible, 7–10 µm dry thickness</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.5" datatype="html">
+        <source>Squeegee: 80 durometer molded preferred; 70–90 or multi-durometer polyurethane</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.6" datatype="html">
+        <source>Coverage: approximately 2,200–3,200 sq ft per gallon (0.40–0.60 mil film deposit)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">189</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.7" datatype="html">
+        <source>Cure: two 200 wpi focused medium pressure mercury vapor lamps; 200 mJ/cm² @ 600 mW/cm² for most colors; 300 mJ/cm² @ 600+ mW/cm² for opaque colors and metallics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.8" datatype="html">
+        <source>Thinner: up to 10% MSK-070 Thinner or 5–10% MSK-049 Mixing Clear</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.9" datatype="html">
+        <source>MSK-000 Metallic Mixing Clear for metallics; increases viscosity to stabilize pigment suspension</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.10" datatype="html">
+        <source>Not weatherable for first surface outdoor; can be used for second surface outdoor where protected</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.11" datatype="html">
+        <source>Screen cleaning: conventional solvent; avoid alcohol. Norcote Press Wash 110, 140, or NSW-824</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.12" datatype="html">
+        <source>Fluorescent colors available on request (not light-fast beyond 60–90 days); 230–260 mesh recommended</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.13" datatype="html">
+        <source>ODMSK-2586-A2 Light-block Ink available (mesh 355.34 pw, two 300 wpi medium pressure mercury lamps)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.msk.features.14" datatype="html">
+        <source>Standard warranty: 1 year from date of sale (no additives); see bulletin for custom colors and limitations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.longDescription" datatype="html">
+        <source>The 1500 is a UV curable ink system specifically formulated for pressure sensitive decal applications requiring exterior exposure up to five years. 1500 Series inks provide excellent flexibility, eliminating edge curl due to ink film shrinkage, as well as outstanding adhesion properties while being NVP free. Combined with automotive grade pigments, Norcote&apos;s 1500 Series exhibits excellent opacity and light-fastness, resulting in superior overall performance on pressure sensitive vinyls and print treated polyesters. It is the responsibility of the user to pretest all substrates with Norcote products prior to use in production.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">234</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.0" datatype="html">
+        <source>Recommended for 3–5 years exterior exposure</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">241</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.1" datatype="html">
+        <source>Not recommended for vinyl with high plasticizer (e.g. static cling); five-year outdoor durability contingent on substrate compatibility</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">242</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.2" datatype="html">
+        <source>Excellent opacity; high gloss</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">243</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.3" datatype="html">
+        <source>Excellent solvent &amp; abrasion resistance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.4" datatype="html">
+        <source>Low shrinkage; NVP free</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.5" datatype="html">
+        <source>Mesh: 355 PW and above for single lamp; 305 PW and above for two lamp UV systems</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">246</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.6" datatype="html">
+        <source>Stencil: direct or capillary emulsions, UV compatible, 7–10 µm dry thickness</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">247</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.7" datatype="html">
+        <source>Squeegee: cut or molded 70–90 durometer or multi-durometer polyurethane, UV compatible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">248</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.8" datatype="html">
+        <source>Coverage: 3,200–3,600 sq ft per gallon (0.40–0.60 mil film deposit)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">249</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.9" datatype="html">
+        <source>Cure: one 300 W/in or two 200 W/in focused medium pressure mercury vapor lamps; 200 mJ/cm² @ 600 mW/cm² for most colors and clear; 300 mJ/cm² @ 600+ mW/cm² for most opaque colors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.10" datatype="html">
+        <source>Thinning: up to 10% UVO Universal Thinner or 5–10% 1500-049 Mixing Clear; do not microwave</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">251</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.11" datatype="html">
+        <source>Non-visual post-curing; cross-linking up to 24 hours; cross hatch tape test (3M 600) after exiting cure unit and cooling</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.12" datatype="html">
+        <source>1500-C1094 Sunblock Clear recommended to increase outdoor durability and light-fastness</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">253</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.13" datatype="html">
+        <source>Metallics: 1500-011 Metallic Mixing Clear; mesh 195–305 pw generally recommended for metallic pigment transfer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">254</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.14" datatype="html">
+        <source>Fluorescent colors and T-Powders available on request (not light-fast beyond 60–90 days); 230–260 plain weave mesh recommended</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">255</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.15" datatype="html">
+        <source>Clean-up: conventional solvent; avoid alcohol. Norcote Press Wash 110, 140, or NSW-824</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">256</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.1500.features.16" datatype="html">
+        <source>Standard warranty: 1 year from date of sale (no additives); 1 month for custom colors containing DayGlo® JZB or T-Powder; custom colors with metallic pastes or intermixed competitor products not warranted</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">257</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.specialty.longDescription" datatype="html">
+        <source>Specialty UV screen inks for decorative, metallic, and special-effect applications. Availability and specifications vary; contact us for technical bulletins and recommendations.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">310</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.specialty.features.0" datatype="html">
+        <source>Metallics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">314</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.specialty.features.1" datatype="html">
+        <source>Pearlescent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.specialty.features.2" datatype="html">
+        <source>Custom effects</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">316</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.series.specialty.features.3" datatype="html">
+        <source>Technical support</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
+          <context context-type="linenumber">317</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.catalogue.title" datatype="html">
+        <source>UV Screen Printing Inks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/inks.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.catalogue.description" datatype="html">
+        <source> Our UV screen printing ink series from Norcote International. Each series is designed for specific applications and substrates. More ink types will be added in the future. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/inks.component.html</context>
+          <context context-type="linenumber">6,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.catalogue.screenPrinting" datatype="html">
+        <source>Screen Printing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/inks.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inks.catalogue.viewDetails" datatype="html">
+        <source>View details →</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/products/inks/inks.component.html</context>
+          <context context-type="linenumber">24,27</context>
         </context-group>
       </trans-unit>
     </body>
