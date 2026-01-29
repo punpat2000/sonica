@@ -1,0 +1,30 @@
+<div class="inks-container">
+  <section class="inks-intro">
+    <div class="glass-card intro-card">
+      <h1 class="page-title" i18n="@@inks.catalogue.title">UV Screen Printing Inks</h1>
+      <p class="page-description" i18n="@@inks.catalogue.description">
+        Our UV screen printing ink series from Norcote International. Each series is designed for specific applications and substrates. More ink types will be added in the future.
+      </p>
+    </div>
+  </section>
+
+  <section class="inks-catalogue">
+    <div class="catalogue-grid">
+      @for (ink of inkSeries; track ink.slug) {
+        <a [routerLink]="['/products/inks', ink.slug]" class="glass-card ink-card">
+          @if (ink.imagePath) {
+            <div class="ink-card-image">
+              <img [ngSrc]="ink.imagePath" [alt]="ink.name" width="400" height="300" class="card-image">
+            </div>
+          }
+          <div class="ink-card-body">
+            <span class="ink-type-badge" i18n="@@inks.catalogue.screenPrinting">Screen Printing</span>
+            <h2 class="ink-name">{{ ink.name }}</h2>
+            <p class="ink-description">{{ ink.shortDescription }}</p>
+            <span class="ink-link" i18n="@@inks.catalogue.viewDetails">View details →</span>
+          </div>
+        </a>
+      }
+    </div>
+  </section>
+</div>
