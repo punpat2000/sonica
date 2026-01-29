@@ -54,17 +54,19 @@
           @if (inkData.slug === '70g-series') {
             <p class="detail-note" i18n="@@inks.detail.soldByWeight">Sold by weight. KG in part code indicates kg per US gallon container.</p>
           }
-          <div class="colors-grid">
+          <ul class="colors-grid" role="list">
             @for (c of inkData.standardColors; track c.code) {
-              <div class="color-item">
-                <span class="color-code">{{ c.code }}</span>
-                <span class="color-name">{{ c.name }}</span>
-                @if (c.note) {
-                  <span class="color-note" [attr.title]="getColorNoteLabel(c.note)">{{ c.note }}</span>
-                }
-              </div>
+              <li class="color-card">
+                <span class="color-card__code">{{ c.code }}</span>
+                <div class="color-card__main">
+                  <span class="color-card__name">{{ c.name }}</span>
+                  @if (c.note) {
+                    <span class="color-card__note" [attr.title]="getColorNoteLabel(c.note)">{{ c.note }}</span>
+                  }
+                </div>
+              </li>
             }
-          </div>
+          </ul>
           @if (inkData.slug === 'msk-series') {
             <p class="detail-footnote">* Halogen free per the International Electrotechnical Commission standard IEC 61249-2-21, or may not be suitable for lightfast applications and is not recommended for prolonged exposure to direct sunlight.</p>
           } @else if (inkData.slug === '70g-series' || inkData.slug === 'ppc-series') {
@@ -80,37 +82,41 @@
           @if (inkData.slug === '1500-series') {
             <p class="detail-note">1500 Series four color process colors exceed SWOP standards. Variation of densities may be achieved with 1500-450 Halftone Base. Plain weave mesh with thread count suitable for LPI and smooth (low rz) stencil with OEM &gt;7 recommended.</p>
           }
-          <div class="colors-grid">
+          <ul class="colors-grid" role="list">
             @for (c of inkData.processColors; track c.code) {
-              <div class="color-item">
-                <span class="color-code">{{ c.code }}</span>
-                <span class="color-name">{{ c.name }}</span>
-                @if (c.density) {
-                  <span class="color-density">Density: {{ c.density }}</span>
-                }
-                @if (c.note) {
-                  <span class="color-note" [attr.title]="getColorNoteLabel(c.note)">{{ c.note }}</span>
-                }
-              </div>
+              <li class="color-card color-card--process">
+                <span class="color-card__code">{{ c.code }}</span>
+                <div class="color-card__main">
+                  <span class="color-card__name">{{ c.name }}</span>
+                  @if (c.density) {
+                    <span class="color-card__meta">Density: {{ c.density }}</span>
+                  }
+                  @if (c.note) {
+                    <span class="color-card__note" [attr.title]="getColorNoteLabel(c.note)">{{ c.note }}</span>
+                  }
+                </div>
+              </li>
             }
-          </div>
+          </ul>
         </div>
       }
 
       @if (inkData.colorMatchingGuide?.length) {
         <div class="detail-section">
           <h2 class="section-heading" i18n="@@inks.detail.colorMatchingGuide">Color Matching Guide</h2>
-          <div class="colors-grid">
+          <ul class="colors-grid" role="list">
             @for (c of inkData.colorMatchingGuide; track c.code) {
-              <div class="color-item">
-                <span class="color-code">{{ c.code }}</span>
-                <span class="color-name">{{ c.name }}</span>
-                @if (c.note) {
-                  <span class="color-note" [attr.title]="getColorNoteLabel(c.note)">{{ c.note }}</span>
-                }
-              </div>
+              <li class="color-card">
+                <span class="color-card__code">{{ c.code }}</span>
+                <div class="color-card__main">
+                  <span class="color-card__name">{{ c.name }}</span>
+                  @if (c.note) {
+                    <span class="color-card__note" [attr.title]="getColorNoteLabel(c.note)">{{ c.note }}</span>
+                  }
+                </div>
+              </li>
             }
-          </div>
+          </ul>
           @if (inkData.slug === '1500-series') {
             <p class="detail-footnote">* Used in Norcote's Color Matching Guide.</p>
           }
@@ -121,17 +127,19 @@
         <div class="detail-section">
           <h2 class="section-heading" i18n="@@inks.detail.transparents">Transparents</h2>
           <p class="detail-note" i18n="@@inks.detail.transparentShelfLife">Transparent inks have a shelf life of 1 year from date of manufacture when stored under proper conditions.</p>
-          <div class="colors-grid">
+          <ul class="colors-grid" role="list">
             @for (c of inkData.transparents; track c.code) {
-              <div class="color-item">
-                <span class="color-code">{{ c.code }}</span>
-                <span class="color-name">{{ c.name }}</span>
-                @if (c.note) {
-                  <span class="color-note" [attr.title]="getColorNoteLabel(c.note)">{{ c.note }}</span>
-                }
-              </div>
+              <li class="color-card">
+                <span class="color-card__code">{{ c.code }}</span>
+                <div class="color-card__main">
+                  <span class="color-card__name">{{ c.name }}</span>
+                  @if (c.note) {
+                    <span class="color-card__note" [attr.title]="getColorNoteLabel(c.note)">{{ c.note }}</span>
+                  }
+                </div>
+              </li>
             }
-          </div>
+          </ul>
           @if (inkData.slug === 'msk-series') {
             <p class="detail-footnote">* Halogen free per the International Electrotechnical Commission standard IEC 61249-2-21, or may not be suitable for lightfast applications and is not recommended for prolonged exposure to direct sunlight.</p>
           }
@@ -141,14 +149,16 @@
       @if (inkData.basesAndClears?.length) {
         <div class="detail-section">
           <h2 class="section-heading" i18n="@@inks.detail.whitesBlacksClears">Whites, Blacks & Clears</h2>
-          <div class="colors-grid">
+          <ul class="colors-grid" role="list">
             @for (b of inkData.basesAndClears; track b.code) {
-              <div class="color-item">
-                <span class="color-code">{{ b.code }}</span>
-                <span class="color-name">{{ b.name }}</span>
-              </div>
+              <li class="color-card">
+                <span class="color-card__code">{{ b.code }}</span>
+                <div class="color-card__main">
+                  <span class="color-card__name">{{ b.name }}</span>
+                </div>
+              </li>
             }
-          </div>
+          </ul>
         </div>
       }
 
@@ -156,17 +166,19 @@
         <div class="detail-section">
           <h2 class="section-heading" i18n="@@inks.detail.texturedClears">Textured Clears</h2>
           <p class="detail-note" i18n="@@inks.detail.texturedClearsShelfLife">Textured clears have a shelf life of 1 year from date of manufacture when stored under proper conditions.</p>
-          <div class="colors-grid">
+          <ul class="colors-grid" role="list">
             @for (c of inkData.texturedClears; track c.code) {
-              <div class="color-item">
-                <span class="color-code">{{ c.code }}</span>
-                <span class="color-name">{{ c.name }}</span>
-                @if (c.leadTime) {
-                  <span class="color-leadtime">{{ c.leadTime }}</span>
-                }
-              </div>
+              <li class="color-card color-card--textured">
+                <span class="color-card__code">{{ c.code }}</span>
+                <div class="color-card__main">
+                  <span class="color-card__name">{{ c.name }}</span>
+                  @if (c.leadTime) {
+                    <span class="color-card__meta color-card__meta--lead">{{ c.leadTime }}</span>
+                  }
+                </div>
+              </li>
             }
-          </div>
+          </ul>
         </div>
       }
 
