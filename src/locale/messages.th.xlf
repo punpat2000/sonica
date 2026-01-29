@@ -716,7 +716,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.transparents" datatype="html">
         <source>Transparents</source>
-        <target>หมึกโปร่งใส</target>
+        <target>หมึกแลคเกอร์ (เคลียร์/โปร่งใส)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">122,123</context>
@@ -724,7 +724,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.transparentShelfLife" datatype="html">
         <source>Transparent inks have a shelf life of 1 year from date of manufacture when stored under proper conditions.</source>
-        <target>หมึกโปร่งใสมีอายุการเก็บรักษา 1 ปีนับจากวันผลิตเมื่อเก็บในสภาพที่เหมาะสม</target>
+        <target>หมึกแลคเกอร์มีอายุการเก็บรักษา 1 ปีนับจากวันผลิตเมื่อเก็บในสภาพที่เหมาะสม</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">123,125</context>
@@ -732,7 +732,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.whitesBlacksClears" datatype="html">
         <source>Whites, Blacks &amp; Clears</source>
-        <target>สีขาว สีดำ และคลียร์</target>
+        <target>สีขาว สีดำ และแลคเกอร์</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">143,145</context>
@@ -740,7 +740,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.texturedClears" datatype="html">
         <source>Textured Clears</source>
-        <target>คลียร์พื้นผิว</target>
+        <target>แลคเกอร์ชนิดมีผิวสัมผัส</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">157,158</context>
@@ -748,7 +748,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.texturedClearsShelfLife" datatype="html">
         <source>Textured clears have a shelf life of 1 year from date of manufacture when stored under proper conditions.</source>
-        <target>คลียร์พื้นผิวมีอายุการเก็บรักษา 1 ปีนับจากวันผลิตเมื่อเก็บในสภาพที่เหมาะสม</target>
+        <target>แลคเกอร์ชนิดมีผิวสัมผัสมีอายุการเก็บรักษา 1 ปีนับจากวันผลิตเมื่อเก็บในสภาพที่เหมาะสม</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">158,160</context>
