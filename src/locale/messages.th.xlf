@@ -212,7 +212,7 @@
       </trans-unit>
       <trans-unit id="footer.copyright" datatype="html">
         <source>© <x id="INTERPOLATION" equiv-text="{{ currentYear() }}"/> Sonica. All rights reserved.</source>
-        <target>© <x id="INTERPOLATION" equiv-text="{{ currentYear }}"/> บริษัท โซนิก้า จำกัด สงวนลิขสิทธิ์</target>
+        <target>© <x id="INTERPOLATION" equiv-text="{{ currentYear() }}"/> บริษัท โซนิก้า จำกัด สงวนลิขสิทธิ์</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
           <context context-type="linenumber">83,84</context>

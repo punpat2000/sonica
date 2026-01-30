@@ -212,7 +212,7 @@
       </trans-unit>
       <trans-unit id="footer.copyright" datatype="html">
         <source>© <x id="INTERPOLATION" equiv-text="{{ currentYear() }}"/> Sonica. All rights reserved.</source>
-        <target>© <x id="INTERPOLATION" equiv-text="{{ currentYear }}"/> Sonica。保留所有权利。</target>
+        <target>© <x id="INTERPOLATION" equiv-text="{{ currentYear() }}"/> Sonica。保留所有权利。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
           <context context-type="linenumber">83,84</context>
@@ -372,7 +372,7 @@
       </trans-unit>
       <trans-unit id="home.hero.description" datatype="html">
         <source>Experience the future of innovation with cutting-edge UV screen printing technology and design solutions</source>
-        <target>体验创新的未来，采用尖端的UV丝网印刷技术和设计解决方案</target>
+        <target>以尖端 UV 丝网印刷技术与设计解决方案，带您体验创新的未来</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">13,14</context>
@@ -700,7 +700,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.processColors" datatype="html">
         <source>Process Colors</source>
-        <target>四色印刷</target>
+        <target>CMYK 四色油墨</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">79,80</context>
@@ -732,7 +732,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.whitesBlacksClears" datatype="html">
         <source>Whites, Blacks &amp; Clears</source>
-        <target>白、黑与透明</target>
+        <target>白墨、黑墨与透明墨</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">143,145</context>
@@ -740,7 +740,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.texturedClears" datatype="html">
         <source>Textured Clears</source>
-        <target>纹理透明</target>
+        <target>纹理透明油墨</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">157,158</context>
@@ -748,7 +748,7 @@
       </trans-unit>
       <trans-unit id="inks.detail.texturedClearsShelfLife" datatype="html">
         <source>Textured clears have a shelf life of 1 year from date of manufacture when stored under proper conditions.</source>
-        <target>纹理透明在适当条件下储存时，自生产日期起保质期为 1 年。</target>
+        <target>纹理透明油墨在适当条件下储存时，自生产日期起保质期为 1 年。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
           <context context-type="linenumber">158,160</context>
@@ -1044,7 +1044,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.1" datatype="html">
         <source>Excellent adhesion and intercoat adhesion</source>
-        <target>Excellent adhesion and intercoat adhesion</target>
+        <target>附着力和层间附着力极佳</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">184</context>
@@ -1060,7 +1060,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.3" datatype="html">
         <source>Mesh: 355 TPI (140/cm²) and above for single lamp; 280 TPI (110/cm²) for two lamp systems</source>
-        <target>Mesh: 355 TPI (140/cm²) and above for single lamp; 280 TPI (110/cm²) for two lamp systems</target>
+        <target>网版：单灯设备使用 355 TPI（140/cm²）及以上；双灯设备使用 280 TPI（110/cm²）</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">186</context>
@@ -1092,7 +1092,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.7" datatype="html">
         <source>Cure: two 200 wpi focused medium pressure mercury vapor lamps; 200 mJ/cm² @ 600 mW/cm² for most colors; 300 mJ/cm² @ 600+ mW/cm² for opaque colors and metallics</source>
-        <target>Cure: two 200 wpi focused medium pressure mercury vapor lamps; 200 mJ/cm² @ 600 mW/cm² for most colors; 300 mJ/cm² @ 600+ mW/cm² for opaque colors and metallics</target>
+        <target>固化：使用两支 200 wpi 聚焦中压汞灯；多数颜色 200 mJ/cm²、600 mW/cm²；不透明色和金属色 300 mJ/cm²、600+ mW/cm²</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">190</context>
@@ -1108,7 +1108,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.9" datatype="html">
         <source>MSK-000 Metallic Mixing Clear for metallics; increases viscosity to stabilize pigment suspension</source>
-        <target>MSK-000 Metallic Mixing Clear for metallics; increases viscosity to stabilize pigment suspension</target>
+        <target>MSK-000 金属调合清漆，适用于金属色；提高粘度以稳定颜料悬浮</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">192</context>
@@ -1180,7 +1180,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.2" datatype="html">
         <source>Excellent opacity; high gloss</source>
-        <target>Excellent opacity; high gloss</target>
+        <target>遮盖力优异；高光泽</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">243</context>
@@ -1228,7 +1228,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.8" datatype="html">
         <source>Coverage: 3,200–3,600 sq ft per gallon (0.40–0.60 mil film deposit)</source>
-        <target>Coverage: 3,200–3,600 sq ft per gallon (0.40–0.60 mil film deposit)</target>
+        <target>覆盖率：约 3,200–3,600 平方英尺/加仑（0.40–0.60 mil 膜厚）</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">249</context>
@@ -1268,7 +1268,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.13" datatype="html">
         <source>Metallics: 1500-011 Metallic Mixing Clear; mesh 195–305 pw generally recommended for metallic pigment transfer</source>
-        <target>Metallics: 1500-011 Metallic Mixing Clear; mesh 195–305 pw generally recommended for metallic pigment transfer</target>
+        <target>金属色：使用 1500-011 Metallic Mixing Clear；一般推荐 195–305 pw 网版以利金属颜料转移</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">254</context>
