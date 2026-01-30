@@ -9,10 +9,10 @@ import { getInkSeriesDetail, type InkSeriesDetail } from '../ink-series.model';
   styleUrl: './ink-detail.component.scss',
 })
 export class InkDetailComponent implements OnInit {
-  private route = inject(ActivatedRoute);
-  private router = inject(Router);
+  private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
 
-  ink = signal<InkSeriesDetail | null>(null);
+  protected ink = signal<InkSeriesDetail | null>(null);
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
