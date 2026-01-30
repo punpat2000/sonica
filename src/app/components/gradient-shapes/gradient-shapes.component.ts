@@ -1,4 +1,4 @@
-import { Component, PLATFORM_ID, inject, signal } from '@angular/core';
+import { Component, PLATFORM_ID, inject, signal, AfterViewInit, Renderer2 } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 
 interface GradientShape {
@@ -20,8 +20,11 @@ interface GradientShape {
   templateUrl: './gradient-shapes.component.html',
   styleUrl: './gradient-shapes.component.scss',
 })
-export class GradientShapesComponent {
+export class GradientShapesComponent implements AfterViewInit {
+  visible = signal(false);
+
   private readonly platformId = inject(PLATFORM_ID);
+  private readonly renderer = inject(Renderer2);
 
   shapes = signal<GradientShape[]>([]);
 
@@ -57,6 +60,16 @@ export class GradientShapesComponent {
     if (isPlatformBrowser(this.platformId)) {
       this.generateShapes();
     }
+  }
+
+  ngAfterViewInit(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        this.visible.set(true);
+      });
+    });
   }
 
   private generateShapes(): void {
