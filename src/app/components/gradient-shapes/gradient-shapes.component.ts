@@ -1,4 +1,4 @@
-import { Component, PLATFORM_ID, inject, signal, AfterViewInit, Renderer2 } from '@angular/core';
+import { Component, PLATFORM_ID, inject, signal, AfterViewInit, OnInit } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
 interface GradientShape {
@@ -16,17 +16,15 @@ interface GradientShape {
 
 @Component({
   selector: 'app-gradient-shapes',
-  imports: [],
   templateUrl: './gradient-shapes.component.html',
   styleUrl: './gradient-shapes.component.scss',
 })
-export class GradientShapesComponent implements AfterViewInit {
-  visible = signal(false);
+export class GradientShapesComponent implements AfterViewInit, OnInit {
 
   private readonly platformId = inject(PLATFORM_ID);
-  private readonly renderer = inject(Renderer2);
 
-  shapes = signal<GradientShape[]>([]);
+  protected visible = signal(false);
+  protected shapes = signal<GradientShape[]>([]);
 
   // Color palette for gradients
   private readonly colorPalette = [
@@ -54,7 +52,7 @@ export class GradientShapesComponent implements AfterViewInit {
     { c1: '#06ffa5', c2: '#ffbe0b' },
   ];
 
-  constructor() {
+  ngOnInit(): void {
     // Generate shapes only on client, not on server
     // This avoids any SSR/hydration issues and keeps the server HTML clean
     if (isPlatformBrowser(this.platformId)) {

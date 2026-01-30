@@ -16,7 +16,6 @@ import { HeroBackgroundComponent } from './components/hero-background/hero-backg
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'sonica';
   private readonly meta = inject(Meta);
   private readonly titleService = inject(Title);
   private readonly locale = inject(LOCALE_ID);
@@ -25,7 +24,7 @@ export class AppComponent implements OnInit, OnDestroy {
   private routerSubscription?: Subscription;
 
   // Signal to track which background to use (default: gradient)
-  useHeroBackground = signal(false);
+  protected useHeroBackground = signal(false);
 
   // SEO titles for different languages
   private readonly seoTitles: Record<string, string> = {
