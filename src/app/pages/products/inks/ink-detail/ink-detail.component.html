@@ -1,0 +1,190 @@
+@if (ink(); as inkData) {
+  <div class="detail-container">
+    <a routerLink="/products/inks" class="back-link" i18n="@@inks.detail.backToCatalogue">← Back to ink catalogue</a>
+
+    <article class="glass-card detail-card">
+      <span class="ink-category" i18n="@@inks.detail.screenPrinting">Screen Printing</span>
+      <h1 class="detail-title">{{ inkData.name }}</h1>
+      <p class="detail-lead">{{ inkData.shortDescription }}</p>
+
+      @if (inkData.longDescription) {
+        <div class="detail-section">
+          <h2 class="section-heading" i18n="@@inks.detail.overview">Overview</h2>
+          <!-- longDescription is localized in ink-series.model.ts via $localize (inks.series.*.longDescription) -->
+          <p class="detail-description">{{ inkData.longDescription }}</p>
+        </div>
+      }
+
+      @if (inkData.applications?.length) {
+        <div class="detail-section">
+          <h2 class="section-heading" i18n="@@inks.detail.applications">Applications</h2>
+          <ul class="detail-list">
+            @for (app of inkData.applications; track app) {
+              <li>{{ app }}</li>
+            }
+          </ul>
+        </div>
+      }
+
+      @if (inkData.substrates?.length) {
+        <div class="detail-section">
+          <h2 class="section-heading" i18n="@@inks.detail.substrates">Substrates</h2>
+          <ul class="detail-list">
+            @for (sub of inkData.substrates; track sub) {
+              <li>{{ sub }}</li>
+            }
+          </ul>
+        </div>
+      }
+
+      @if (inkData.features?.length) {
+        <div class="detail-section">
+          <h2 class="section-heading" i18n="@@inks.detail.features">Features</h2>
+          <ul class="detail-list">
+            @for (f of inkData.features; track f) {
+              <li>{{ f }}</li>
+            }
+          </ul>
+        </div>
+      }
+
+      @if (inkData.standardColors?.length) {
+        <div class="detail-section">
+          <h2 class="section-heading" i18n="@@inks.detail.standardColors">Standard Colors</h2>
+          @if (inkData.slug === '70g-series') {
+            <p class="detail-note" i18n="@@inks.detail.soldByWeight">Sold by weight. KG in part code indicates kg per US gallon container.</p>
+          }
+          <ul class="colors-grid" role="list">
+            @for (c of inkData.standardColors; track c.code) {
+              <li class="color-card">
+                <span class="color-card__code">{{ c.code }}</span>
+                <div class="color-card__main">
+                  <span class="color-card__name">{{ c.name }}</span>
+                  @if (c.note) {
+                    <span class="color-card__note" [attr.title]="getColorNoteLabel(c.note)">{{ c.note }}</span>
+                  }
+                </div>
+              </li>
+            }
+          </ul>
+          @if (inkData.slug === 'msk-series') {
+            <p class="detail-footnote">* Halogen free per the International Electrotechnical Commission standard IEC 61249-2-21, or may not be suitable for lightfast applications and is not recommended for prolonged exposure to direct sunlight.</p>
+          } @else if (inkData.slug === '70g-series' || inkData.slug === 'ppc-series') {
+            <p class="detail-footnote" i18n="@@inks.detail.footnote1">¹ May not be suitable for lightfast applications. Prolonged exposure to direct sunlight not recommended.</p>
+            <p class="detail-footnote" i18n="@@inks.detail.footnote2">² Avoid using in color matches; these colors contain multiple pigments.</p>
+          }
+        </div>
+      }
+
+      @if (inkData.processColors?.length) {
+        <div class="detail-section">
+          <h2 class="section-heading" i18n="@@inks.detail.processColors">Process Colors</h2>
+          @if (inkData.slug === '1500-series') {
+            <p class="detail-note">1500 Series four color process colors exceed SWOP standards. Variation of densities may be achieved with 1500-450 Halftone Base. Plain weave mesh with thread count suitable for LPI and smooth (low rz) stencil with OEM &gt;7 recommended.</p>
+          }
+          <ul class="colors-grid" role="list">
+            @for (c of inkData.processColors; track c.code) {
+              <li class="color-card color-card--process">
+                <span class="color-card__code">{{ c.code }}</span>
+                <div class="color-card__main">
+                  <span class="color-card__name">{{ c.name }}</span>
+                  @if (c.density) {
+                    <span class="color-card__meta">Density: {{ c.density }}</span>
+                  }
+                  @if (c.note) {
+                    <span class="color-card__note" [attr.title]="getColorNoteLabel(c.note)">{{ c.note }}</span>
+                  }
+                </div>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+
+      @if (inkData.colorMatchingGuide?.length) {
+        <div class="detail-section">
+          <h2 class="section-heading" i18n="@@inks.detail.colorMatchingGuide">Color Matching Guide</h2>
+          <ul class="colors-grid" role="list">
+            @for (c of inkData.colorMatchingGuide; track c.code) {
+              <li class="color-card">
+                <span class="color-card__code">{{ c.code }}</span>
+                <div class="color-card__main">
+                  <span class="color-card__name">{{ c.name }}</span>
+                  @if (c.note) {
+                    <span class="color-card__note" [attr.title]="getColorNoteLabel(c.note)">{{ c.note }}</span>
+                  }
+                </div>
+              </li>
+            }
+          </ul>
+          @if (inkData.slug === '1500-series') {
+            <p class="detail-footnote">* Used in Norcote's Color Matching Guide.</p>
+          }
+        </div>
+      }
+
+      @if (inkData.transparents?.length) {
+        <div class="detail-section">
+          <h2 class="section-heading" i18n="@@inks.detail.transparents">Transparents</h2>
+          <p class="detail-note" i18n="@@inks.detail.transparentShelfLife">Transparent inks have a shelf life of 1 year from date of manufacture when stored under proper conditions.</p>
+          <ul class="colors-grid" role="list">
+            @for (c of inkData.transparents; track c.code) {
+              <li class="color-card">
+                <span class="color-card__code">{{ c.code }}</span>
+                <div class="color-card__main">
+                  <span class="color-card__name">{{ c.name }}</span>
+                  @if (c.note) {
+                    <span class="color-card__note" [attr.title]="getColorNoteLabel(c.note)">{{ c.note }}</span>
+                  }
+                </div>
+              </li>
+            }
+          </ul>
+          @if (inkData.slug === 'msk-series') {
+            <p class="detail-footnote">* Halogen free per the International Electrotechnical Commission standard IEC 61249-2-21, or may not be suitable for lightfast applications and is not recommended for prolonged exposure to direct sunlight.</p>
+          }
+        </div>
+      }
+
+      @if (inkData.basesAndClears?.length) {
+        <div class="detail-section">
+          <h2 class="section-heading" i18n="@@inks.detail.whitesBlacksClears">Whites, Blacks & Clears</h2>
+          <ul class="colors-grid" role="list">
+            @for (b of inkData.basesAndClears; track b.code) {
+              <li class="color-card">
+                <span class="color-card__code">{{ b.code }}</span>
+                <div class="color-card__main">
+                  <span class="color-card__name">{{ b.name }}</span>
+                </div>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+
+      @if (inkData.texturedClears?.length) {
+        <div class="detail-section">
+          <h2 class="section-heading" i18n="@@inks.detail.texturedClears">Textured Clears</h2>
+          <p class="detail-note" i18n="@@inks.detail.texturedClearsShelfLife">Textured clears have a shelf life of 1 year from date of manufacture when stored under proper conditions.</p>
+          <ul class="colors-grid" role="list">
+            @for (c of inkData.texturedClears; track c.code) {
+              <li class="color-card color-card--textured">
+                <span class="color-card__code">{{ c.code }}</span>
+                <div class="color-card__main">
+                  <span class="color-card__name">{{ c.name }}</span>
+                  @if (c.leadTime) {
+                    <span class="color-card__meta color-card__meta--lead">{{ c.leadTime }}</span>
+                  }
+                </div>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+
+      <div class="detail-cta">
+        <a routerLink="/contact" class="cta-button" i18n="@@inks.detail.contactUs">Contact us for more info</a>
+      </div>
+    </article>
+  </div>
+}

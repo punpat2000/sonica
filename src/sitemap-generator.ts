@@ -2,16 +2,26 @@
  * Sitemap generator for multi-language Angular application
  */
 
+import { SCREEN_PRINTING_SERIES_SLUGS } from './app/pages/products/inks/ink-series-slugs';
+
 export interface Route {
   path: string;
   priority?: number;
   changefreq?: string;
 }
 
+// Dynamic ink detail routes (slugs only — no $localize, safe for route extraction)
+const inkDetailRoutes: Route[] = SCREEN_PRINTING_SERIES_SLUGS.map(slug => ({
+  path: `/products/inks/${slug}`,
+  priority: 0.7,
+  changefreq: 'monthly',
+}));
+
 export const routes: Route[] = [
   { path: '', priority: 1.0, changefreq: 'daily' },
   { path: '/about', priority: 0.9, changefreq: 'monthly' },
   { path: '/products/inks', priority: 0.8, changefreq: 'monthly' },
+  ...inkDetailRoutes,
   { path: '/products/squeegees', priority: 0.8, changefreq: 'monthly' },
   { path: '/products/led-uv-curing', priority: 0.8, changefreq: 'monthly' },
   { path: '/products/uv-meters', priority: 0.8, changefreq: 'monthly' },

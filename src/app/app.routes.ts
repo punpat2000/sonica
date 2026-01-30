@@ -17,8 +17,13 @@ export const routes: Routes = [
     children: [
       {
         path: 'inks',
-        loadComponent: () => import('./pages/placeholder/placeholder.component').then(m => m.PlaceholderComponent),
-        data: { title: 'UV Screen Printing Inks', description: 'High-quality UV screen printing inks for various applications.' }
+        loadComponent: () => import('./pages/products/inks/inks.component').then(m => m.InksComponent),
+        data: { title: 'UV Screen Printing Inks', description: 'Explore our UV screen printing ink catalogue by series and application.' }
+      },
+      {
+        path: 'inks/:slug',
+        loadComponent: () => import('./pages/products/inks/ink-detail/ink-detail.component').then(m => m.InkDetailComponent),
+        data: { title: 'Ink Series Details', description: 'Detailed information about this UV ink series.' }
       },
       {
         path: 'squeegees',

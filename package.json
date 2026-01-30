@@ -14,6 +14,7 @@
     "serve:zh": "ng serve --configuration=zh",
     "serve:ja": "ng serve --configuration=ja",
     "test": "ng test",
+    "extract-i18n": "ng extract-i18n --output-path src/locale --out-file messages-new.xlf",
     "serve:ssr:sonica": "node dist/sonica/server/server.mjs",
     "update": "ng update @angular/core@^21 @angular/cli@^21",
     "update:check": "ng update"
