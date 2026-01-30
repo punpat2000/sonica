@@ -16,11 +16,12 @@
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
 
-  opacity: 1;
+  opacity: 0;
   transition: opacity 600ms ease-out;
   will-change: opacity;
-  @starting-style {
-    opacity: 0;
+
+  &.gradient-shapes--visible {
+    opacity: 1;
   }
 }
 
