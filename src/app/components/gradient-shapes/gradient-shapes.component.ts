@@ -1,5 +1,5 @@
 import { Component, PLATFORM_ID, inject, signal, AfterViewInit, Renderer2 } from '@angular/core';
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 
 interface GradientShape {
   size: number;
@@ -16,7 +16,7 @@ interface GradientShape {
 
 @Component({
   selector: 'app-gradient-shapes',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './gradient-shapes.component.html',
   styleUrl: './gradient-shapes.component.scss',
 })
