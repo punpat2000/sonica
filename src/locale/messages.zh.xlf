@@ -156,7 +156,7 @@
       </trans-unit>
       <trans-unit id="footer.products.squeegees" datatype="html">
         <source>Squeegees</source>
-        <target>刮刀</target>
+        <target>胶刮刀</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
           <context context-type="linenumber">64,65</context>
@@ -164,7 +164,7 @@
       </trans-unit>
       <trans-unit id="footer.products.ledUvCuring" datatype="html">
         <source>LED/UV Curing Systems</source>
-        <target>LED/UV固化系统</target>
+        <target>LED/UV灯系统</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
           <context context-type="linenumber">65,66</context>
@@ -172,7 +172,7 @@
       </trans-unit>
       <trans-unit id="footer.products.uvMeters" datatype="html">
         <source>UV Intensity Meters</source>
-        <target>UV强度计</target>
+        <target>UV能量测量仪</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/footer/footer.component.html</context>
           <context context-type="linenumber">66,70</context>
@@ -276,7 +276,7 @@
       </trans-unit>
       <trans-unit id="header.products.squeegees" datatype="html">
         <source>Squeegees</source>
-        <target>刮刀</target>
+        <target>胶刮刀</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
           <context context-type="linenumber">31,32</context>
@@ -284,7 +284,7 @@
       </trans-unit>
       <trans-unit id="header.products.ledUvCuring" datatype="html">
         <source>LED/UV Curing Systems</source>
-        <target>LED/UV固化系统</target>
+        <target>LED/UV灯系统</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
           <context context-type="linenumber">32,33</context>
@@ -292,7 +292,7 @@
       </trans-unit>
       <trans-unit id="header.products.uvMeters" datatype="html">
         <source>UV Intensity Meters</source>
-        <target>UV强度计</target>
+        <target>UV能量测量仪</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
           <context context-type="linenumber">33,36</context>
@@ -404,7 +404,7 @@
       </trans-unit>
       <trans-unit id="home.aboutSonica.description2" datatype="html">
         <source> We specialize in providing high-quality UV screen printing inks, premium squeegees, advanced LED/UV curing systems, and precision UV intensity meters. Our commitment to excellence and innovation, combined with our exclusive partnership with Norcote International, has made us a preferred partner for leading manufacturers across Thailand. </source>
-        <target> 我们专注于提供高品质的UV丝网印刷油墨、优质刮刀、先进的LED/UV固化系统和精密UV强度计。我们对卓越和创新的承诺，加上与Norcote International的独家合作伙伴关系，使我们成为泰国各地领先制造商的首选合作伙伴。 </target>
+        <target> 我们专注于提供高品质的UV丝网印刷油墨、优质胶刮刀、先进的LED/UV灯系统和精密UV能量测量仪。我们对卓越和创新的承诺，加上与Norcote International的独家合作伙伴关系，使我们成为泰国各地领先制造商的首选合作伙伴。 </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">29,33</context>
@@ -540,7 +540,7 @@
       </trans-unit>
       <trans-unit id="home.services.equipment.description" datatype="html">
         <source>State-of-the-art LED/UV curing systems and UV intensity meters for quality control.</source>
-        <target>用于质量控制的先进LED/UV固化系统和UV强度计。</target>
+        <target>用于质量控制的先进LED/UV灯系统和UV能量测量仪。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">81,85</context>
@@ -868,7 +868,7 @@
       </trans-unit>
       <trans-unit id="inks.series.70g.longDescription" datatype="html">
         <source>The 70G Series is a one-part, dual cure ink system formulated to meet the requirements needed for printing on glass and plastic bottles commonly used in the container market. It can be cured with UV or LED systems (365–405 nm) or with traditional UV mercury or iron-doped curing systems. Cross-linking continues for up to 24 hours after printing; adhesion should be tested after cooling to room temperature.</source>
-        <target>70G 系列为单液双固化油墨体系，用于容器市场常用的玻璃与塑料瓶印刷。可用 UV 或 LED（365–405 nm）或传统 UV 汞灯/掺铁固化系统固化。印刷后交联可持续至 24 小时；冷却至室温后应测试附着力。</target>
+        <target>70G 系列为单液双固化油墨体系，用于容器市场常用的玻璃与塑料瓶印刷。可用 UV 或 LED（365–405 nm）或传统 UV 汞灯/掺铁灯系统固化。印刷后交联可持续至 24 小时；冷却至室温后应测试附着力。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">86</context>
@@ -980,7 +980,7 @@
       </trans-unit>
       <trans-unit id="inks.series.ppc.features.5" datatype="html">
         <source>Squeegee: sharp 80 shore durometer polyurethane preferred (60–90 or dual durometer)</source>
-        <target>刮刀：推荐锐角 80 肖氏硬度聚氨酯（60–90 或双硬度）</target>
+        <target>胶刮刀：推荐锐角 80 肖氏硬度聚氨酯（60–90 或双硬度）</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">135</context>
@@ -1076,7 +1076,7 @@
       </trans-unit>
       <trans-unit id="inks.series.msk.features.5" datatype="html">
         <source>Squeegee: 80 durometer molded preferred; 70–90 or multi-durometer polyurethane</source>
-        <target>刮刀：推荐 80 硬度模制；70–90 或多硬度聚氨酯</target>
+        <target>胶刮刀：推荐 80 硬度模制；70–90 或多硬度聚氨酯</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">188</context>
@@ -1220,7 +1220,7 @@
       </trans-unit>
       <trans-unit id="inks.series.1500.features.7" datatype="html">
         <source>Squeegee: cut or molded 70–90 durometer or multi-durometer polyurethane, UV compatible</source>
-        <target>刮刀：切割或模制 70–90 硬度或多硬度聚氨酯，UV 兼容</target>
+        <target>胶刮刀：切割或模制 70–90 硬度或多硬度聚氨酯，UV 兼容</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-series.model.ts</context>
           <context context-type="linenumber">248</context>

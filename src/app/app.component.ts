@@ -38,7 +38,7 @@ export class AppComponent implements OnInit, OnDestroy {
   private readonly seoDescriptions: Record<string, string> = {
     'en': 'Sonica, established in 2000, provides UV screen printing inks, color matching services, high-quality squeegees, LED/UV curing systems, and UV intensity meters. Trusted by leading manufacturers in Thailand.',
     'th': 'บริษัท โซนิก้า จำกัด ก่อตั้งในปี 2000 ให้บริการหมึกพิมพ์สกรีน UV บริการ color matching ยางปาดคุณภาพสูง เครื่องอบ LED/UV เครื่องความเข้มแสง UV ไว้วางใจโดยผู้ผลิตชั้นนำในประเทศไทย.',
-    'zh': 'Sonica成立于2000年，提供UV丝网印刷油墨、配色服务、高品质刮刀、LED/UV固化系统和UV强度计。受到泰国领先制造商的信赖。',
+    'zh': 'Sonica成立于2000年，提供UV丝网印刷油墨、配色服务、高品质胶刮刀、LED/UV灯系统和UV能量测量仪。受到泰国领先制造商的信赖。',
     'ja': 'Sonicaは2000年に設立され、UVスクリーン印刷インク、カラーマッチングサービス、高品質スクイージー、LED/UV硬化システム、UV強度計を提供しています。タイの主要メーカーから信頼されています。',
   };
 
@@ -46,7 +46,7 @@ export class AppComponent implements OnInit, OnDestroy {
   private readonly seoKeywords: Record<string, string> = {
     'en': 'Sonica, UV screen printing inks, squeegees, LED/UV curing systems, UV intensity meters, color matching services, leading manufacturer Thailand, Norcote distributor',
     'th': 'บริษัท โซนิก้า จำกัด, หมึกพิมพ์สกรีน UV, ยางปาด, เครื่องอบ LED/UV, เครื่องความเข้มแสง UV, บริการ color matching, ผู้ผลิตชั้นนำในประเทศไทย',
-    'zh': 'Sonica, UV丝网印刷油墨, 刮刀, LED/UV固化系统, UV强度计, 配色服务, 泰国领先制造商, Norcote经销商',
+    'zh': 'Sonica, UV丝网印刷油墨, 胶刮刀, LED/UV灯系统, UV能量测量仪, 配色服务, 泰国领先制造商, Norcote经销商',
     'ja': 'Sonica, UVスクリーン印刷インク, スクイージー, LED/UV硬化システム, UV強度計, カラーマッチングサービス, タイの主要メーカー, Norcoteディストリビューター',
   };
 
