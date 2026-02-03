@@ -1,4 +1,4 @@
-import { Component, inject, LOCALE_ID, OnInit, OnDestroy, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, LOCALE_ID, OnInit, OnDestroy, signal } from '@angular/core';
 import { RouterOutlet, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 
@@ -13,7 +13,8 @@ import { HeroBackgroundComponent } from './components/hero-background/hero-backg
   selector: 'app-root',
   imports: [RouterOutlet, HeaderComponent, FooterComponent, GradientShapesComponent, HeroBackgroundComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent implements OnInit, OnDestroy {
   private readonly meta = inject(Meta);
