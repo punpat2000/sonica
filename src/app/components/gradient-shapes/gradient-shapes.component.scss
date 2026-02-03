@@ -1,10 +1,8 @@
 // Gradient background shapes (randomly generated, deferred rendering for FCP optimization)
 .gradient-shapes {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  height: 100vh; /* stable height so it doesn’t readjust when Safari bar shows/hides on scroll */
   z-index: 0;
   pointer-events: none;
   overflow: hidden;

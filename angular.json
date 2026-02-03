@@ -151,6 +151,9 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "port": 4298
+          },
           "configurations": {
             "production": {
               "buildTarget": "sonica:build:production"
