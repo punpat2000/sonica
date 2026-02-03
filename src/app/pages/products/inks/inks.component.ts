@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
 import { INK_SERIES_CATALOGUE } from './ink-series.model';
@@ -8,6 +8,7 @@ import { INK_SERIES_CATALOGUE } from './ink-series.model';
   imports: [RouterLink, NgOptimizedImage],
   templateUrl: './inks.component.html',
   styleUrl: './inks.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InksComponent {
   readonly inkSeries = INK_SERIES_CATALOGUE;

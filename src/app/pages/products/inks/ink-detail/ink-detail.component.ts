@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, OnInit, signal } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { getInkSeriesDetail, type InkSeriesDetail } from '../ink-series.model';
 
@@ -7,6 +7,7 @@ import { getInkSeriesDetail, type InkSeriesDetail } from '../ink-series.model';
   imports: [RouterLink],
   templateUrl: './ink-detail.component.html',
   styleUrl: './ink-detail.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class InkDetailComponent implements OnInit {
   private readonly route = inject(ActivatedRoute);
