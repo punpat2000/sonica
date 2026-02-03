@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
@@ -6,6 +6,7 @@ import { NgOptimizedImage } from '@angular/common';
   imports: [NgOptimizedImage],
   templateUrl: './led-uv-curing.component.html',
   styleUrl: './led-uv-curing.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LedUvCuringComponent {
 

@@ -1,4 +1,4 @@
-import { Component, PLATFORM_ID, inject, signal, AfterViewInit, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, PLATFORM_ID, inject, signal, AfterViewInit, OnInit } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
 interface GradientShape {
@@ -18,6 +18,7 @@ interface GradientShape {
   selector: 'app-gradient-shapes',
   templateUrl: './gradient-shapes.component.html',
   styleUrl: './gradient-shapes.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GradientShapesComponent implements AfterViewInit, OnInit {
 

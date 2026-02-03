@@ -1,14 +1,15 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, inject, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-placeholder',
   imports: [],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="placeholder-container">
       <div class="glass-card placeholder-card">
-        <h1 class="placeholder-title">{{ title }}</h1>
-        <p class="placeholder-text">{{ description }}</p>
+        <h1 class="placeholder-title">{{ title() }}</h1>
+        <p class="placeholder-text">{{ description() }}</p>
       </div>
     </div>
   `,
@@ -54,12 +55,12 @@ import { ActivatedRoute } from '@angular/router';
 export class PlaceholderComponent implements OnInit {
   private route = inject(ActivatedRoute);
 
-  title: string = 'Page Title';
-  description: string = 'This page is coming soon.';
+  readonly title = signal('Page Title');
+  readonly description = signal('This page is coming soon.');
 
   ngOnInit(): void {
     const data = this.route.snapshot.data;
-    this.title = data['title'] || this.title;
-    this.description = data['description'] || this.description;
+    this.title.set(data['title'] ?? this.title());
+    this.description.set(data['description'] ?? this.description());
   }
 }
