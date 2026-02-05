@@ -53,7 +53,9 @@
       <li class="nav-item dropdown language-switcher">
         <a href="#" class="nav-link" (click)="toggleDropdown($event)">
           <span class="lang-display">
-            <span class="lang-flag">{{ currentLanguage().flag }}</span>
+            <span class="lang-flag lang-flag--svg" aria-hidden="true">
+              <app-language-flag [code]="currentLanguage().code" />
+            </span>
             <span class="lang-code">{{ currentLanguage().code.toUpperCase() }}</span>
           </span>
           <span class="dropdown-arrow">▼</span>
@@ -66,7 +68,9 @@
                 class="dropdown-link"
                 [class.active]="currentLocale() === lang.code"
                 (click)="switchLanguage(lang.code); $event.preventDefault()">
-                <span class="lang-flag">{{ lang.flag }}</span>
+                <span class="lang-flag lang-flag--svg" aria-hidden="true">
+                  <app-language-flag [code]="lang.code" />
+                </span>
                 <span class="lang-name">{{ lang.name }}</span>
               </a>
             </li>

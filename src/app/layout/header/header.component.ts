@@ -2,10 +2,11 @@ import { Component, HostListener, signal, computed, inject, LOCALE_ID } from '@a
 import { RouterLink, RouterLinkActive, NavigationEnd, Router, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { filter } from 'rxjs';
+import { LanguageFlagComponent } from '../../components/language-flag/language-flag.component';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, LanguageFlagComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
@@ -16,12 +17,11 @@ export class HeaderComponent {
   private router = inject(Router);
   private locale = inject(LOCALE_ID);
 
-  // Available languages
   languages = [
-    { code: 'en', name: 'English', flag: '🇺🇸' },
-    { code: 'th', name: 'ไทย', flag: '🇹🇭' },
-    { code: 'zh', name: '中文', flag: '🇨🇳' },
-    { code: 'ja', name: '日本語', flag: '🇯🇵' }
+    { code: 'en', name: 'English' },
+    { code: 'th', name: 'ไทย' },
+    { code: 'zh', name: '中文' },
+    { code: 'ja', name: '日本語' }
   ];
 
   // Detect current locale from LOCALE_ID
