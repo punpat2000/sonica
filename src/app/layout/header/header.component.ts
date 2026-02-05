@@ -1,6 +1,5 @@
 import { Component, HostListener, signal, computed, inject, LOCALE_ID } from '@angular/core';
-import { RouterLink, RouterLinkActive, NavigationEnd, Router, ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
+import { RouterLink, RouterLinkActive, NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
 import { LanguageFlagComponent } from '../../components/language-flag/language-flag.component';
 
@@ -13,7 +12,6 @@ import { LanguageFlagComponent } from '../../components/language-flag/language-f
 export class HeaderComponent {
   isMobileMenuOpen = signal(false);
   openDropdown: HTMLElement | null = null;
-  private location = inject(Location);
   private router = inject(Router);
   private locale = inject(LOCALE_ID);
 
