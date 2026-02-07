@@ -11,7 +11,8 @@
   <section class="inks-catalogue">
     <div class="catalogue-grid">
       @for (ink of inkSeries; track ink.slug) {
-        <a [routerLink]="['/products/inks', ink.slug]" class="glass-card ink-card">
+        @let detailLink = ['/products/inks', ink.slug];
+        <a [routerLink]="detailLink" class="glass-card ink-card">
           @if (ink.imagePath) {
             <div class="ink-card-image">
               <img [ngSrc]="ink.imagePath" [alt]="ink.name" width="400" height="300" class="card-image">

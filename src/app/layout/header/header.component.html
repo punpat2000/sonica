@@ -1,3 +1,5 @@
+@let menuOpen = isMobileMenuOpen();
+@let currentLang = currentLanguage();
 <header class="header">
   <nav class="nav-container">
     <div class="logo">
@@ -6,13 +8,13 @@
       </a>
     </div>
 
-    <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" [attr.aria-expanded]="isMobileMenuOpen()" i18n-aria-label="@@header.toggleMenu" aria-label="Toggle menu">
-      <span class="hamburger-line" [class.active]="isMobileMenuOpen()"></span>
-      <span class="hamburger-line" [class.active]="isMobileMenuOpen()"></span>
-      <span class="hamburger-line" [class.active]="isMobileMenuOpen()"></span>
+    <button class="mobile-menu-toggle" (click)="toggleMobileMenu()" [attr.aria-expanded]="menuOpen" i18n-aria-label="@@header.toggleMenu" aria-label="Toggle menu">
+      <span class="hamburger-line" [class.active]="menuOpen"></span>
+      <span class="hamburger-line" [class.active]="menuOpen"></span>
+      <span class="hamburger-line" [class.active]="menuOpen"></span>
     </button>
 
-    <ul class="nav-menu" [class.mobile-open]="isMobileMenuOpen()">
+    <ul class="nav-menu" [class.mobile-open]="menuOpen">
       <!-- Ink Stain Decoration for Mobile Menu -->
       <div class="mobile-menu-stain">
         <img src="ink-stain2.webp" alt="" class="stain-image">
@@ -54,9 +56,9 @@
         <a href="#" class="nav-link" (click)="toggleDropdown($event)">
           <span class="lang-display">
             <span class="lang-flag lang-flag--svg" aria-hidden="true">
-              <app-language-flag [code]="currentLanguage().code" />
+              <app-language-flag [code]="currentLang.code" />
             </span>
-            <span class="lang-code">{{ currentLanguage().code.toUpperCase() }}</span>
+            <span class="lang-code">{{ currentLang.code.toUpperCase() }}</span>
           </span>
           <span class="dropdown-arrow">▼</span>
         </a>
