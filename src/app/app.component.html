@@ -1,8 +1,4 @@
-@if (useHeroBackground()) {
-  <app-hero-background />
-} @else {
-  <app-gradient-shapes />
-}
+<ng-container [ngComponentOutlet]="backgroundComponent()" />
 
 <app-header />
 

@@ -1,4 +1,5 @@
-import { Component, inject, LOCALE_ID, OnInit, OnDestroy, signal } from '@angular/core';
+import { Component, inject, LOCALE_ID, OnInit, OnDestroy, signal, computed } from '@angular/core';
+import { NgComponentOutlet } from '@angular/common';
 import { RouterOutlet, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 
@@ -11,9 +12,9 @@ import { HeroBackgroundComponent } from './components/hero-background/hero-backg
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, GradientShapesComponent, HeroBackgroundComponent],
+  imports: [RouterOutlet, NgComponentOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit, OnDestroy {
   private readonly meta = inject(Meta);
@@ -23,8 +24,10 @@ export class AppComponent implements OnInit, OnDestroy {
   private readonly activatedRoute = inject(ActivatedRoute);
   private routerSubscription?: Subscription;
 
-  // Signal to track which background to use (default: gradient)
   protected useHeroBackground = signal(false);
+  protected backgroundComponent = computed(() =>
+    this.useHeroBackground() ? HeroBackgroundComponent : GradientShapesComponent
+  );
 
   // SEO titles for different languages
   private readonly seoTitles: Record<string, string> = {
