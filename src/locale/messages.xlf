@@ -209,105 +209,217 @@
         <source>Toggle menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">9,10</context>
+          <context context-type="linenumber">11,12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.home" datatype="html">
         <source>Home</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">23,24</context>
+          <context context-type="linenumber">25,26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.about" datatype="html">
         <source>About Us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">25,27</context>
+          <context context-type="linenumber">27,29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.products" datatype="html">
         <source>Products <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;dropdown-arrow&quot;&gt;"/>▼<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">28,29</context>
+          <context context-type="linenumber">30,31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.products.inks" datatype="html">
         <source>UV Screen Printing Inks</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">30,31</context>
+          <context context-type="linenumber">32,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.products.squeegees" datatype="html">
         <source>Squeegees</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">31,32</context>
+          <context context-type="linenumber">33,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.products.ledUvCuring" datatype="html">
         <source>LED/UV Curing Systems</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">32,33</context>
+          <context context-type="linenumber">34,35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.products.uvMeters" datatype="html">
         <source>UV Intensity Meters</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">33,36</context>
+          <context context-type="linenumber">35,38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.services" datatype="html">
         <source>Services <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;dropdown-arrow&quot;&gt;"/>▼<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">37,38</context>
+          <context context-type="linenumber">39,40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.services.colorMatching" datatype="html">
         <source>Color Matching</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">39,40</context>
+          <context context-type="linenumber">41,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.services.consulting" datatype="html">
         <source>Technical Consulting</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">40,41</context>
+          <context context-type="linenumber">42,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.services.support" datatype="html">
         <source>Customer Support</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">41,44</context>
+          <context context-type="linenumber">43,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.industries" datatype="html">
         <source>Industries</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">45,47</context>
+          <context context-type="linenumber">47,49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.resources" datatype="html">
         <source>Resources</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">48,50</context>
+          <context context-type="linenumber">50,52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.contact" datatype="html">
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">51,53</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.title" datatype="html">
+        <source>Contact Us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.intro" datatype="html">
+        <source> Get in touch with our team for product inquiries, technical support, or color matching services. We&apos;re here to help. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.getInTouch" datatype="html">
+        <source>Get in touch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.email" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.phone" datatype="html">
+        <source>Phone</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.note" datatype="html">
+        <source> We typically respond within 1–2 business days. For urgent technical support, please call. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.followUs" datatype="html">
+        <source>Follow us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.ourTeam" datatype="html">
+        <source>Our team</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.teamIntro" datatype="html">
+        <source> Reach out to the right people for sales, technical support, or color matching. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">47,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.viewDigitalCard" datatype="html">
+        <source>View digital card</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.team.pisut.name" datatype="html">
+        <source>Pisut Punvichartkul</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.team.pisut.role" datatype="html">
+        <source>General Manager</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.team.saint.name" datatype="html">
+        <source>Pattradanai Punvichartkul (Saint)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.team.saint.role" datatype="html">
+        <source>Sales &amp; Technical Support</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.team.little.name" datatype="html">
+        <source>Nuthanicha Pasithbhattarabhorn (Little)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.team.little.role" datatype="html">
+        <source>Marketing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.ts</context>
+          <context context-type="linenumber">52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.title" datatype="html">
@@ -601,70 +713,70 @@
         <source>¹ May not be suitable for lightfast applications. Prolonged exposure to direct sunlight not recommended.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">71,72</context>
+          <context context-type="linenumber">73,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.footnote2" datatype="html">
         <source>² Avoid using in color matches; these colors contain multiple pigments.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">72,75</context>
+          <context context-type="linenumber">74,77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.processColors" datatype="html">
         <source>Process Colors</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">79,80</context>
+          <context context-type="linenumber">81,82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.colorMatchingGuide" datatype="html">
         <source>Color Matching Guide</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">102,104</context>
+          <context context-type="linenumber">106,107</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.transparents" datatype="html">
         <source>Transparents</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">122,123</context>
+          <context context-type="linenumber">128,129</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.transparentShelfLife" datatype="html">
         <source>Transparent inks have a shelf life of 1 year from date of manufacture when stored under proper conditions.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">123,125</context>
+          <context context-type="linenumber">129,130</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.whitesBlacksClears" datatype="html">
         <source>Whites, Blacks &amp; Clears</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">143,145</context>
+          <context context-type="linenumber">151,152</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.texturedClears" datatype="html">
         <source>Textured Clears</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">157,158</context>
+          <context context-type="linenumber">167,168</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.texturedClearsShelfLife" datatype="html">
         <source>Textured clears have a shelf life of 1 year from date of manufacture when stored under proper conditions.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">158,160</context>
+          <context context-type="linenumber">168,169</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.contactUs" datatype="html">
         <source>Contact us for more info</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">174,177</context>
+          <context context-type="linenumber">186,189</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2750456055320728274" datatype="html">
@@ -1189,14 +1301,14 @@
         <source>Screen Printing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/inks.component.html</context>
-          <context context-type="linenumber">21,22</context>
+          <context context-type="linenumber">22,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.catalogue.viewDetails" datatype="html">
         <source>View details →</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/inks.component.html</context>
-          <context context-type="linenumber">24,27</context>
+          <context context-type="linenumber">25,28</context>
         </context-group>
       </trans-unit>
     </body>
