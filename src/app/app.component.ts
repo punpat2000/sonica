@@ -1,5 +1,5 @@
-import { Component, inject, LOCALE_ID, OnInit, OnDestroy, signal, computed } from '@angular/core';
-import { NgComponentOutlet } from '@angular/common';
+import { Component, inject, LOCALE_ID, OnInit, OnDestroy, signal, computed, PLATFORM_ID, Renderer2 } from '@angular/core';
+import { NgComponentOutlet, isPlatformBrowser, DOCUMENT } from '@angular/common';
 import { RouterOutlet, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 
@@ -22,6 +22,9 @@ export class AppComponent implements OnInit, OnDestroy {
   private readonly locale = inject(LOCALE_ID);
   private readonly router = inject(Router);
   private readonly activatedRoute = inject(ActivatedRoute);
+  private readonly platformId = inject(PLATFORM_ID);
+  private readonly document = inject(DOCUMENT);
+  private readonly renderer = inject(Renderer2);
   private routerSubscription?: Subscription;
 
   protected useHeroBackground = signal(false);
@@ -60,12 +63,14 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     // Check initial route
     this.updateBackground();
+    this.updateCanonical();
 
     // Subscribe to route changes
     this.routerSubscription = this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
         this.updateBackground();
+        this.updateCanonical();
       });
   }
 
@@ -111,6 +116,23 @@ export class AppComponent implements OnInit, OnDestroy {
       this.meta.updateTag({ name: 'keywords', content: keywords });
     } else {
       this.meta.addTag({ name: 'keywords', content: keywords });
+    }
+  }
+
+  /** Set canonical URL to the current page so each route has a valid self-referencing canonical. */
+  private updateCanonical(): void {
+    if (!isPlatformBrowser(this.platformId) || !this.document.defaultView) {
+      return;
+    }
+    const url = this.document.defaultView.location.origin + (this.document.defaultView.location.pathname || '/');
+    const existing = this.document.querySelector('link[rel="canonical"]');
+    if (existing) {
+      this.renderer.setAttribute(existing, 'href', url);
+    } else {
+      const link = this.renderer.createElement('link');
+      this.renderer.setAttribute(link, 'rel', 'canonical');
+      this.renderer.setAttribute(link, 'href', url);
+      this.renderer.appendChild(this.document.head, link);
     }
   }
 
