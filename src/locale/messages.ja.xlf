@@ -239,7 +239,7 @@
         <target>メニューを切り替え</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">9,10</context>
+          <context context-type="linenumber">11,12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.home" datatype="html">
@@ -247,7 +247,7 @@
         <target>ホーム</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">23,24</context>
+          <context context-type="linenumber">25,26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.about" datatype="html">
@@ -255,7 +255,7 @@
         <target>私たちについて</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">25,27</context>
+          <context context-type="linenumber">27,29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.products" datatype="html">
@@ -263,7 +263,7 @@
         <target>製品 <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;dropdown-arrow&quot;&gt;"/>▼<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">28,29</context>
+          <context context-type="linenumber">30,31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.products.inks" datatype="html">
@@ -271,7 +271,7 @@
         <target>UVスクリーン印刷インク</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">30,31</context>
+          <context context-type="linenumber">32,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.products.squeegees" datatype="html">
@@ -279,7 +279,7 @@
         <target>スクイージー</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">31,32</context>
+          <context context-type="linenumber">33,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.products.ledUvCuring" datatype="html">
@@ -287,7 +287,7 @@
         <target>LED/UV硬化システム</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">32,33</context>
+          <context context-type="linenumber">34,35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.products.uvMeters" datatype="html">
@@ -295,7 +295,7 @@
         <target>UV強度計</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">33,36</context>
+          <context context-type="linenumber">35,38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.services" datatype="html">
@@ -303,7 +303,7 @@
         <target>サービス <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;dropdown-arrow&quot;&gt;"/>▼<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">37,38</context>
+          <context context-type="linenumber">39,40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.services.colorMatching" datatype="html">
@@ -311,7 +311,7 @@
         <target>カラーマッチング</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">39,40</context>
+          <context context-type="linenumber">41,42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.services.consulting" datatype="html">
@@ -319,7 +319,7 @@
         <target>技術コンサルティング</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">40,41</context>
+          <context context-type="linenumber">42,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.services.support" datatype="html">
@@ -327,7 +327,7 @@
         <target>カスタマーサポート</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">41,44</context>
+          <context context-type="linenumber">43,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.industries" datatype="html">
@@ -335,7 +335,7 @@
         <target>業界</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">45,47</context>
+          <context context-type="linenumber">47,49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.resources" datatype="html">
@@ -343,7 +343,7 @@
         <target>リソース</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">48,50</context>
+          <context context-type="linenumber">50,52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="header.contact" datatype="html">
@@ -351,7 +351,135 @@
         <target>お問い合わせ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/header/header.component.html</context>
-          <context context-type="linenumber">51,53</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.title" datatype="html">
+        <source>Contact Us</source>
+        <target>お問い合わせ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.intro" datatype="html">
+        <source> Get in touch with our team for product inquiries, technical support, or color matching services. We&apos;re here to help. </source>
+        <target> Sonica の製品に関するお問い合わせ、技術サポート、またはカラー マッチングのサービスについては、ぜひ私たちのチームへご連絡ください。私たちがお手伝いいたします。 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.getInTouch" datatype="html">
+        <source>Get in touch</source>
+        <target>お問い合わせ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.email" datatype="html">
+        <source>Email</source>
+        <target>メール</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.phone" datatype="html">
+        <source>Phone</source>
+        <target>電話</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.note" datatype="html">
+        <source> We typically respond within 1–2 business days. For urgent technical support, please call. </source>
+        <target> 通常、1〜2営業日以内にご返信いたします。お急ぎの技術サポートにつきましては、お電話にてご連絡ください。 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.followUs" datatype="html">
+        <source>Follow us</source>
+        <target>フォローする</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.ourTeam" datatype="html">
+        <source>Our team</source>
+        <target>私たちのチーム</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.teamIntro" datatype="html">
+        <source> Reach out to the right people for sales, technical support, or color matching. </source>
+        <target> 販売・技術サポート・カラー マッチングについて、適切な担当者にご連絡ください。 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">47,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.viewDigitalCard" datatype="html">
+        <source>View digital card</source>
+        <target>デジタル名刺を見る</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.team.pisut.name" datatype="html">
+        <source>Pisut Punvichartkul</source>
+        <target>Pisut Punvichartkul (ピスットさん)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.team.pisut.role" datatype="html">
+        <source>General Manager</source>
+        <target>ゼネラルマネージャー</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.team.saint.name" datatype="html">
+        <source>Pattradanai Punvichartkul (Saint)</source>
+        <target>Pattradanai Punvichartkul (センさん)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.team.saint.role" datatype="html">
+        <source>Sales &amp; Technical Support</source>
+        <target>営業・技術サポート</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.team.little.name" datatype="html">
+        <source>Nuthanicha Pasithbhattarabhorn (Little)</source>
+        <target>Nuthanicha Pasithbhattarabhorn (リトルさん)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contact.team.little.role" datatype="html">
+        <source>Marketing</source>
+        <target>マーケティング</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.ts</context>
+          <context context-type="linenumber">52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="home.hero.title" datatype="html">
@@ -687,7 +815,7 @@
         <target>¹ 耐光性が求められる用途には不向きな場合があります。直射日光への長時間の暴露は推奨されません。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">71,72</context>
+          <context context-type="linenumber">73,74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.footnote2" datatype="html">
@@ -695,7 +823,7 @@
         <target>² 配色には使用しないでください。これらの色は複数の顔料を含みます。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">72,75</context>
+          <context context-type="linenumber">74,77</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.processColors" datatype="html">
@@ -703,7 +831,7 @@
         <target>プロセスカラー（CMYK）</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">79,80</context>
+          <context context-type="linenumber">81,82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.colorMatchingGuide" datatype="html">
@@ -711,7 +839,7 @@
         <target>配色ガイド</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">102,104</context>
+          <context context-type="linenumber">106,107</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.transparents" datatype="html">
@@ -719,7 +847,7 @@
         <target>クリアインク</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">122,123</context>
+          <context context-type="linenumber">128,129</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.transparentShelfLife" datatype="html">
@@ -727,7 +855,7 @@
         <target>クリアインクは適切な条件下で保管した場合、製造日から1年の保存期限があります。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">123,125</context>
+          <context context-type="linenumber">129,130</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.whitesBlacksClears" datatype="html">
@@ -735,7 +863,7 @@
         <target>白・黒・クリア</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">143,145</context>
+          <context context-type="linenumber">151,152</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.texturedClears" datatype="html">
@@ -743,7 +871,7 @@
         <target>テクスチャークリア</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">157,158</context>
+          <context context-type="linenumber">167,168</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.texturedClearsShelfLife" datatype="html">
@@ -751,7 +879,7 @@
         <target>テクスチャークリアは適切な条件下で保管した場合、製造日から1年の保存期限があります。</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">158,160</context>
+          <context context-type="linenumber">168,169</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.detail.contactUs" datatype="html">
@@ -759,7 +887,7 @@
         <target>詳細はお問い合わせください</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/ink-detail/ink-detail.component.html</context>
-          <context context-type="linenumber">174,177</context>
+          <context context-type="linenumber">186,189</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2750456055320728274" datatype="html">
@@ -1359,7 +1487,7 @@
         <target>スクリーン印刷</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/inks.component.html</context>
-          <context context-type="linenumber">21,22</context>
+          <context context-type="linenumber">22,23</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inks.catalogue.viewDetails" datatype="html">
@@ -1367,7 +1495,7 @@
         <target>詳細を見る →</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/products/inks/inks.component.html</context>
-          <context context-type="linenumber">24,27</context>
+          <context context-type="linenumber">25,28</context>
         </context-group>
       </trans-unit>
     </body>
