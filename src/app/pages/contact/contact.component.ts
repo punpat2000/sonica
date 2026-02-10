@@ -1,5 +1,6 @@
 import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { InitialsPipe } from '../../pipes/initials.pipe';
 
 export interface TeamMember {
   name: string;
@@ -12,21 +13,12 @@ export interface TeamMember {
 
 @Component({
   selector: 'app-contact',
-  imports: [NgOptimizedImage],
+  imports: [NgOptimizedImage, InitialsPipe],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactComponent {
-  /** First letters of first two words, or first two characters of name. */
-  initials(name: string): string {
-    const parts = name.trim().split(/\s+/);
-    if (parts.length >= 2) {
-      return (parts[0][0] + parts[1][0]).toUpperCase();
-    }
-    return name.slice(0, 2).toUpperCase();
-  }
-
   readonly email = 'info@sonica.co.th';
   readonly phone = '+66 81 754 4363';
   readonly phoneTel = 'tel:+66817544363';

@@ -53,7 +53,7 @@
               @if (member.imageUrl) {
                 <img [ngSrc]="member.imageUrl" [alt]="member.name" width="80" height="80" class="avatar-img">
               } @else {
-                <span class="avatar-initials">{{ initials(member.name) }}</span>
+                <span class="avatar-initials">{{ member.name | initials }}</span>
               }
             </div>
             <div class="team-info">
