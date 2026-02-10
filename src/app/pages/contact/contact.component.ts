@@ -12,7 +12,6 @@ export interface TeamMember {
 
 @Component({
   selector: 'app-contact',
-  standalone: true,
   imports: [NgOptimizedImage],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
