@@ -1,0 +1,81 @@
+<div class="contact-container">
+  <section class="contact-intro">
+    <div class="glass-card intro-card">
+      <h1 class="page-title" i18n="@@contact.title">Contact Us</h1>
+      <p class="page-description" i18n="@@contact.intro">
+        Get in touch with our team for product inquiries, technical support, or color matching services. We're here to help.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-details">
+    <div class="glass-card contact-card">
+      <h2 class="section-heading" i18n="@@contact.getInTouch">Get in touch</h2>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label" i18n="@@contact.email">Email</span>
+          <a [href]="'mailto:' + email" class="contact-value">{{ email }}</a>
+        </li>
+        <li>
+          <span class="contact-label" i18n="@@contact.phone">Phone</span>
+          <a [href]="phoneTel" class="contact-value">{{ phone }}</a>
+        </li>
+      </ul>
+      <p class="contact-note" i18n="@@contact.note">
+        We typically respond within 1–2 business days. For urgent technical support, please call.
+      </p>
+    </div>
+
+    <div class="glass-card social-card">
+      <h2 class="section-heading" i18n="@@contact.followUs">Follow us</h2>
+      <div class="social-links">
+        @for (link of socialLinks; track link.href) {
+          <a [href]="link.href" target="_blank" rel="noopener noreferrer" [attr.aria-label]="link.ariaLabel" class="social-link">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path [attr.d]="link.iconPath" />
+            </svg>
+          </a>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-team">
+    <div class="glass-card team-card">
+      <h2 class="section-heading" i18n="@@contact.ourTeam">Our team</h2>
+      <p class="team-intro" i18n="@@contact.teamIntro">
+        Reach out to the right people for sales, technical support, or color matching.
+      </p>
+      <ul class="team-list">
+        @for (member of teamMembers; track member.name) {
+          <li class="team-member">
+            <div class="team-avatar" [class.has-image]="member.imageUrl">
+              @if (member.imageUrl) {
+                <img [ngSrc]="member.imageUrl" [alt]="member.name" width="80" height="80" class="avatar-img">
+              } @else {
+                <span class="avatar-initials">{{ initials(member.name) }}</span>
+              }
+            </div>
+            <div class="team-info">
+              <span class="team-name">{{ member.name }}</span>
+              <span class="team-role">{{ member.role }}</span>
+              @if (member.email) {
+                <a [href]="'mailto:' + member.email" class="team-email">{{ member.email }}</a>
+              }
+              @if (member.businessCardUrl) {
+                <a [href]="member.businessCardUrl" target="_blank" rel="noopener noreferrer" class="team-card-link" i18n-aria-label="@@contact.viewDigitalCardAria">
+                  <span class="team-card-link-text" i18n="@@contact.viewDigitalCard">View digital card</span>
+                  <svg class="team-card-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+              }
+            </div>
+          </li>
+        }
+      </ul>
+    </div>
+  </section>
+</div>

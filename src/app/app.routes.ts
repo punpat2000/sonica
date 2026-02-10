@@ -74,7 +74,7 @@ export const routes: Routes = [
   },
   {
     path: 'contact',
-    loadComponent: () => import('./pages/placeholder/placeholder.component').then(m => m.PlaceholderComponent),
+    loadComponent: () => import('./pages/contact/contact.component').then(m => m.ContactComponent),
     data: { title: 'Contact Us', description: 'Get in touch with our team for inquiries and support.' }
   },
   {
