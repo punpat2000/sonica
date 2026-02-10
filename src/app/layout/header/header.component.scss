@@ -54,10 +54,6 @@
   font-style: italic;
 }
 
-.mobile-menu-stain {
-  display: none;
-}
-
 .nav-menu {
   display: flex;
   align-items: center;
@@ -282,23 +278,6 @@
 
     &.mobile-open {
       transform: translateX(0);
-    }
-  }
-
-  .mobile-menu-stain {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 0;
-    pointer-events: none;
-    opacity: 1;
-
-    .stain-image {
-      width: 100%;
-      height: auto;
-      display: block;
     }
   }
 
