@@ -1,4 +1,4 @@
-import { Component, PLATFORM_ID, inject, signal, AfterViewInit, OnInit } from '@angular/core';
+import { Component, PLATFORM_ID, inject, signal, OnInit, afterNextRender } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
 interface GradientShape {
@@ -10,8 +10,8 @@ interface GradientShape {
   color1: string;
   color2: string;
   isCenter?: boolean;
-  // Pre-computed style string to avoid function calls during hydration
-  styleString: string;
+  /** Style object for [style] binding (pre-computed to avoid function calls during hydration). */
+  style: Record<string, string | number>;
 }
 
 @Component({
@@ -19,12 +19,12 @@ interface GradientShape {
   templateUrl: './gradient-shapes.component.html',
   styleUrl: './gradient-shapes.component.scss',
 })
-export class GradientShapesComponent implements AfterViewInit, OnInit {
+export class GradientShapesComponent implements OnInit {
 
   private readonly platformId = inject(PLATFORM_ID);
 
-  protected visible = signal(false);
-  protected shapes = signal<GradientShape[]>([]);
+  readonly visible = signal(false);
+  readonly shapes = signal<GradientShape[]>([]);
 
   // Color palette for gradients
   private readonly colorPalette = [
@@ -52,22 +52,22 @@ export class GradientShapesComponent implements AfterViewInit, OnInit {
     { c1: '#06ffa5', c2: '#ffbe0b' },
   ];
 
+  constructor() {
+    afterNextRender(() => {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          this.visible.set(true);
+        });
+      });
+    });
+  }
+
   ngOnInit(): void {
     // Generate shapes only on client, not on server
     // This avoids any SSR/hydration issues and keeps the server HTML clean
     if (isPlatformBrowser(this.platformId)) {
       this.generateShapes();
     }
-  }
-
-  ngAfterViewInit(): void {
-    if (!isPlatformBrowser(this.platformId)) return;
-
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        this.visible.set(true);
-      });
-    });
   }
 
   private generateShapes(): void {
@@ -85,7 +85,7 @@ export class GradientShapesComponent implements AfterViewInit, OnInit {
         size,
         color1: colors.c1,
         color2: colors.c2,
-        styleString: '', // Will be computed below
+        style: {}, // Will be computed below
       };
 
       switch (positionType) {
@@ -111,8 +111,8 @@ export class GradientShapesComponent implements AfterViewInit, OnInit {
           break;
       }
 
-      // Pre-compute style string to avoid function calls during hydration
-      shape.styleString = this.computeStyleString(shape);
+      // Pre-compute style object for ngStyle
+      shape.style = this.computeStyle(shape);
 
       shapesArray.push(shape);
     }
@@ -121,40 +121,39 @@ export class GradientShapesComponent implements AfterViewInit, OnInit {
     this.shapes.set(shapesArray);
   }
 
-  private computeStyleString(shape: GradientShape): string {
-    const parts: string[] = [];
-
-    parts.push(`width: ${shape.size}px`);
-    parts.push(`height: ${shape.size}px`);
-    parts.push(`background: linear-gradient(135deg, ${shape.color1} 0%, ${shape.color2} 100%)`);
+  private computeStyle(shape: GradientShape): Record<string, string | number> {
+    const style: Record<string, string | number> = {
+      width: `${shape.size}px`,
+      height: `${shape.size}px`,
+      background: `linear-gradient(135deg, ${shape.color1} 0%, ${shape.color2} 100%)`,
+    };
 
     if (shape.isCenter) {
-      parts.push('top: 50%');
-      parts.push('left: 50%');
-      parts.push('transform: translate(-50%, -50%) translateZ(0)');
+      style['top'] = '50%';
+      style['left'] = '50%';
+      style['transform'] = 'translate(-50%, -50%) translateZ(0)';
     } else {
       if (shape.top !== undefined) {
-        parts.push(`top: ${shape.top < 0 ? `${shape.top}px` : `${shape.top}%`}`);
+        style['top'] = shape.top < 0 ? `${shape.top}px` : `${shape.top}%`;
       }
       if (shape.left !== undefined) {
-        parts.push(`left: ${shape.left < 0 ? `${shape.left}px` : `${shape.left}%`}`);
+        style['left'] = shape.left < 0 ? `${shape.left}px` : `${shape.left}%`;
       }
       if (shape.right !== undefined) {
-        parts.push(`right: ${shape.right}px`);
-        parts.push('transform: translateZ(0)');
+        style['right'] = `${shape.right}px`;
+        style['transform'] = 'translateZ(0)';
       }
       if (shape.bottom !== undefined) {
-        parts.push(`bottom: ${shape.bottom < 0 ? `${shape.bottom}px` : `${shape.bottom}%`}`);
+        style['bottom'] = shape.bottom < 0 ? `${shape.bottom}px` : `${shape.bottom}%`;
         if (shape.right === undefined) {
-          parts.push('transform: translateZ(0)');
+          style['transform'] = 'translateZ(0)';
         }
       }
-      // Ensure GPU acceleration for all shapes
-      if (!parts.some(p => p.includes('transform'))) {
-        parts.push('transform: translateZ(0)');
+      if (style['transform'] === undefined) {
+        style['transform'] = 'translateZ(0)';
       }
     }
 
-    return parts.join('; ');
+    return style;
   }
 }
